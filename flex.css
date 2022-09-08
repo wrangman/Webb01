@@ -1,0 +1,258 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(210, 210, 210);
+
+}
+
+a:link {
+    color: black;
+    user-select: none;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+    user-select: none;
+    text-decoration: none;
+}
+
+h1 {
+    color: wheat;
+    margin: 10px;
+}
+
+h2 {    
+    margin-top: 0px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+h3 {
+    margin-top: 0px;
+    margin-bottom: 5px;
+    text-transform:capitalize;
+}
+
+p {
+    margin-bottom: 10px;
+
+}
+
+.list {
+    cursor:pointer;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: center;
+    align-items: stretch;
+    height: 100vh;   
+}
+
+.wrapper #row1 {
+    background-color: lightslategray;
+    padding: 10px;
+    text-shadow:
+    -1px -1px 0 black,  
+     1px -1px 0 black,
+     -1px 1px 0 black,
+      1px 1px 0 black;
+}
+
+.wrapper #row2 {
+    display: flex;
+    /*background-color: white;*/
+    flex: 1 1 auto;
+}
+
+.wrapper #row2 #col1 {
+    /*background-color: white;*/
+    flex: 0 0 240px;
+}
+
+.wrapper #row2 #col2 {
+    /*background-color: white;*/
+    flex: 1 1 auto;
+    padding: 10px;
+    margin-right: 250px;
+}
+
+.wrapper #row2 #divRotate {
+    background-color: rgb(210, 210, 210);
+    flex: 1 0 100%;
+    padding: 10px;
+    font-size: 22px;
+    vertical-align: middle;
+    justify-content:  center;
+}
+
+.menuitem { 
+    position: relative;
+    left: -10px;
+    width: 80%;
+    line-height: 30px;
+    background-color: lightslategray;
+    color: black;
+    margin: 10px 5px 5px 0px;
+    text-align: right;
+    user-select: none;        
+    text-transform: uppercase;
+    font-weight: 300em;
+    cursor: pointer;
+    padding-right: 5px;
+    box-shadow: 5px 5px 10px gray;
+}
+
+.menuitem:hover {
+    width: 95%;
+    margin: 10px 5px 5px 0px;
+    background-color: lightsteelblue;
+    transition: .2s;
+    translate: width 10%;
+}
+
+#submenu {
+    visibility: hidden;
+    position: relative;
+    left: 20px;
+    top: 0px;
+    width: 100%;
+    height:fit-content;
+    vertical-align: top;
+    z-index: 1;
+}   
+
+img {
+    float: left;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    padding: 15px;
+    border-radius: 25px;
+}
+
+#planeDiv {     
+    position: relative;
+    left: 25%;
+    top: 25%;
+    line-height: 200px;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    color: white;   
+   
+}
+
+#planeDiv:hover {
+    animation: rotate 2s;
+
+}
+
+@keyframes rotate {
+    0% {
+        rotate: 0 0 0 0deg;
+    }
+
+    100% {
+        rotate: 1 0 1 360deg;
+    }
+}
+
+.calc-UI {
+    width: 400px;
+    height: 400px;
+
+    border: gray 1px solid;
+    padding: 10px;
+}
+    
+.color-palette {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    border: gray 1px solid;
+    gap: 1rem;
+}
+
+.btn-col {
+    display: flex;
+    flex-basis: 100px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    user-select: none;
+    font-size: 18px;
+    font-weight: bold;
+    text-shadow:
+    -1px -1px 0 white,  
+     1px -1px 0 white,
+     -1px 1px 0 white,
+      1px 1px 0 white;
+    box-shadow: 2px 2px gray;
+    justify-content: center;
+    align-items: center;
+    opacity: .5;
+
+}
+
+#cred {
+    background-color: red;
+}
+
+
+#cgreen {
+    background-color: green;
+}
+
+
+#cblue {
+    background-color: blue;
+}
+
+
+#cyellow {
+    background-color: yellow;
+}
+
+
+#cpurple {
+    background-color: purple;
+}
+
+
+#cbrown {
+    background-color: brown;
+}
+
+
+#cwhite {
+    background-color: white;
+}
+
+
+#cgray {
+    background-color: gray;
+}
+
+
+#cblack {
+    background-color: black;
+}
+
+button {
+width: 100%;
+height: 40px;   
+font-size: 22px;
+font-weight: bold;
+}
+
+

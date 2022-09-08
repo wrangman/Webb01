@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="flex.css">
+    <script src="flex.js" defer></script>
+
+    <title>JS miniräknare</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div id="row1">
+            <h1>Webbutveckling 1</h1>
+        </div>
+        <div id="row2">
+            <div id="col1">
+                <div w3-include-html="menu.html"></div>
+            </div>
+            <div id="col2">
+                <h2>Färgblandare</h2>
+                <p>
+                Denna färgstarka lilla &ldquo;miniräknare&rdquo; blandar två färger :)
+                </p>
+                <div class="calc-UI">
+                    Välj två färger att blanda!
+                    <div class="color-palette">
+                        <div class="btn-col" id="cred" onpointerdown="btnClick('cred');">Röd</div>
+                        <div class="btn-col" id="cgreen" onpointerdown="btnClick('cgreen');">Grön</div>
+                        <div class="btn-col" id="cblue" onpointerdown="btnClick('cblue');">Blå</div>
+                        <div class="btn-col" id="cyellow" onpointerdown="btnClick('cyellow');">Gul</div>
+                        <div class="btn-col" id="cpurple" onpointerdown="btnClick('cpurple');">Lila</div>
+                        <div class="btn-col" id="cbrown" onpointerdown="btnClick('cbrown');">Brun</div>
+                        <div class="btn-col" id="cwhite" onpointerdown="btnClick('cwhite');">Vit</div>
+                        <div class="btn-col" id="cgray" onpointerdown="btnClick('cgray');">Grå</div>
+                        <div class="btn-col" id="cblack" onpointerdown="btnClick('cblack');">Svart</div>
+                    </div>
+                    <button type="button" id="mergeColor">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
