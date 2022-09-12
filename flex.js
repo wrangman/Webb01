@@ -1,5 +1,6 @@
 var selColor1 = null;
 var selColor2 = null;
+let tempQuery = window.location.search;
 
 function includeHTML() {
     var z, i, elmnt, file, xhttp;
@@ -44,7 +45,8 @@ function showSubMenu(whatId, stateShow) {
         document.getElementById(whatId).style.visibility = "hidden";
     }
 }
-/*
+
+if (tempQuery.search("checklist") > 2) {   // endast ladda om på rätt sida
     const form = document.querySelector("form");
     const input = document.querySelector("input");
     const list = document.querySelector(".list");
@@ -65,7 +67,8 @@ function showSubMenu(whatId, stateShow) {
         list.append(elem);
         input.value = "";
     })
-*/
+}
+
 function btnClick(whatColor) {
     if (selColor1 === null || selColor2 === null) {
         document.getElementById(whatColor).style.opacity = ".6";
@@ -81,7 +84,6 @@ function btnEval() {
     if (selColor1 === null && selColor2 === null) {
         alert("Välj två färger först");
     } else {
-
         document.getElementById(selColor1).style.opacity = "1";
         document.getElementById(selColor2).style.opacity = "1";
 
@@ -89,5 +91,4 @@ function btnEval() {
         selColor1 = null
         selColor2 = null
     }
-
 }
