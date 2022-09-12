@@ -1,3 +1,6 @@
+var selColor1 = null;
+var selColor2 = null;
+
 function includeHTML() {
     var z, i, elmnt, file, xhttp;
     /* Loop through a collection of all HTML elements: */
@@ -33,53 +36,58 @@ function aboutDialog() {
 }
 
 function showSubMenu(whatId, stateShow) {
-    console.log(stateShow)
+    console.log(stateShow);
 
     if (stateShow === true) {
-        document.getElementById(whatId).style.visibility = "visible"
+        document.getElementById(whatId).style.visibility = "visible";
     } else {
-        document.getElementById(whatId).style.visibility = "hidden"
+        document.getElementById(whatId).style.visibility = "hidden";
     }
 }
-
-
-
-    const form = document.querySelector("form")
-    const input = document.querySelector("input")
-    const list = document.querySelector(".list")
+/*
+    const form = document.querySelector("form");
+    const input = document.querySelector("input");
+    const list = document.querySelector(".list");
 
     form.addEventListener("submit", e => {
         e.preventDefault()
         const value = input.value
         const elem = document.createElement("div")
 
-        elem.textContent = value
+        elem.textContent = value;
         elem.addEventListener("click", () => {
             if (elem.style.textDecoration === "line-through") {
-                elem.style.textDecoration = "none"
+                elem.style.textDecoration = "none";
             } else {
-                elem.style.textDecoration = "line-through"
+                elem.style.textDecoration = "line-through";
             }
         })
-        list.append(elem)
-        input.value = ""
+        list.append(elem);
+        input.value = "";
     })
+*/
+function btnClick(whatColor) {
+    if (selColor1 === null || selColor2 === null) {
+        document.getElementById(whatColor).style.opacity = ".6";
+        if (selColor1 === null) {
+            selColor1 = whatColor;
+        } else {
+            selColor2 = whatColor;
+        }
+    }
+}
 
-    
-function btnClick(whatId) {
-
-    console.log(whatId)
-
-    let whatStyle = document.getElementById(whatId).style.opacity
-
-    console.log(document.getElementById(whatId).style.color)
-
-
-    if (whatStyle === ".5") {
-        whatStyle = "1"
+function btnEval() {
+    if (selColor1 === null && selColor2 === null) {
+        alert("Välj två färger först");
     } else {
-        whatStyle = ".5"
-    
+
+        document.getElementById(selColor1).style.opacity = "1";
+        document.getElementById(selColor2).style.opacity = "1";
+
+        document.getElementById("btn-eval").style.backgroundImage = "linear-gradient(90deg, " + selColor1 + ", " + selColor2 + ")";
+        selColor1 = null
+        selColor2 = null
     }
 
 }

@@ -157,22 +157,23 @@ img {
 
 }
 
-@keyframes rotate {
-    0% {
-        rotate: 0 0 0 0deg;
-    }
 
-    100% {
-        rotate: 1 0 1 360deg;
-    }
+.calc-body {
+    background-image: linear-gradient(0deg,rgba(228, 225, 219, 1), rgb(253, 203, 103, 1));
+    height: 100vh;
 }
 
 .calc-UI {
     width: 400px;
     height: 400px;
-
-    border: gray 1px solid;
     padding: 10px;
+    
+}
+
+.calc-result {
+    width: 400px;
+    padding: 10px;
+    
 }
     
 .color-palette {
@@ -180,79 +181,84 @@ img {
     width: 100%;
     height: 100%;
     flex-wrap: wrap;
-    border: gray 1px solid;
     gap: 1rem;
 }
 
 .btn-col {
     display: flex;
-    flex-basis: 100px;
-    flex-grow: 1;
-    flex-shrink: 0;
+    flex: 1 1 100px;
     user-select: none;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
     text-shadow:
     -1px -1px 0 white,  
      1px -1px 0 white,
      -1px 1px 0 white,
       1px 1px 0 white;
-    box-shadow: 2px 2px gray;
+    box-shadow: 2px 2px black;
     justify-content: center;
     align-items: center;
-    opacity: .5;
-
 }
 
-#cred {
+.btn-col:hover {
+    box-shadow: -2px -2px white;
+}
+
+#red {
     background-color: red;
 }
 
 
-#cgreen {
+#green {
     background-color: green;
 }
 
 
-#cblue {
+#blue {
     background-color: blue;
 }
 
 
-#cyellow {
+#yellow {
     background-color: yellow;
 }
 
 
-#cpurple {
+#purple{
     background-color: purple;
 }
 
 
-#cbrown {
+#brown {
     background-color: brown;
 }
 
 
-#cwhite {
+#white {
     background-color: white;
 }
 
 
-#cgray {
+#gray {
     background-color: gray;
 }
 
 
-#cblack {
+#black {
     background-color: black;
 }
 
-button {
-width: 100%;
-height: 40px;   
-font-size: 22px;
-font-weight: bold;
+#btn-eval {
+    background-color: inherit;
+    text-shadow:
+    -1px -1px 0 white,  
+     1px -1px 0 white,
+     -1px 1px 0 white,
+      1px 1px 0 white;
+    width: 100%;
+    height: 80px;   
+    font-size: 16px;
 }
+
 
 

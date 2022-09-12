@@ -10,7 +10,7 @@
 
     <title>JS miniräknare</title>
 </head>
-<body>
+<body class="calc-body">
     <div class="wrapper">
         <div id="row1">
             <h1>Webbutveckling 1</h1>
@@ -22,25 +22,41 @@
             <div id="col2">
                 <h2>Färgblandare</h2>
                 <p>
-                Denna färgstarka lilla &ldquo;miniräknare&rdquo; blandar två färger :)
+                    Denna färgstarka lilla &ldquo;miniräknare&rdquo; blandar två färger :)
+                </p>
+                <p>
+                    Välj två färger att blanda!
                 </p>
                 <div class="calc-UI">
-                    Välj två färger att blanda!
                     <div class="color-palette">
-                        <div class="btn-col" id="cred" onpointerdown="btnClick('cred');">Röd</div>
-                        <div class="btn-col" id="cgreen" onpointerdown="btnClick('cgreen');">Grön</div>
-                        <div class="btn-col" id="cblue" onpointerdown="btnClick('cblue');">Blå</div>
-                        <div class="btn-col" id="cyellow" onpointerdown="btnClick('cyellow');">Gul</div>
-                        <div class="btn-col" id="cpurple" onpointerdown="btnClick('cpurple');">Lila</div>
-                        <div class="btn-col" id="cbrown" onpointerdown="btnClick('cbrown');">Brun</div>
-                        <div class="btn-col" id="cwhite" onpointerdown="btnClick('cwhite');">Vit</div>
-                        <div class="btn-col" id="cgray" onpointerdown="btnClick('cgray');">Grå</div>
-                        <div class="btn-col" id="cblack" onpointerdown="btnClick('cblack');">Svart</div>
+                        <div type="button" class="btn-col" id="red" onClick="btnClick('red');">Röd</div>
+                        <div type="button" class="btn-col" id="green" onClick="btnClick('green');">Grön</div>
+                        <div type="button" class="btn-col" id="blue" onClick="btnClick('blue');">Blå</div>
+                        <div type="button" class="btn-col" id="yellow" onClick="btnClick('yellow');">Gul</div>
+                        <div type="button" class="btn-col" id="purple" onClick="btnClick('purple');">Lila</div>
+                        <div type="button" class="btn-col" id="brown" onClick="btnClick('brown');">Brun</div>
+                        <div type="button" class="btn-col" id="white" onClick="btnClick('white');">Vit</div>
+                        <div type="button" class="btn-col" id="gray" onClick="btnClick('gray');">Grå</div>
+                        <div type="button" class="btn-col" id="black" onClick="btnClick('black');">Svart</div>
                     </div>
-                    <button type="button" id="mergeColor">=</button>
+                </div>
+                <div class="calc-result">
+                    <button type="button" id="btn-eval" onClick="btnEval();">Blanda</button>
+          
                 </div>
             </div>
         </div>
     </div>
+
+
+    <!--div type="button" class="btn-col" id="cred" onClick="btnClick('0');">Röd</div>
+                        <div type="button" class="btn-col" id="cgreen" onClick="btnClick('cgreen');">Grön</div>
+                        <div type="button" class="btn-col" id="cblue" onClick="btnClick('cblue');">Blå</div>
+                        <div type="button" class="btn-col" id="cyellow" onClick="btnClick('cyellow');">Gul</div>
+                        <div type="button" class="btn-col" id="cpurple" onClick="btnClick('cpurple');">Lila</div>
+                        <div type="button" class="btn-col" id="cbrown" onClick="btnClick('cbrown');">Brun</div>
+                        <div type="button" class="btn-col" id="cwhite" onClick="btnClick('cwhite');">Vit</div>
+                        <div type="button" class="btn-col" id="cgray" onClick="btnClick('cgray');">Grå</div>
+                        <div type="button" class="btn-col" id="cblack" onClick="btnClick('cblack');">Svart</div>-->
 </body>
 </html>
