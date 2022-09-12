@@ -39,7 +39,7 @@ function aboutDialog() {
 function showSubMenu(whatId, stateShow) {
     console.log(stateShow);
 
-    if (stateShow === true) {
+    if (stateShow == true) {
         document.getElementById(whatId).style.visibility = "visible";
     } else {
         document.getElementById(whatId).style.visibility = "hidden";
@@ -58,7 +58,7 @@ if (tempQuery.search("checklist") > 2) {   // endast ladda om på rätt sida
 
         elem.textContent = value;
         elem.addEventListener("click", () => {
-            if (elem.style.textDecoration === "line-through") {
+            if (elem.style.textDecoration == "line-through") {
                 elem.style.textDecoration = "none";
             } else {
                 elem.style.textDecoration = "line-through";
@@ -70,9 +70,9 @@ if (tempQuery.search("checklist") > 2) {   // endast ladda om på rätt sida
 }
 
 function btnClick(whatColor) {
-    if (selColor1 === null || selColor2 === null) {
+    if (selColor1 == null || selColor2 == null) {
         document.getElementById(whatColor).style.opacity = ".6";
-        if (selColor1 === null) {
+        if (selColor1 == null) {
             selColor1 = whatColor;
         } else {
             selColor2 = whatColor;
@@ -81,7 +81,7 @@ function btnClick(whatColor) {
 }
 
 function btnEval() {
-    if (selColor1 === null && selColor2 === null) {
+    if (selColor1 == null && selColor2 == null) {
         alert("Välj två färger först");
     } else {
         document.getElementById(selColor1).style.opacity = "1";

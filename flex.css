@@ -149,11 +149,21 @@ img {
     height: 200px;
     background-color: blue;
     color: white;   
+    
    
 }
 
 #planeDiv:hover {
-    animation: rotate 2s;
+    animation: rotate 3s infinite;
+}
+
+@keyframes rotate {
+    0% {
+        rotate: 1 0 1 0deg;
+    }
+    100% {
+        rotate: 1 0 1 360deg;
+    }
 
 }
 
