@@ -88,6 +88,7 @@ function btnEval() {
         document.getElementById(selColor2).style.opacity = "1";
 
         document.getElementById("btn-eval").style.backgroundImage = "linear-gradient(90deg, " + selColor1 + ", " + selColor2 + ")";
+
         selColor1 = null
         selColor2 = null
     }
