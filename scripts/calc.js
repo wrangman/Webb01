@@ -66,7 +66,7 @@ function btnCalc(whichButton) {
             let result = eval(calcScreen);
             if (result != "Infinity" && result != "-Infinity") document.getElementById('calc-screen').innerHTML = result;
         } catch (error) {
-            alert("Felaktig inmatning");
+            alert(error);
         }
     }
 
