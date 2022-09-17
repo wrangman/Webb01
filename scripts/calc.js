@@ -1,3 +1,8 @@
+
+/******************************
+ JS Miniräknare
+*******************************/
+
 var buttonAvail = false;
 
 function btnCalc(whichButton) {
