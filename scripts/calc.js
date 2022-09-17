@@ -3,7 +3,7 @@
  JS Miniräknare
 *******************************/
 
-var buttonAvail = false;
+var buttonEnabled = false;
 
 function btnCalc(whichButton) {
     let calcInput = document.getElementById(whichButton).innerHTML;
@@ -12,19 +12,19 @@ function btnCalc(whichButton) {
 
     switch (whichButton) {                      //Vilken knapp tryckte användaren på?
         case 'btn4':                            //Dela
-            if (buttonAvail) inputNumbers('/');
+            if (buttonEnabled) inputNumbers('/');
             break;
         case 'btn8':                            //Gånger
-            if (buttonAvail) inputNumbers('*');
+            if (buttonEnabled) inputNumbers('*');
             break;
         case 'btn12':                            //Minus
-            if (buttonAvail) inputNumbers('-');
+            if (buttonEnabled) inputNumbers('-');
             break;
         case 'btn13':                            //Konvertera +/-
-            if (buttonAvail) convert();
+            if (buttonEnabled) convert();
             break;
         case 'btn16':                            //Plus
-            if (buttonAvail) inputNumbers('+');
+            if (buttonEnabled) inputNumbers('+');
             break;
         case 'btn18':                           //Sudda
             backSpace();
@@ -33,15 +33,15 @@ function btnCalc(whichButton) {
             clearScreen();
             break;
         case 'btn19':                            //Räkna
-            if (buttonAvail) calculate();
+            if (buttonEnabled) calculate();
             break;
         default:                                //Nuffror
             inputNumbers(calcInput);
     } //switch
 
     function inputNumbers(whatDigit) {
-        if (!buttonAvail) clearScreen();
-        buttonAvail=true;
+        if (!buttonEnabled) clearScreen();
+        buttonEnabled=true;
         if (screenLength<19) {
             document.getElementById('calc-screen').innerHTML += whatDigit;
         }
@@ -52,7 +52,7 @@ function btnCalc(whichButton) {
             calcScreen = calcScreen.slice(0, -1);
             document.getElementById('calc-screen').innerHTML = calcScreen;
         } else {
-            buttonAvail=false;
+            buttonEnabled=false;
         }
     }
 
@@ -76,7 +76,7 @@ function btnCalc(whichButton) {
     }
 
     function clearScreen() {
-        buttonAvail=false;
+        buttonEnabled=false;
         document.getElementById('calc-screen').innerHTML = "";
     }
 }
