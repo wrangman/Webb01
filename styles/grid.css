@@ -10,8 +10,8 @@
 
 .article-grid {
     display: grid;
+    grid-template-columns: 1;
     gap: 1.5rem;
-    grid-template-columns: repeat(4, 1fr);
     padding-block: 1rem;
     width: min(95%, 70rem);
     margin-inline: auto;
@@ -48,4 +48,22 @@
 .article-item:hover {
     z-index: 1;
     scale: 1.05;
+}
+
+@media (min-width: 900px) {
+    .grid-col-span-2 {
+        grid-column: span 2;
+    }
+    
+    .grid-col-span-3 {
+        grid-column: span 3;
+    }
+    
+    .grid-row-span-2 {
+        grid-row: span 2;
+    }
+    
+    .article-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }

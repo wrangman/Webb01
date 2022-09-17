@@ -53,3 +53,7 @@
     background-color: cyan;
     border-color: white;
 }
+
+.grid-col-span-2 {
+    grid-column: span 2;
+}
