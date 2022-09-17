@@ -1,0 +1,51 @@
+/******************************
+ CSS Grid
+*******************************/
+
+
+.wrapper #row2 #div-grid {
+    background-color: rgb(210, 210, 210);
+    width: 1000px;
+}
+
+.article-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(4, 1fr);
+    padding-block: 1rem;
+    width: min(95%, 70rem);
+    margin-inline: auto;
+}
+
+.article-item {
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 10px 15px 20px -10px gray;
+    transition: .4s ease-in-out;
+    z-index: 0;
+}
+
+.article-item:nth-child(1) {
+    background-color: lightblue;
+}
+
+.article-item:nth-child(2) {
+    background-color: lightgreen;
+}
+.article-item:nth-child(3) {
+    background-color: lightpink;
+}
+.article-item:nth-child(4) {
+    background-color: lightcoral;
+}
+.article-item:nth-child(5) {
+    background-color: lightseagreen;
+}
+.article-item:nth-child(6) {
+    background-color: lightyellow;
+}
+
+.article-item:hover {
+    z-index: 1;
+    scale: 1.05;
+}

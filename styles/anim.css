@@ -1,0 +1,45 @@
+
+/******************************
+ CSS anim
+*******************************/
+
+.wrapper #row2 #divRotate {
+    background-color: rgb(210, 210, 210);
+    flex: 1 0 100%;
+    padding: 10px;
+    font-size: 22px;
+    vertical-align: middle;
+    justify-content:  center;
+}
+
+#planeDiv {     
+    position: relative;
+    left: 25%;
+    top: 25%;
+    line-height: 200px;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    color: white;   
+}
+
+#planeDiv:hover {
+    animation: rotate 3s;
+    
+}
+
+@keyframes rotate {
+    0% {
+        rotate: 1 0 1 0deg;
+    }
+    50% {
+        background-color: red;
+    }
+    100% {
+        rotate: 1 0 1 360deg;
+        background-color: blue;
+      
+    }
+
+}

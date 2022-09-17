@@ -1,0 +1,55 @@
+
+/******************************
+ JS miniräknare
+*******************************/
+
+.calc-UI {
+    border: darkcyan 3px solid;
+    background: lightcyan;
+    position: absolute;
+    display: grid;
+    gap: .5rem;
+    grid-template-rows: 1fr 1fr;
+    padding-block: .5rem;
+    width: min(95%, 30rem);
+    margin-inline: auto;
+    height: 410px;
+    width: 300px;   
+    left: 10px;
+    top: 130px;
+    box-shadow: 5px 5px 5px -5px black; 
+}
+
+#calc-screen {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: white;
+    border: lightslategray 1px solid;
+    font-size:22px;
+    margin: 5px;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.calc-buttons {
+    display: grid;
+    gap: .2rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    padding-block: .5rem;
+    width: min(95%, 30rem);
+    margin-inline: auto;
+}
+
+.calc-button {
+    background-color: lightcyan;
+    color: black;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-size:18px;
+    border-color: lightslategray;
+}
+
+.calc-button:hover {
+    background-color: cyan;
+    border-color: white;
+}
