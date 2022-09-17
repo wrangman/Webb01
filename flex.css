@@ -69,17 +69,15 @@ p {
 
 .wrapper #row2 {
     display: flex;
-    /*background-color: white;*/
     flex: 1 1 auto;
 }
 
 .wrapper #row2 #col1 {
-    /*background-color: white;*/
     flex: 0 0 240px;
 }
 
 .wrapper #row2 #col2 {
-    /*background-color: white;*/
+    position: relative;
     flex: 1 1 auto;
     padding: 10px;
     margin-right: 250px;
@@ -171,20 +169,20 @@ img {
 
 }
 
-.calc-body {
+.colorcalc-body {
     background-image: linear-gradient(0deg,rgba(228, 225, 219, 1), rgb(253, 203, 103, 1));
     height: 100vh;
 
 }
 
-.calc-UI {
+.colorcalc-UI {
     width: 400px;
     height: 300px;
     padding: 10px;
     
 }
 
-.calc-result {
+.colorcalc-result {
     width: 400px;
     padding: 10px;
 }
@@ -273,5 +271,109 @@ img {
     font-size: 16px;
 }
 
+/******************************
+ CSS Grid
+*******************************/
+
+.grid-col-span-2 {
+    grid-column: span 2;
+}
+
+.grid-col-span-3 {
+    grid-column: span 3;
+}
+
+.grid-row-span-2 {
+    grid-row: span 2;
+}
+
+.article-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(4, 1fr);
+    padding-block: 2rem;
+    width: min(95%, 70rem);
+    margin-inline: auto;
+}
+
+.article-item {
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 10px 15px 20px -10px gray;
+}
+
+.article-item:nth-child(1) {
+    background-color: lightblue;
+}
+
+.article-item:nth-child(2) {
+    background-color: lightgreen;
+}
+.article-item:nth-child(3) {
+    background-color: lightpink;
+}
+.article-item:nth-child(4) {
+    background-color: lightcoral;
+}
+.article-item:nth-child(5) {
+    background-color: lightseagreen;
+}
+.article-item:nth-child(6) {
+    background-color: lightyellow;
+}
 
 
+
+/******************************
+ JS miniräknare
+*******************************/
+
+.calc-UI {
+    border: darkcyan 3px solid;
+    background: lightcyan;
+    position: absolute;
+    display: grid;
+    gap: .5rem;
+    grid-template-rows: 1fr 1fr;
+    padding-block: .5rem;
+    width: min(95%, 30rem);
+    margin-inline: auto;
+    height: 410px;
+    width: 300px;   
+    left: 10px;
+    top: 130px;
+    box-shadow: 5px 5px 5px -5px black; 
+}
+
+#calc-screen {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: white;
+    border: lightslategray 1px solid;
+    font-size:20px;
+    margin: 5px;
+}
+
+.calc-buttons {
+    display: grid;
+    gap: .2rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    padding-block: .5rem;
+    width: min(95%, 30rem);
+    margin-inline: auto;
+}
+
+.calc-button {
+    background-color: lightcyan;
+    color: black;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 5px 5px 5px -5px lightslategray;
+    font-size:18px;
+    border-color: lightslategray;
+}
+
+.calc-button:hover {
+    background-color: cyan;
+}
