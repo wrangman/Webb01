@@ -20,7 +20,7 @@ function btnCalc(whichButton) {
         case 'btn12':                            //Minus
             if (buttonAvail) inputNumbers('-');
             break;
-        case 'btn13':                            //Convert
+        case 'btn13':                            //Konvertera +/-
             if (buttonAvail) convert();
             break;
         case 'btn16':                            //Plus
@@ -32,7 +32,7 @@ function btnCalc(whichButton) {
         case 'btn17':                           //Sudda allt
             clearScreen();
             break;
-        case 'btn19':                            //Minus
+        case 'btn19':                            //Räkna
             if (buttonAvail) calculate();
             break;
         default:                                //Nuffror
