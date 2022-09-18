@@ -6,20 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    
     <link rel="stylesheet" href="styles/styles.css">
-    <script src="scripts/web.js" defer></script>
+    <link rel="stylesheet" href="styles/menu.css">
+    <script src="scripts/menu.js" defer></script>
     
     <title>Om Webbutveckling 1</title>
 </head>
 <body>
-    <div class="wrapper">
+    <div class="container">
         <div id="row1">
             <h1>Webbutveckling 1</h1>
         </div>
-        <div id="row2">
-            <div id="col1">
-                <div w3-include-html="menu.html"></div>
+        <nav>
+            <div class="mobile-nav">
+                <span style="font-weight:bold;">Huvudmeny</span>
+                <div class="nav-btn">    
+                    <img src="/img/menuicon.png" alt="menu">
+                </div>
             </div>
-            <div id="col2">
+        </nav>
+        <div id="row2">
+            <div id="content">
                 <h2>Om kursen</h2>
                 <h3>Examination</h3>
                 <p>
@@ -35,7 +41,6 @@
                     Under varje projekt, uppgift och inlämning i kursen ska du vara förberedd på att kunna förklara, motivera och effektivt visa hur din hemsida/kod fungerar. När som helst under läsåret kan läraren komma fram till dig och be dig förklara dina val. Då är det ditt ansvar att visa att du förstår vad du skapat, kan förklara hur den fungerar i detalj och vara redo att svara på andra frågor som läraren eventuellt kommer ställa. Med andra ord räcker det inte att lämna in fungerande hemsidor utan det kommer krävas att du förstår vad du gjort samt dokumenterar (särskilt i större projekt). Om du har frågor om detta eller något är det bara att fråga under lektion eller mejla.
                 </p>
             </div>
-
         </div>
     </div>
 </body>

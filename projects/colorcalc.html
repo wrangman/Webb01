@@ -6,23 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    
     <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="/styles/menu.css">
     <link rel="stylesheet" href="/styles/colorcalc.css">
-    <script src="/scripts/web.js" defer></script>
-    <script src="/scripts/colorcalc.js" defer></script>
 
-    <title>JS färgblandare</title>
+    <script src="/scripts/menu.js" defer></script>
+    <script src="/scripts/colorcalc.js" defer></script>
+    
+    <title>Webbutveckling 1</title>
 </head>
-<body class="colorcalc-body">
-    <div class="wrapper">
+<body>
+    <div class="container">
         <div id="row1">
             <h1>Webbutveckling 1</h1>
         </div>
-        <div id="row2">
-            <div id="col1">
-                <div w3-include-html="/menu.html"></div>
+        <nav>
+            <div class="mobile-nav">
+                <span style="font-weight:bold;">Huvudmeny</span>
+                <div class="nav-btn">    
+                    <img src="/img/menuicon.png" alt="menu">
+                </div>
             </div>
-            <div id="col2">
-                <h2>JS Färgblandare</h2>
+        </nav>
+        <div id="row2">
+            <div id="content">
+                <h2>Färgblandare (JAVASCRIPT)</h2>
                 <p>
                     Denna färgstarka lilla &ldquo;miniräknare&rdquo; blandar två färger :)
                 </p>
@@ -44,7 +51,6 @@
                 </div>
                 <div class="colorcalc-result">
                     <button type="button" id="btn-eval" onClick="btnEval();">Blanda</button>
-          
                 </div>
             </div>
         </div>

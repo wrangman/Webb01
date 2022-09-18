@@ -6,20 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    
     <link rel="stylesheet" href="/styles/styles.css">
-    <script src="/scripts/web.js" defer></script>
-  
-    <title>JS att-göra-lista</title>
+    <link rel="stylesheet" href="/styles/menu.css">
+    
+    <script src="/scripts/menu.js" defer></script>
+    <script src="/scripts/checklist.js" defer></script>
+    
+    <title>Webbutveckling 1</title>
 </head>
 <body>
-    <div class="wrapper">
+    <div class="container">
         <div id="row1">
             <h1>Webbutveckling 1</h1>
         </div>
-        <div id="row2">
-            <div id="col1">
-                <div w3-include-html="/menu.html"></div>
+        <nav>
+            <div class="mobile-nav">
+                <span style="font-weight:bold;">Huvudmeny</span>
+                <div class="nav-btn">    
+                    <img src="/img/menuicon.png" alt="menu">
+                </div>
             </div>
-            <div id="col2">
+        </nav>
+        <div id="row2">
+            <div id="content">
                 <h2>Att-göra-lista (Javascript)</h2>
                 <form>
                     Ny Aktivitet: <input type="text">
