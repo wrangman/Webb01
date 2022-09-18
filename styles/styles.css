@@ -2,13 +2,43 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  
 }
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: rgb(210, 210, 210);
-    min-height: 100vh;
+    height: 100%;
+    width: min(70%, 70.5rem);
+    margin-inline: auto;
+}
+
+#container {
+    margin: 0 auto;
+    width: 100%;
+}
+
+#container #row1 {
+    background-color: #3676E8;
+    padding: 10px;
+    text-shadow:
+    -1px -1px 0 black,  
+     1px -1px 0 black,
+     -1px 1px 0 black,
+      1px 1px 0 black;
+}
+
+#content img {
+    display: block;
+    max-width: 100%;
+    float: left;
+    object-fit: cover;
+    margin-right: 2rem;
+}
+
+#content {
+    padding: 2rem 4rem;
+    background-color: white;
+    height: 100vh;
 }
 
 h1 {
@@ -33,79 +63,34 @@ p {
     background-color: inherit;
     color: inherit;
     cursor: default;
-
-}
-
-.project-item {
-    display: inherit;
-    background-color: inherit;
-    font-style: inherit;
-    color: inherit;
-    width: inherit;
-    list-style: square;
-}
-
-.project {
-    display: inherit;
-    background-color: inherit;
-    font-style: inherit;
-    color: inherit;
-    width: inherit;
-}
-
-.list {
-    cursor: pointer;
-}
-
-.container {
-    margin: 0 auto;
-    width: 75%;
-    min-height: max-content;
-}
-
-.container #row1 {
-    background-color: #3676E8;
-    padding: 10px;
-    text-shadow:
-    -1px -1px 0 black,  
-     1px -1px 0 black,
-     -1px 1px 0 black,
-      1px 1px 0 black;
-
-      
-    height: 100%;
-}
-
-#row2 img {
-    width: 300px;
-    float: left;
-    object-fit: cover;
-    margin-right: 10px;
-}
-
-.container #row2 {
-    background-color: white;
-    padding: 10px;
-
-}
-
-#content {
-    min-width: 50%;
-    padding: 10px;
-    background-color: white;
-    height: 100vh;
 }
 
 @media screen and (max-width: 868px) {
-    .container {
-        margin: 0 auto;
+    body {
         width: 100%;
         height: 100%;
     }
+   
+    #container {
+        margin: 0 auto;
+        width: 100%;
+    }
+    
     #content {
-        min-width: 50%;
-        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+        width: auto;
         background-color: white;
-        height: auto;
+        height: 100%;
+        padding: 10px;
+    }
+    
+    #content img {
+        max-width: 100%;
+        object-fit: cover;
+        margin-right: 0;
     }
 }
+

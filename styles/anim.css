@@ -3,20 +3,8 @@
  CSS anim
 *******************************/
 
-.wrapper #row2 #divRotate {
-    background-color: rgb(210, 210, 210);
-    flex: 1 0 100%;
-    padding: 10px;
-    font-size: 22px;
-    vertical-align: middle;
-    justify-content:  center;
-}
-
 #planeDiv {     
-    position: relative;
-    left: 25%;
-    top: 25%;
-    line-height: 200px;
+     line-height: 200px;
     text-align: center;
     width: 200px;
     height: 200px;
@@ -26,7 +14,6 @@
 
 #planeDiv:hover {
     animation: rotate 3s;
-    
 }
 
 @keyframes rotate {
@@ -41,5 +28,4 @@
         background-color: blue;
       
     }
-
 }

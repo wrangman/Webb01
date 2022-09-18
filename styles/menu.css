@@ -1,4 +1,4 @@
-.nav {
+nav {
     background: cornflowerblue;
 }
 
@@ -200,5 +200,13 @@ li:active > ul {
         margin: auto;
         object-fit: cover;
         float: none;
+    }
+}
+
+@supports (position: sticky) {
+    nav {
+        position: sticky;
+        top: 0;
+        z-index: 1;
     }
 }

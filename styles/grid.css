@@ -2,15 +2,9 @@
  CSS Grid
 *******************************/
 
-.wrapper #row2 #div-grid {
-    background-color: rgb(210, 210, 210);
-    width: 1000px;
-}
-
 .article-grid {
     display: grid;
-    grid-template-columns: 1;
-    gap: 1.5rem;
+    grid-template-columns: 1fr;
     padding-block: 1rem;
     width: min(95%, 70rem);
     margin-inline: auto;
@@ -20,7 +14,7 @@
     padding: 1.5rem;
     border-radius: 0.5rem;
     box-shadow: 10px 15px 20px -10px gray;
-    transition: .4s ease-in-out;
+    transition: .3s ease-in-out;
     z-index: 0;
 }
 
@@ -44,11 +38,6 @@
     background-color: lightyellow;
 }
 
-.article-item:hover {
-    z-index: 1;
-    scale: 1.05;
-}
-
 @media screen and (min-width: 868px) {
     .grid-col-span-2 {
         grid-column: span 2;
@@ -64,5 +53,24 @@
     
     .article-grid {
         grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@supports (gap: 1.5rem) {
+    .article-grid {
+        gap: 1.5rem;
+    }
+}
+
+@supports not (gap: 1.5rem) {
+    .article-grid {
+        margin: 1rem;
+    }
+}
+
+@supports (scale: 1.05) {
+    .article-item:hover {
+        z-index: 1;
+        scale: 1.05;
     }
 }

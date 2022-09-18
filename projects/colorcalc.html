@@ -15,7 +15,7 @@
     <title>Webbutveckling 1</title>
 </head>
 <body>
-    <div class="container">
+    <header id="container">
         <div id="row1">
             <h1>Webbutveckling 1</h1>
         </div>
@@ -27,33 +27,31 @@
                 </div>
             </div>
         </nav>
-        <div id="row2">
-            <div id="content">
-                <h2>Färgblandare (JAVASCRIPT)</h2>
-                <p>
-                    Denna färgstarka lilla &ldquo;miniräknare&rdquo; blandar två färger :)
-                </p>
-                <p>
-                    Välj två färger att blanda:
-                </p>
-                <div class="colorcalc-UI">
-                    <div class="color-palette">
-                        <button class="btn-col" id="red" onClick="btnClick('red');">Röd</button>
-                        <button class="btn-col" id="green" onClick="btnClick('green');">Grön</button>
-                        <button class="btn-col" id="blue" onClick="btnClick('blue');">Blå</button>
-                        <button class="btn-col" id="yellow" onClick="btnClick('yellow');">Gul</button>
-                        <button class="btn-col" id="purple" onClick="btnClick('purple');">Lila</button>
-                        <button class="btn-col" id="brown" onClick="btnClick('brown');">Brun</button>
-                        <button class="btn-col" id="white" onClick="btnClick('white');">Vit</button>
-                        <button class="btn-col" id="gray" onClick="btnClick('gray');">Grå</button>
-                        <button class="btn-col" id="black" onClick="btnClick('black');">Svart</button>
-                    </div>
-                </div>
-                <div class="colorcalc-result">
-                    <button type="button" id="btn-eval" onClick="btnEval();">Blanda</button>
-                </div>
+    </header>
+    <section id="content">
+        <h2>Färgblandare (JAVASCRIPT)</h2>
+        <p>
+            Denna färgstarka lilla &ldquo;miniräknare&rdquo; blandar två färger :)
+        </p>
+        <p>
+            Välj två färger att blanda:
+        </p>
+        <div class="colorcalc-UI">
+            <div class="color-palette">
+                <button class="btn-col" id="red" onClick="btnClick('red');">Röd</button>
+                <button class="btn-col" id="green" onClick="btnClick('green');">Grön</button>
+                <button class="btn-col" id="blue" onClick="btnClick('blue');">Blå</button>
+                <button class="btn-col" id="yellow" onClick="btnClick('yellow');">Gul</button>
+                <button class="btn-col" id="purple" onClick="btnClick('purple');">Lila</button>
+                <button class="btn-col" id="brown" onClick="btnClick('brown');">Brun</button>
+                <button class="btn-col" id="white" onClick="btnClick('white');">Vit</button>
+                <button class="btn-col" id="gray" onClick="btnClick('gray');">Grå</button>
+                <button class="btn-col" id="black" onClick="btnClick('black');">Svart</button>
             </div>
         </div>
-    </div>
+        <div class="colorcalc-result">
+            <button type="button" id="btn-eval" onClick="btnEval();">Blanda</button>
+        </div>
+    </section>
 </body>
 </html>
