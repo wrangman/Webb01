@@ -113,15 +113,20 @@ li:active > ul {
 
     ul.nav {
         visibility: hidden; 
-        height: 0;
+        transform: translateY(-80%);
+        top: 100px;
         opacity: 0;
-        transition: 0.5s ease-in-out;
+        height: 0;
+        transition: 0.3s ease-in-out;
+        z-index: -1;
     }
 
     ul.nav.toggle {
         visibility: visible;
+        transform: translateY(0%);
         height: auto;
         opacity: 1;
+        z-index:1;
     }
 
     ul {
