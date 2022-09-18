@@ -101,6 +101,7 @@ div.style.height = "100px";
 div.style.background = "red";
 div.style.color = "blue";*/
 
+div.style.zIndex = "1";
 div.style.left = "40%";
 div.style.top = "25%";
 
