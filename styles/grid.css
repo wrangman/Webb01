@@ -6,8 +6,7 @@
     display: grid;
     grid-template-columns: 1fr;
     padding-block: 1rem;
-    width: min(95%, 70rem);
-    margin-inline: auto;
+    
 }
 
 .article-item {

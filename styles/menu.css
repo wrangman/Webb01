@@ -1,4 +1,6 @@
 nav {
+    position: sticky;
+    top:0;
     background: cornflowerblue;
 }
 
@@ -79,9 +81,9 @@ li:active > ul {
 .dropdown > a:hover,
 .dropdown.active > a,
 .dropdown.active > a:hover  {
-    background: url("/img/downarrow.svg");
+    background: url("/img/arrowdown.png");
     background-position: right;
-    background-size: 15px;
+    
     background-repeat: no-repeat;
     color: #fff;
 }
@@ -89,6 +91,16 @@ li:active > ul {
 .dropdown a:hover {
    background-color: #ccc3;
    color: #111;
+}
+
+ul li a::before {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 10px;
+    width: 100%;
+    color:red;
+
 }
 
 .mobile-nav {

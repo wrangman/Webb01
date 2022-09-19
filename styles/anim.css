@@ -12,9 +12,13 @@
     color: white;   
 }
 
+ 
+
 #planeDiv:hover {
     animation: rotate 3s;
 }
+
+
 
 @keyframes rotate {
     0% {
