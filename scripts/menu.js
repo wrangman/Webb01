@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
-
-    let jsonString = `[
+                                                                        //Huvudmeny
+    let jsonString = `[                                 
         {
             "menuName": "home",
             "name": "Hem",
@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function() {
             "href": "/about.html",
             "name": "Om"
         }
-    ]`;
+    ]`; //Huvudmeny
 
 
     let menus = JSON.parse(jsonString);
@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         const ul = document.createElement('ul');
         initial ? ul.classList.add('nav') : '';
-        
+    
         //check if its initial then append ul or else append inside the li 
         
         if(initial){
@@ -82,8 +82,7 @@ document.addEventListener("DOMContentLoaded", function() {
             let position = document.querySelector(`[data-position="${key}"]`);
             if(position) position.appendChild(ul);
         }
-        
-        
+                
         menus.forEach((menu, key) => {
             const li = document.createElement('li');
             menu?.children ? li.classList.add('dropdown') : '';

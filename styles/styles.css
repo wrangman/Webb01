@@ -1,3 +1,10 @@
+:root {
+    --bg-col-blue: lightslategray;
+    --bg-col-accent: #ccc3;
+    --fg-col-dark: #555;
+    --fg-col-normal: #fff;
+    --fg-col-black: #111;
+}
 
 * {
     margin: 0;
@@ -6,11 +13,11 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: rgb(210, 210, 210);
     width: min(70%, 70.5rem);
+    height: 700px;
     margin-inline: auto;
-    height: auto;
+    overflow: unset;
 }
 
 #container {
@@ -19,14 +26,9 @@ body {
 }
 
 #container #row1 {
-    background-color: #3676E8;
-    
+    background-color: skyblue;
     padding: 10px;
-    text-shadow:
-    -1px -1px 0 black,  
-     1px -1px 0 black,
-     -1px 1px 0 black,
-      1px 1px 0 black;
+
 }
 
 #content img {
@@ -43,27 +45,23 @@ body {
     height: 100vh;
 }
 
+h2, h3 {
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: .5rem 0 1rem 0rem;
+}
+
 h1 {
-    color: wheat;
-    margin: 10px;
-}
-
-h2 {    
-    margin-top: 0px;
-    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+    color: var(--fg-col-black);
+    margin: 1rem;
     text-transform: uppercase;
-}
-
-h3 {
-    margin-top: 0px;
-    margin-bottom: 5px;
-    text-transform: capitalize;
+    
 }
 
 p {
-    margin-bottom: 10px;
-    background-color: inherit;
-    color: inherit;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
     cursor: default;
 }
 

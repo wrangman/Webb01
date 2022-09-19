@@ -105,7 +105,7 @@ div.style.zIndex = "1";
 div.style.left = "40%";
 div.style.top = "25%";
 
-div.addEventListener('mousedown', function(e) {
+div.addEventListener('pointerdown', function(e) {
     isDown = true;
     offset = [
         div.offsetLeft - e.clientX,
@@ -113,11 +113,11 @@ div.addEventListener('mousedown', function(e) {
     ];
 }, true);
 
-document.addEventListener('mouseup', function() {
+document.addEventListener('pointerup', function() {
     isDown = false;
 }, true);
 
-document.addEventListener('mousemove', function(event) {
+document.addEventListener('pointermove', function(event) {
     event.preventDefault();
     if (isDown) {
         mousePosition = {

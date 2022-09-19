@@ -1,46 +1,54 @@
+
 nav {
-    position: sticky;
-    top:0;
-    background: cornflowerblue;
+    background: var(--bg-col-blue);
+    transition: all 250ms ease-in;
+}
+
+nav:hover {
+    position: relative;
+    box-shadow: 0px 5px 5px 0px darkgray;
+    top: -5px;
 }
 
 ul {
     list-style: none;
     display: flex;
-    background: cornflowerblue;
+    background: var(--bg-col-blue);
 }
 
 ul li a,
 ul li {
     cursor: pointer;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
     font-size: 16px;
+    font-weight: 200;
     text-decoration: none;
-    background: cornflowerblue;
+    background: var(--bg-col-blue);
 }
 
 ul li {
     padding: 10px;
-    color: #fff;
+    color: var(--fg-col-normal);
     display: block;
     z-index: 1;
 }
 
 ul li a {
-    padding: 10px 20px;
-    color: #fff;
+    padding: 10px 15px;
+    color: var(--fg-col-normal);
     display: block;
     z-index: 1;
     /* white-space: nowrap; */
-    
 }
 
 li a:hover {
-    background-color: #ccc3;
-    color:#111;
+    background-color: var(--bg-col-accent);
+    color: var(--fg-col-normal);
 }
 
 ul li ul {
-    background: #555;
+    background: var(--fg-col-dark);
     padding-left: 5px;
     position: absolute;
     display: none;
@@ -49,12 +57,12 @@ ul li ul {
 
 li ul li a {
     padding: 10px;
-    background-color: cornflowerblue;
-    color: #fff;
+    background-color: var(--bg-col-blue);
+    color: var(--fg-col-normal);
 }
 
-li ul li a:hover {
-    background-color:#ccc3;
+ul li a:hover {
+    background-color: var(--bg-col-accent);
 }
 
 ul li ul li {
@@ -71,6 +79,7 @@ li:hover > ul,
 li:active > ul {
     display: block;
     z-index: 1;
+    box-shadow: 0px 5px 5px 0px darkgray;
 }
 
 .dropdown {
@@ -83,29 +92,35 @@ li:active > ul {
 .dropdown.active > a:hover  {
     background: url("/img/arrowdown.png");
     background-position: right;
-    
     background-repeat: no-repeat;
-    color: #fff;
+    color: var(--fg-col-normal);
 }
 
 .dropdown a:hover {
-   background-color: #ccc3;
-   color: #111;
+    background-color: var(--bg-col-accent);
+    color: var(--fg-col-normal);
 }
 
-ul li a::before {
-    content: '';
-    position: absolute;
-    display: block;
-    height: 10px;
-    width: 100%;
-    color:red;
+.dropdown ul li a:hover {
+    background-color: var(--bg-col-accent);
+    color: var(--fg-col-normal);
+ }
 
+span {
+    font-weight:bold;
 }
+
+
+/*******************************
+MOBILNAV
+********************************/
+
 
 .mobile-nav {
     background: wheat;
-    color: #111;
+    color: var(--fg-col-black);
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
     display: none;
     justify-content: space-between;
     align-items: center;
@@ -151,16 +166,18 @@ ul li a::before {
     }
 
     ul li ul li {
-        background: #3676E8;
+        background: rgb(128, 127, 127);
+        
     }
 
 
     ul li ul a {
-        background-color: #3676E8;
+        background-color: rgb(128, 127, 127);;
     }
 
     ul li ul li ul {
-        background: #3676E8;
+        background: rgb(128, 127, 127);;
+       
     }
 
     ul li ul {
@@ -177,7 +194,7 @@ ul li a::before {
 
     ul li ul li ul {
         position: initial;
-        background: #3676E8;
+        background: lightgray;
         top: 0;
         width: 96%;
         padding: 0 2%;
@@ -203,8 +220,8 @@ ul li a::before {
     }
 
     .dropdown a:hover {
-        background-color: #ccc3;
-        color: #111;
+        background-color: var(--bg-col-accent);
+        color: var(--fg-col-black);
     }
 
     #row2 img {
@@ -214,6 +231,7 @@ ul li a::before {
         float: none;
     }
 }
+
 
 @supports (position: sticky) {
     nav {
