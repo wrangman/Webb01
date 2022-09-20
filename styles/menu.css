@@ -35,14 +35,14 @@ ul li {
     padding: 10px;
     color: var(--fg-col-normal);
     display: block;
-    z-index: 1;
+    z-index: 100;
 }
 
 ul li a {
     padding: 10px 15px;
     color: var(--fg-col-normal);
     display: block;
-    z-index: 1;
+    z-index: 100;
     /* white-space: nowrap; */
 }
 
@@ -86,7 +86,7 @@ ul li ul li ul {
 li:hover > ul,  
 li:active > ul {
     display: block;
-    z-index: 1;
+    z-index: 100;
     background-image: linear-gradient(to right, #566671, #445669);
     box-shadow: 5px 5px 7px rgb(57, 57, 57);
 }
@@ -162,7 +162,7 @@ MOBILNAV
         transform: translateY(0%);
         height: auto;
         opacity: 1;
-        z-index:1;
+        z-index: 100;
     }
 
     ul {
@@ -212,7 +212,7 @@ MOBILNAV
     li:hover > ul,
     li:active > ul {
         display: block;
-        z-index: 1;
+        z-index: 100;
     }
     
     li.active > ul {
@@ -246,6 +246,6 @@ MOBILNAV
     nav {
         position: sticky;
         top: 0;
-        z-index: 1;
+        z-index: 100;
     }
 }
