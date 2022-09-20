@@ -59,7 +59,6 @@
 
 .article-item:hover {
     filter: brightness(1.70);
-   
 }
 
 @supports (gap: 1.5rem) {
