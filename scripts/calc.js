@@ -4,10 +4,12 @@
 *******************************/
 
 var buttonEnabled = false;
+var isRotated = false;
 
 function btnCalc(whichButton) {
     let calcInput = document.getElementById(whichButton).innerHTML;
     let calcScreen = document.getElementById('calc-screen').innerHTML;
+    let disp = document.getElementById('calc-screen');
     let screenLength = calcScreen.length;
 
     switch (whichButton) {                      //Vilken knapp tryckte användaren på?
@@ -32,7 +34,10 @@ function btnCalc(whichButton) {
         case 'btn17':                           //Sudda allt
             clearScreen();
             break;
-        case 'btn19':                            //Räkna
+        case 'btn19':
+            rotateCalc();
+            break;
+        case 'btn20':                            //Räkna
             if (buttonEnabled) calculate();
             break;
         default:                                //Nuffror
@@ -42,17 +47,18 @@ function btnCalc(whichButton) {
     function inputNumbers(whatDigit) {
         if (!buttonEnabled) clearScreen();
         buttonEnabled=true;
-        if (screenLength<19) {
-            document.getElementById('calc-screen').innerHTML += whatDigit;
+        if (screenLength<100) {
+            disp.innerHTML += whatDigit;
+            disp.scrollLeft = disp.scrollWidth;
         }
     }
 
     function backSpace() {
         if (screenLength > 0) {
             calcScreen = calcScreen.slice(0, -1);
-            document.getElementById('calc-screen').innerHTML = calcScreen;
+            disp.innerHTML = calcScreen;
         }
-        if (document.getElementById('calc-screen').innerHTML.length <= 0) {
+        if (disp.innerHTML.length <= 0) {
             buttonEnabled=false;
         }
     }
@@ -60,25 +66,38 @@ function btnCalc(whichButton) {
     function convert() {
         if (calcScreen < 0) {
             calcScreen = Math.abs(calcScreen);
-            document.getElementById('calc-screen').innerHTML = calcScreen;
+            disp.innerHTML = calcScreen;
         } else if (calcScreen > 0) {
             calcScreen = calcScreen * -1;
-            document.getElementById('calc-screen').innerHTML = calcScreen;
+            disp.innerHTML = calcScreen;
         }
     }
 
     function calculate() {
         try {
             let result = eval(calcScreen);
-            if (result != "Infinity" && result != "-Infinity") document.getElementById('calc-screen').innerHTML = result;
+            if (result != "Infinity" && result != "-Infinity") disp.innerHTML = result;
         } catch (error) {
             alert(error);
         }
     }
 
+    function rotateCalc() {
+        let calcBody = document.getElementById('calc-UI');
+        
+        if (!isRotated) {
+            calcBody.style.transform = "rotate(180deg)";
+            isRotated=true;
+        
+        } else {
+            calcBody.style.transform = "rotate(0deg)";
+            isRotated=false;
+        }
+    }
+
     function clearScreen() {
         buttonEnabled=false;
-        document.getElementById('calc-screen').innerHTML = "";
+        disp.innerHTML = "";
     }
 }
 

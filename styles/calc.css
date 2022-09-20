@@ -13,7 +13,7 @@
     padding-block: .5rem;
     width: min(95%, 30rem);
     margin-inline: auto;
-    height: 440px;
+    height: 500px;
     width: 300px;   
     left: 30%;
     top: 30%;
@@ -25,17 +25,20 @@
     border-radius: 0.5rem;
     background-color: lightcyan;
     border: lightslategray 1px solid;
-    font-size:22px;
+    font-size:24px;
     margin: 5px;
-    font-family:'Courier New', Courier, monospace;
-    height: 55px;
+    font-family: 'Orbitron', monospace;
+    height: 70px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    text-align: right;
 }
 
 .calc-buttons {
     display: grid;
     gap: .2rem;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(5, 1fr);
     padding-block: .5rem;
     width: min(95%, 30rem);
     margin-inline: auto;
@@ -57,4 +60,8 @@
 
 .grid-col-span-2 {
     grid-column: span 2;
+}
+
+.grid-col-span-all {
+    grid-column: span 4;
 }
