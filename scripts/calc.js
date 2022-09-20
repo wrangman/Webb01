@@ -58,7 +58,7 @@ function btnCalc(whichButton) {
     }
 
     function convert() {
-        if (calcScreen <0 ) {
+        if (calcScreen < 0) {
             calcScreen = Math.abs(calcScreen);
             document.getElementById('calc-screen').innerHTML = calcScreen;
         } else if (calcScreen > 0) {

@@ -13,7 +13,7 @@
 }
 
 body {
-    background-color: rgb(210, 210, 210);
+    background-color: rgb(210, 210, 210); 
     width: min(70%, 70.5rem);
     height: 700px;
     margin-inline: auto;
@@ -82,7 +82,7 @@ p {
         gap: 2rem;
         align-items: center;
         width: auto;
-        background-color: white;
+        background: whitesmoke;
         height: 100%;
         padding: 10px;
     }
