@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="position.css">
+
+    <title>CSS Position-demonstration</title>
+    <style>
+        * {
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 22px;
+            color: black;        
+        }
+
+        div {
+            line-height: 40px;
+        }
+
+        .parent {
+            padding: 10px;
+            background-color: #4edddf;
+        }
+
+        .child {
+            padding: 5px;
+        }
+
+        .child1 {
+            background-color:#c093eb;
+        }
+
+        .child2 {
+            background-color:#eb9493;
+        }
+        
+        .child3 {
+            background-color:#beeb93;
+        }
+        
+        /* DELTE ME! */
+        #btnClose {
+            opacity: .3;  
+            position: fixed;
+            font-size: 22px;
+            right: 10px;
+            bottom: 10px;
+            cursor: pointer;
+        }
+
+        #btnClose:hover {
+            text-decoration: underline;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        parent
+        <div class="child child1">one</div>
+        <div class="child child2">two</div>
+        <div class="child child3">three</div>
+    </div>
+    <!--Delete me first --><!--Delete me first -->
+    <!--Delete me first --><!--Delete me first -->
+    <!--Delete me first --><!--Delete me first -->
+    <div id="btnClose" onclick="window.close();">Stäng</div>
+</body>
+</html>

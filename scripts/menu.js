@@ -44,6 +44,11 @@ document.addEventListener("DOMContentLoaded", function() {
                     "href": "#",
                     "children": [
                         {
+                            "menuName": "pos",
+                            "name": "Position",
+                            "href": "/projects/position/index.html"
+                        },
+                        {
                             "menuName": "anim",
                             "name": "Animation",
                             "href": "/projects/rotate.html"

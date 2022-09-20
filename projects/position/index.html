@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="styles.css">
+    <title>Lär dig CSS: position</title>
+
+</head>
+<body>
+    <div class="container">
+        <div class="page">            
+            <div class="top-menu">
+                <div class="top-menu link-item" onclick="location.href='#';">HEM</div>
+                <div class="top-menu link-item" onclick="window.open('common.html', '_blank');">VANLIGA EXEMPEL</div>
+                <div class="top-menu link-item" onclick="window.open('sticky2.html', '_blank');">STICKY EXEMPEL</div>
+            </div>
+            <div class="header-image">
+                <img src="img/newyorksky.jpg" alt="new york sky">
+            </div>
+            <div class="content">
+                <h1>LÄR DIG CSS: POSITION</h1>
+                <div class="content-center"><iframe width="100%" height="500" src="https://www.youtube.com/embed/jx5jmI0UlXU?autoplay=0&mute=1"></iframe></div>
+                <h2>
+                    CSS: Position
+                </h2>
+                <p>Det finns fem värden för attributet <em>position</em>: <em>Static, relative, absolute, fixed och sticky</em>. Lova att kolla denna video så du verkligen förstår. Videon finns länkad på Classroom under Hjälp & Självstudier.
+                </p>
+                <h3>
+                    Static (standard)
+                </h3>
+                <p>
+                    <em>Static</em> är vad alla HTML-taggar får som standard när man skapar en webbsida. <em>Static</em> följer alla andra taggar/element. Så om t.ex. skriver in tre <strong>&lt;div&gt;</strong>-taggar i din kod kommer de hamna precis som du skrivit dem: nämligen under varandra. 
+                </p>
+                <h3>
+                    Relative
+                </h3>
+                <p>
+                    <em>Relative</em> nästan likadant som <em>static</em>, men den låter dig ändra toppen, botten, vänster och höger position av elementet. Om du ändrar en <strong>&lt;div&gt;</strong>-tagg till left: 10px; kommer det elementet flyttas relativt till var det var innan.
+                </p>
+                <h3>
+                    Absolute
+                </h3>
+                <p>
+                    Element med <em>Absolute</em> är i stort sett fristående. Detta är användbart när du vill placera något var du vill utan att något annat påverkas runtomkring. Om man t.ex. ändrar <em>top</em> till 0px kommer elementet hamna högst upp på sidan. Det påverkas enbart av "parent"-containers utanför med någon av de andra värdenen (<em>relative</em>, <em>absolute</em>, <em>fixed</em>, eller <em>sticky</em>).
+                </p>
+                <h3>
+                    Fixed
+                </h3>
+                <p>
+                    <em>Fixed</em> relaterar till hela HTML-dokumentet och har inget att göra med arv (s.k. parent-containers). Vad som är unikt med detta värde är att det stannar i samma position när du scrollar ner.
+                </p>
+                <h3>
+                    Sticky
+                </h3>
+                <p>
+                    <em>Sticky</em>-värdet fungerar lite som <em>Relative & Fixed</em>. Det börjar på den plats det är, men så fort det ska försvinna ur sidan fastnar det på kanten.    
+                </p>
+                <img src="img/html5.jpg" alt="html5 image">
+                <div class="link-item" onclick="location.href='#';">&uarr; Tillbaka till toppen</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
