@@ -13,27 +13,31 @@
 .article-item {
     padding: 1.5rem;
     border-radius: 0.5rem;
-    box-shadow: 10px 15px 20px -10px gray;
-    transition: .3s ease-in-out;
+    box-shadow: 10px 15px 20px gray;
+    transition: all 400ms ease;
     z-index: 0;
 }
 
 .article-item:nth-child(1) {
-    background-color: lightblue;
+    background-image: linear-gradient(-45deg, #A770EF, #CF8BF3, #efc5ff);
+
+}
+.article-item:nth-child(2) {
+    background-image: linear-gradient(-45deg, limegreen, lightgreen, aquamarine);
 }
 
-.article-item:nth-child(2) {
-    background-color: lightgreen;
-}
 .article-item:nth-child(3) {
-    background-color: lightpink;
+    background-image: linear-gradient(-45deg, #2e8ae1,#739fe0, rgb(159, 207, 223));    
 }
+
 .article-item:nth-child(4) {
-    background-color: lightcoral;
+    background-image: linear-gradient(-45deg, indianred, lightcoral, #ffc3a0);
 }
+
 .article-item:nth-child(5) {
     background-color: lightseagreen;
 }
+
 .article-item:nth-child(6) {
     background-color: lightyellow;
 }
@@ -56,9 +60,15 @@
     }
 }
 
+.article-item:hover {
+    filter: brightness(1.70);
+    box-shadow: 15px 20px 30px black;
+}
+
 @supports (gap: 1.5rem) {
     .article-grid {
         gap: 1.5rem;
+        
     }
 }
 
@@ -72,5 +82,6 @@
     .article-item:hover {
         z-index: 1;
         scale: 1.05;
+     
     }
 }
