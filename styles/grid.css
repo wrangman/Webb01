@@ -6,7 +6,7 @@
     display: grid;
     grid-template-columns: 1fr;
     padding-block: 1rem;
-    height: auto;
+    height:fit-content;
     
 }
 
