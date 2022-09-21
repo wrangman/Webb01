@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
             "children": [
                 {
                     "menuItem": "all",
-                    "name": "Visa alla",
+                    "name": "Visa allt",
                     "href": "/project.html"
                 },
                 {
