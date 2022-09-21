@@ -15,7 +15,7 @@
 body {
     background-color: rgb(210, 210, 210); 
     width: min(70%, 70.5rem);
-    height: 700px;
+    height: 100vh;
     margin-inline: auto;
     overflow: unset;
 }

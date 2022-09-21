@@ -2,6 +2,10 @@
  CSS Grid
 *******************************/
 
+#content {
+    height: auto;
+}   
+
 .article-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -54,7 +58,7 @@
     
     .article-grid {
         grid-template-columns: repeat(4, 1fr);
-    }
+   }
 }
 
 .article-item:hover {

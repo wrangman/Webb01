@@ -5,6 +5,7 @@
 
 var buttonEnabled = false;
 var isRotated = false;
+var hasParentheses = false;
 
 function btnCalc(whichButton) {
     let calcInput = document.getElementById(whichButton).innerHTML;
@@ -13,43 +14,62 @@ function btnCalc(whichButton) {
     let screenLength = calcScreen.length;
 
     switch (whichButton) {                      //Vilken knapp tryckte användaren på?
-        case 'btn4':                            //Dela
-            if (buttonEnabled) inputNumbers('/');
-            break;
-        case 'btn8':                            //Gånger
-            if (buttonEnabled) inputNumbers('*');
-            break;
-        case 'btn12':                            //Minus
-            if (buttonEnabled) inputNumbers('-');
-            break;
-        case 'btn13':                            //Konvertera +/-
-            if (buttonEnabled) convert();
-            break;
-        case 'btn16':                            //Plus
-            if (buttonEnabled) inputNumbers('+');
-            break;
-        case 'btn18':                           //Sudda
-            backSpace();
-            break;
-        case 'btn17':                           //Sudda allt
+        case 'btn1':                           //Sudda allt
             clearScreen();
             break;
-        case 'btn19':
+        case 'btn2':                            //Gånger
+            inputParentheses();
+            break;
+        case 'btn4':                        //square root
+        if (buttonEnabled) calculate(Math.sqrt(calcScreen));
+            break;
+        case 'btn12':                            //Gånger
+            if (buttonEnabled) inputSymbol('*');
+            break;
+        case 'btn3':                            //Procent
+            if (buttonEnabled) calculate(100);
+            break;
+        case 'btn8':                            //Dela
+            if (buttonEnabled) inputSymbol('/');
+            break;
+        case 'btn16':                            //Minus
+            if (buttonEnabled) inputSymbol('-');
+            break;
+        case 'btn17':                            //Konvertera +/-
+            if (buttonEnabled) convert();
+            break;
+        case 'btn20':                            //Plus
+            if (buttonEnabled) inputSymbol('+');
+            break;
+        case 'btn21':
             rotateCalc();
             break;
-        case 'btn20':                            //Räkna
-            if (buttonEnabled) calculate();
+        case 'btn22':                           //Sudda
+            backSpace();
+            break;
+        case 'btn23':                            //Räkna
+            if (buttonEnabled) calculate(0);
             break;
         default:                                //Nuffror
-            inputNumbers(calcInput);
+            inputSymbol(calcInput);
     } //switch
 
-    function inputNumbers(whatDigit) {
+    function inputSymbol(whatDigit) {
         if (!buttonEnabled) clearScreen();
         buttonEnabled=true;
         if (screenLength<100) {
             disp.innerHTML += whatDigit;
             disp.scrollLeft = disp.scrollWidth;
+        }
+    }
+
+    function inputParentheses() {
+        if (!hasParentheses) {
+            inputSymbol('(');
+            hasParentheses=true;
+        } else {
+            inputSymbol(')');
+            hasParentheses=false;
         }
     }
 
@@ -73,12 +93,23 @@ function btnCalc(whichButton) {
         }
     }
 
-    function calculate() {
-        try {
-            let result = eval(calcScreen);
-            if (result != "Infinity" && result != "-Infinity") disp.innerHTML = result;
-        } catch (error) {
-            alert(error);
+    function calculate(immCalc) {
+        if (immCalc > 0) {
+            try {
+                let result = eval(calcScreen/immCalc);
+                disp.innerHTML = result;
+            } catch (error) {
+                hasParentheses=false;
+                alert(error);
+            }
+        } else {
+            try {
+                let result = eval(calcScreen);
+                if (result != "Infinity" && result != "-Infinity") disp.innerHTML = result;
+            } catch (error) {
+                alert(error);
+                isDown = false;
+            }
         }
     }
 
@@ -101,51 +132,53 @@ function btnCalc(whichButton) {
     }
 }
 
+
 /****************************************
  *  Flytta miniräknaren
  * *************************************/
 
 
-var mousePosition;
-var offset = [0,0];
-var div;
-var isDown = false;
+ var mousePosition;
+ var offset = [0,0];
+ var div;
+ var isDown = false;
+ 
+ div = document.getElementById("calc-UI");
+ /*div.style.position = "absolute";
+ div.style.left = "0px";
+ div.style.top = "0px";
+ div.style.width = "100px";
+ div.style.height = "100px";
+ div.style.background = "red";
+ div.style.color = "blue";*/
+ 
+ div.style.zIndex = "1";
+ div.style.left = "40%";
+ div.style.top = "25%";
+ 
+ div.addEventListener('pointerdown', function(e) {
+     isDown = true;
+     offset = [
+         div.offsetLeft - e.clientX,
+         div.offsetTop - e.clientY
+     ];
+ }, true);
+ 
+ document.addEventListener('pointerup', function() {
+     isDown = false;
+ }, true);
+ 
+ document.addEventListener('pointermove', function(event) {
+     event.preventDefault();
+     if (isDown) {
+         mousePosition = {
+ 
+             x : event.clientX,
+             y : event.clientY
+ 
+         };
+         div.style.left = (mousePosition.x + offset[0]) + 'px';
+         div.style.top  = (mousePosition.y + offset[1]) + 'px';
+     }
+ }, true);
 
-div = document.getElementById("calc-UI");
-/*div.style.position = "absolute";
-div.style.left = "0px";
-div.style.top = "0px";
-div.style.width = "100px";
-div.style.height = "100px";
-div.style.background = "red";
-div.style.color = "blue";*/
-
-div.style.zIndex = "1";
-div.style.left = "40%";
-div.style.top = "25%";
-
-div.addEventListener('pointerdown', function(e) {
-    isDown = true;
-    offset = [
-        div.offsetLeft - e.clientX,
-        div.offsetTop - e.clientY
-    ];
-}, true);
-
-document.addEventListener('pointerup', function() {
-    isDown = false;
-}, true);
-
-document.addEventListener('pointermove', function(event) {
-    event.preventDefault();
-    if (isDown) {
-        mousePosition = {
-
-            x : event.clientX,
-            y : event.clientY
-
-        };
-        div.style.left = (mousePosition.x + offset[0]) + 'px';
-        div.style.top  = (mousePosition.y + offset[1]) + 'px';
-    }
-}, true);

@@ -2,68 +2,80 @@ document.addEventListener("DOMContentLoaded", function() {
                                                                         //Huvudmeny
     let jsonString = `[                                 
         {
-            "menuName": "home",
+            "menuItem": "home",
             "name": "Hem",
             "href": "/index.html"
         },
         {
-            "menuName": "project",
+            "menuItem": "project",
             "href": "#",
             "name": "Projekt",
             "children": [
                 {
-                    "menuName": "all",
+                    "menuItem": "all",
                     "name": "Visa alla",
                     "href": "/project.html"
                 },
                 {
-                    "menuName": "js",
-                    "name": "Javascript",
+                    "menuItem": "basics",
+                    "name": "HTML",
                     "href": "#",
                     "children": [
                         {
-                            "menuName": "checklist",
-                            "name": "Checklista",
-                            "href": "/projects/checklist.html"
-                        },
-                        {
-                            "menuName": "calc",
-                            "name": "Miniräknare",
-                            "href": "/projects/calc.html"
-                        },
-                        {
-                            "menuName": "ccalc",
-                            "name": "Färgblandare",
-                            "href": "/projects/colorcalc.html"
+                            "menuItem": "htmlbasic",
+                            "name": "HTML <div>",
+                            "href": "/projects/div.html"
                         }
                     ]
-                },
+                },  
                 {
-                    "menuName": "css",
+                    "menuItem": "css",
                     "name": "CSS",
                     "href": "#",
                     "children": [
                         {
-                            "menuName": "pos",
+                            "menuItem": "pos",
                             "name": "Position",
                             "href": "/projects/position/index.html"
                         },
                         {
-                            "menuName": "anim",
+                            "menuItem": "anim",
                             "name": "Animation",
                             "href": "/projects/rotate.html"
                         },
                         {
-                            "menuName": "grid",
+                            "menuItem": "grid",
                             "name": "Grid-exempel",
                             "href": "/projects/grid.html"
+                        }
+                    ]
+                },
+                {
+                    "menuItem": "js",
+                    "name": "Javascript",
+                    "href": "#",
+                    "children": [
+                        {
+                            "menuItem": "checklist",
+                            "name": "Checklista",
+                            "href": "/projects/checklist.html"
+                        },
+                        {
+                            "menuItem": "calc",
+                            "name": "Miniräknare",
+                            "href": "/projects/calc.html"
+                        },
+                        {
+                            "menuItem": "ccalc",
+                            "name": "Färgblandare",
+                            "href": "/projects/colorcalc.html"
                         }
                     ]
                 }
             ]
         },
         {
-            "menuName": "about",
+            "menuItem": "about",
             "href": "/about.html",
             "name": "Om"
         }
