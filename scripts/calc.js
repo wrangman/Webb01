@@ -137,48 +137,46 @@ function btnCalc(whichButton) {
  *  Flytta miniräknaren
  * *************************************/
 
+var mousePosition;
+var offset = [0,0];
+var div;
+var isDown = false;
 
- var mousePosition;
- var offset = [0,0];
- var div;
- var isDown = false;
- 
- div = document.getElementById("calc-UI");
- /*div.style.position = "absolute";
- div.style.left = "0px";
- div.style.top = "0px";
- div.style.width = "100px";
- div.style.height = "100px";
- div.style.background = "red";
- div.style.color = "blue";*/
- 
- div.style.zIndex = "1";
- div.style.left = "40%";
- div.style.top = "25%";
- 
- div.addEventListener('pointerdown', function(e) {
-     isDown = true;
-     offset = [
-         div.offsetLeft - e.clientX,
-         div.offsetTop - e.clientY
-     ];
- }, true);
- 
- document.addEventListener('pointerup', function() {
-     isDown = false;
- }, true);
- 
- document.addEventListener('pointermove', function(event) {
-     event.preventDefault();
-     if (isDown) {
-         mousePosition = {
- 
-             x : event.clientX,
-             y : event.clientY
- 
-         };
-         div.style.left = (mousePosition.x + offset[0]) + 'px';
-         div.style.top  = (mousePosition.y + offset[1]) + 'px';
-     }
- }, true);
+div = document.getElementById("calc-UI");
+/*div.style.position = "absolute";
+div.style.left = "0px";
+div.style.top = "0px";
+div.style.width = "100px";
+div.style.height = "100px";
+div.style.background = "red";
+div.style.color = "blue";*/
 
+div.style.zIndex = "1";
+div.style.left = "40%";
+div.style.top = "25%";
+
+div.addEventListener('pointerdown', function(e) {
+    isDown = true;
+    offset = [
+        div.offsetLeft - e.clientX,
+        div.offsetTop - e.clientY
+    ];
+}, true);
+
+document.addEventListener('pointerup', function() {
+    isDown = false;
+}, true);
+
+document.addEventListener('pointermove', function(event) {
+    event.preventDefault();
+    if (isDown) {
+        mousePosition = {
+
+            x : event.clientX,
+            y : event.clientY
+
+        };
+        div.style.left = (mousePosition.x + offset[0]) + 'px';
+        div.style.top  = (mousePosition.y + offset[1]) + 'px';
+    }
+}, true);
