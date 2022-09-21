@@ -59,10 +59,18 @@
     border-color: lightgray;
 }
 
-.grid-col-span-2 {
-    grid-column: span 2;
+.compability-warning {
+    display: none;
+    background: var(--fg-col-black);
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.5;
+    padding: 10px;
 }
 
-.grid-col-span-all {
-    grid-column: span 4;
+@media screen and (max-width: 768px) {
+    .compability-warning {
+        display:block;
+    }
 }

@@ -7,9 +7,9 @@ document.addEventListener("DOMContentLoaded", function() {
             "href": "/index.html"
         },
         {
-            "menuItem": "project",
+            "menuItem": "portfolio",
             "href": "#",
-            "name": "Projekt",
+            "name": "Portfolio",
             "children": [
                 {
                     "menuItem": "all",
@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     "href": "#",
                     "children": [
                         {
-                            "menuItem": "htmlbasic",
+                            "menuItem": "htmldiv",
                             "name": "HTML <div>",
                             "href": "/projects/div.html"
                         }
@@ -47,6 +47,11 @@ document.addEventListener("DOMContentLoaded", function() {
                             "menuItem": "grid",
                             "name": "Grid-exempel",
                             "href": "/projects/grid.html"
+                        },
+                        {
+                            "menuItem": "porto",
+                            "name": "Portfolio med Grid",
+                            "href": "/portfolio.html"
                         }
                     ]
                 },

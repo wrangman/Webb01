@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Raleway:wght@100;300;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/styles_ex.css">
+    <link rel="stylesheet" href="styles/menu.css">
+
+    <script src="scripts/menu.js" defer></script>
+
+    <title>Webbutveckling 1</title>
+
+    <style>
+        :root {
+            --bg-col-blue: lightslategray;
+            --bg-col-accent: #ccc3;
+            --fg-col-dark: #555;
+            --fg-col-normal: #fff;
+            --fg-col-black: #111;
+        }
+
+        .project-image {
+            width: 300px;
+            max-width: 100%;
+            object-fit: cover;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(210, 210, 210); 
+            width: min(70%, 70.5rem);
+            height: 100vh;
+            margin-inline: auto;
+            overflow: unset;
+        }
+
+        #container {
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        #container #row1 {
+            background-image: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
+            padding: 10px;
+        }
+
+        #content {
+            padding: 2rem 4rem;
+            background-color: whitesmoke;
+            height: auto;
+        }
+
+        h2, h3 {
+            font-family: 'Raleway', sans-serif;
+            margin: .5rem 0 1rem 0rem;
+        }
+
+        h1 {
+            font-family: 'Raleway', sans-serif;
+            color:  wheat;
+            font-weight: bold;
+            margin: 1rem;
+            text-transform: uppercase;
+            
+        }
+
+        p {
+            font-family: 'Lato', sans-serif;
+            margin-bottom: 1.5rem;
+            line-height: 1.5;
+            cursor: default;
+        }
+    </style>
+</head>
+<body>
+    <header id="container">
+        <div id="row1">
+            <h1>Webbutveckling 1</h1>
+        </div>
+    </header>
+    <nav>
+        <div class="mobile-nav">
+            <span style="font-weight:bold;">Huvudmeny</span>
+            <div class="nav-btn">
+                <img src="/img/menuicon.png" alt="menu">
+            </div>
+        </div>
+    </nav>
+    <section id="content">
+        <h2>Portfolio</h2>
+        <h3>Position CSS</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia deserunt blanditiis molestias dolores nobis officia optio itaque saepe eligendi doloremque, dolorum nam quasi eum impedit obcaecati quos sunt libero suscipit quis? Cum labore architecto saepe.</p>
+        <img class="project-image" src="img/position_500p.png" alt="positionsexempel i css">
+
+        <h3>Grid-exempel i CSS</h3>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit nihil molestiae aspernatur ipsum vel unde facere? Quaerat eveniet recusandae exercitationem.
+        </p>
+        <img class="project-image" src="img/grid_500px.png" alt="gridexempel i css">
+        <h3>Färgblandare i Javascript</h3>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium eaque dolor aliquid, possimus minima repellendus, officiis facere quibusdam, eos optio ullam atque.
+        </p>
+        <img class="project-image" src="img/colorc_500p.png" alt="färgblandare i javascript">
+        <h3>Miniräknare i Javascript</h3>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores, ipsum enim ipsam repudiandae neque corporis cupiditate mollitia eos exercitationem aperiam eius praesentium, molestiae doloremque nam sit officiis omnis illum explicabo? Maxime quaerat nesciunt rerum est expedita! Mollitia, maiores. Nemo incidunt perspiciatis recusandae illo temporibus enim accusamus repellendus dolores provident beatae?
+        </p>
+        <img class="project-image" src="img/calc_500p.png" alt="miniräknare i javascript">
+      
+    </section>
+</body>
+</html>

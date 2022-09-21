@@ -147,7 +147,7 @@ MOBILNAV
     cursor: pointer;
 }
 
-@media screen and (max-width: 868px) {
+@media screen and (max-width: 768px) {
     .mobile-nav {
         display: flex;
     }
