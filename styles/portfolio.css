@@ -1,0 +1,55 @@
+.p-grid {
+    display: grid;
+
+}
+
+.p-item {
+    background: rgba(161, 215, 249, 0.2); 
+   
+}
+
+
+/*.grid-col-span-2 {
+    grid-column: span 2;
+}
+*/
+
+ /*   grid-template-areas:
+        'cent cent'
+        'left1 right1'
+        'left2 right2'
+        'left3 right3'
+        'left4 right4'
+*/
+
+
+/*
+.p-item:nth-child(1) {
+    grid-area: cent;
+}
+
+.p-item:nth-child(2) {
+    grid-area: right1;
+}
+.p-item:nth-child(3) {
+    grid-area: left1;
+}
+.p-item:nth-child(4) {
+    grid-area: right2;
+}
+.p-item:nth-child(5) {
+    grid-area: left2;
+}
+.p-item:nth-child(6) {
+    grid-area: right3;
+}
+.p-item:nth-child(7) {
+    grid-area: left3;
+}
+.p-item:nth-child(8) {
+    grid-area: right4;
+}
+.p-item:nth-child(9) {
+    grid-area: left4;
+}
+*/

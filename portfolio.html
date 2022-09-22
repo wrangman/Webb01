@@ -9,10 +9,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Raleway:wght@100;300;700&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" href="styles/styles_ex.css">
+    <link rel="stylesheet" href="styles/portfolio.css">
     <link rel="stylesheet" href="styles/menu.css">
 
     <script src="scripts/menu.js" defer></script>
+    <script src="scripts/image.js" defer></script>
 
     <title>Webbutveckling 1</title>
 
@@ -25,10 +26,11 @@
             --fg-col-black: #111;
         }
 
-        .project-image {
+        .p-image {
             width: 300px;
             max-width: 100%;
             object-fit: cover;
+            border: 1px solid black;
         }
 
         * {
@@ -93,32 +95,50 @@
         <div class="mobile-nav">
             <span style="font-weight:bold;">Huvudmeny</span>
             <div class="nav-btn">
-                <img src="/img/menuicon.png" alt="menu">
+                <img src="img/menuicon.png" alt="menu">
             </div>
         </div>
     </nav>
     <section id="content">
-        <h2>Portfolio</h2>
-        <h3>Position CSS</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia deserunt blanditiis molestias dolores nobis officia optio itaque saepe eligendi doloremque, dolorum nam quasi eum impedit obcaecati quos sunt libero suscipit quis? Cum labore architecto saepe.</p>
-        <img class="project-image" src="img/position_500p.png" alt="positionsexempel i css">
-
-        <h3>Grid-exempel i CSS</h3>
-        <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit nihil molestiae aspernatur ipsum vel unde facere? Quaerat eveniet recusandae exercitationem.
-        </p>
-        <img class="project-image" src="img/grid_500px.png" alt="gridexempel i css">
-        <h3>Färgblandare i Javascript</h3>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium eaque dolor aliquid, possimus minima repellendus, officiis facere quibusdam, eos optio ullam atque.
-        </p>
-        <img class="project-image" src="img/colorc_500p.png" alt="färgblandare i javascript">
-        <h3>Miniräknare i Javascript</h3>
-        <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores, ipsum enim ipsam repudiandae neque corporis cupiditate mollitia eos exercitationem aperiam eius praesentium, molestiae doloremque nam sit officiis omnis illum explicabo? Maxime quaerat nesciunt rerum est expedita! Mollitia, maiores. Nemo incidunt perspiciatis recusandae illo temporibus enim accusamus repellendus dolores provident beatae?
-        </p>
-        <img class="project-image" src="img/calc_500p.png" alt="miniräknare i javascript">
-      
+        <article class="p-grid">
+            <article class="p-item">
+                <h2>Portfolio</h2>
+            </article>
+            <article class="p-item">
+                <h3>Position CSS</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia deserunt blanditiis molestias dolores nobis officia optio itaque saepe eligendi doloremque, dolorum nam quasi eum impedit obcaecati quos sunt libero suscipit quis? Cum labore architecto saepe.</p>
+            </article>
+            <article class="p-item">    
+                <img class="p-image" src="img/position_500p.png" target="_blank" onClick="showImg('pos');" alt="positionsexempel i css">
+            </article>
+            <article class="p-item">
+                <h3>Grid-exempel i CSS</h3>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit nihil molestiae aspernatur ipsum vel unde facere? Quaerat eveniet recusandae exercitationem.
+                </p>
+            </article>
+            <article class="p-item">
+                <img class="p-image" src="img/grid_500px.png" onClick="showImg('grid');" alt="gridexempel i css">
+            </article>
+            <article class="p-item">
+                <h3>Färgblandare i Javascript</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium eaque dolor aliquid, possimus minima repellendus, officiis facere quibusdam, eos optio ullam atque.
+                </p>
+            </article>
+            <article class="p-item">
+                <img class="p-image" src="img/colorc_500p.png" onClick="showImg('colorc');" alt="färgblandare i javascript">
+            </article>
+            <article class="p-item">
+                <h3>Miniräknare i Javascript</h3>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores, ipsum enim ipsam repudiandae neque corporis cupiditate mollitia eos exercitationem aperiam eius praesentium, molestiae doloremque nam sit officiis omnis illum explicabo? Maxime quaerat nesciunt rerum est expedita! Mollitia, maiores. Nemo incidunt perspiciatis recusandae illo temporibus enim accusamus repellendus dolores provident beatae?
+                </p>
+            </article>
+            <article class="p-item">
+                <img class="p-image" src="img/calc_500p.png" onClick="showImg('calc');" alt="miniräknare i javascript">
+            </article>    
+        </article>
     </section>
 </body>
 </html>

@@ -112,7 +112,8 @@ LISTS
 **************************************************************/
 
 .list-header {
-    position: relative;
+    position: sticky;
+    top: 0;
     padding: 10px;
     line-height: 30px;    
     background-color: rgb(46, 46, 46);

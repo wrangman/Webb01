@@ -43,8 +43,6 @@
 
 }
 
-
-
 @supports (gap: 1.5rem) {
     .article-grid {
         gap: 1.5rem;
