@@ -2,12 +2,12 @@
     display: grid;
 
 }
+    
 
 .p-item {
     background: rgba(161, 215, 249, 0.2); 
-   
+    
 }
-
 
 /*.grid-col-span-2 {
     grid-column: span 2;
