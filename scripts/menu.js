@@ -74,6 +74,11 @@ document.addEventListener("DOMContentLoaded", function() {
                             "menuItem": "ccalc",
                             "name": "Färgblandare",
                             "href": "/projects/colorcalc.html"
+                        },
+                        {
+                            "menuItem": "tictac",
+                            "name": "Tre-i-rad",
+                            "href": "/projects/tictactoe.html"
                         }
                     ]
                 }

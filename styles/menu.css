@@ -245,7 +245,6 @@ MOBILNAV
     }
 }
 
-
 @supports (position: sticky) {
     nav {
         position: sticky;
