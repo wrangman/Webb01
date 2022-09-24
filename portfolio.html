@@ -25,8 +25,6 @@
         img {
             border: 1px solid black;
         }
-
-
     </style>
 </head>
 <body>
@@ -53,7 +51,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia deserunt blanditiis molestias dolores nobis officia optio itaque saepe eligendi doloremque, dolorum nam quasi eum impedit obcaecati quos sunt libero suscipit quis? Cum labore architecto saepe.</p>
             </article>
             <article class="p-item grid-col-center">    
-                <img src="img/position_500p.png" target="_blank" onClick="showImg('pos');" alt="positionsexempel i css">
+                <img src="img/position_500p.png" target="_blank" onClick="loadImage('/img/position_1080p.png', 1920, 1080, 'position');" alt="positionsexempel i css">
             </article>
             <article class="p-item">
                 <h3><a class="p-link" href="projects/grid.html">Grid-exempel i CSS</a></h3>
@@ -62,16 +60,16 @@
                 </p>
             </article>
             <article class="p-item grid-col-center">
-                <img src="img/grid_500px.png" onClick="showImg('grid');" alt="gridexempel i css">
+                <img src="img/grid_500px.png" onClick="loadImage('/img/grid_1080p.png', 'grid');" alt="gridexempel i css">
             </article>
             <article class="p-item">
-                <h3><a class="p-link" href="projects/colorcalc.html">Färgblandare i Javascript</a></h3>
+                <h3><a class="p-link" href="projects/colorcalc.html" >Färgblandare i Javascript</a></h3>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium eaque dolor aliquid, possimus minima repellendus, officiis facere quibusdam, eos optio ullam atque.
                 </p>
             </article>
             <article class="p-item grid-col-center">
-                <img src="img/colorc_500p.png" onClick="showImg('colorc');" alt="färgblandare i javascript">
+                <img src="img/colorc_500p.png" onClick="loadImage('/img/colorc_1080p.png', 'färgblandare');" alt="färgblandare i javascript">
             </article>
             <article class="p-item">
                 <h3><a class="p-link" href="projects/calc.html">Miniräknare i Javascript</a></h3>
@@ -80,9 +78,11 @@
                 </p>
             </article>
             <article class="p-item grid-col-center">
-                <img src="img/calc_500p.png" onClick="showImg('calc');" alt="miniräknare i javascript">
+                <img src="img/calc_500p.png" onClick="loadImage('/img/calc_1080p.png', 'miniräknare');" alt="miniräknare i javascript">
             </article>    
         </article>
     </section>
+    <div id="show-image">
+    </div>
 </body>
 </html>

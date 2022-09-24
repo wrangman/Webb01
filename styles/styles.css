@@ -96,12 +96,37 @@ span {
 
 }
 
-img {
-    cursor: pointer;
+.p-item > img {
+    cursor:zoom-in;
 }
 
 .grid-col-center {
     text-align: center;
+}
+
+#show-image {
+    position: fixed;
+    display: none;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,.7);
+    align-items:center;
+    justify-content: center;
+    z-index: 100;
+}
+
+
+@keyframes zoomIn {
+    0% {
+        left: -100vw;
+    }
+    100% {
+        left: 100vw;
+    }
 }
 
 @media screen and (min-width: 768px) {

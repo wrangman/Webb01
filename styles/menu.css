@@ -166,7 +166,7 @@ MOBILNAV
         transform: translateY(0%);
         height: auto;
         opacity: 1;
-        z-index: 100;
+        z-index: 2;
     }
 
     ul {
@@ -216,7 +216,7 @@ MOBILNAV
     li:hover > ul,
     li:active > ul {
         display: block;
-        z-index: 100;
+        z-index: 2;
     }
     
     li.active > ul {
@@ -250,6 +250,6 @@ MOBILNAV
     nav {
         position: sticky;
         top: 0;
-        z-index: 100;
+        z-index: 2;
     }
 }

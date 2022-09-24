@@ -1,19 +1,40 @@
-function showImg(whatProject) {
-    switch (whatProject) {
-        case 'pos':
-            thisPage = 'img/position_1080p.png';
-            break;
-        case 'grid':
-            thisPage = 'img/grid_1080p.png';
-            break;    
-        case 'colorc':
-            thisPage = 'img/colorc_1080p.png';
-            break;    
-        case 'calc':
-            thisPage = 'img/calc_1080p.png';
-            break;    
-        default:
-            alert("Couldn't find image!");
-    }
-    window.open(thisPage, '_blank');
+const elemShowImage = document.getElementById('show-image');
+    
+const elemBtnClose = document.getElementById('btn-close');
+
+
+elemShowImage.addEventListener("click", e => closeImage());
+
+function loadImage(src, alt) {
+
+    let windowW = window.innerWidth;
+    let windowH = window.innerHeight;
+    let img = document.createElement("img");
+
+    console.log(windowW, windowH);
+
+    img.src = src;
+    img.width = windowW - 100;
+    img.height = windowH - 100;
+    img.style.left = - windowW + 100;
+    img.alt = alt;
+    img.id = "tempImage";
+    img.style.objectFit = "contain";
+    img.style.cursor = "zoom-out";
+    img.style.border = "none";
+
+    elemShowImage.appendChild(img);
+
+    elemShowImage.style.display = "flex"; //show image
 }
+
+function closeImage() {
+    let remImage = document.getElementById('tempImage');
+ 
+    remImage.remove();
+    elemShowImage.style.display = "none";
+}
+
+
+
+
