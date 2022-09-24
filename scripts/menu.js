@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 {
                     "menuItem": "all",
                     "name": "Visa allt",
-                    "href": "/project.html"
+                    "href": "/portfolio.html"
                 },
                 {
                     "menuItem": "basics",

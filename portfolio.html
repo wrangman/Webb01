@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Raleway:wght@100;300;700&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" href="styles/portfolio.css">
+    <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/menu.css">
 
     <script src="scripts/menu.js" defer></script>
@@ -18,71 +18,15 @@
     <title>Webbutveckling 1</title>
 
     <style>
-        :root {
-            --bg-col-blue: lightslategray;
-            --bg-col-accent: #ccc3;
-            --fg-col-dark: #555;
-            --fg-col-normal: #fff;
-            --fg-col-black: #111;
+        #content {
+            height: auto !important;
         }
 
-        .p-image {
-            width: 300px;
-            max-width: 100%;
-            object-fit: cover;
+        img {
             border: 1px solid black;
         }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
 
-        body {
-            background-color: rgb(210, 210, 210); 
-            width: min(70%, 70.5rem);
-            height: 100vh;
-            margin-inline: auto;
-            overflow: unset;
-        }
-
-        #container {
-            margin: 0 auto;
-            width: 100%;
-        }
-
-        #container #row1 {
-            background-image: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
-            padding: 10px;
-        }
-
-        #content {
-            padding: 2rem 4rem;
-            background-color: whitesmoke;
-            height: auto;
-        }
-
-        h2, h3 {
-            font-family: 'Raleway', sans-serif;
-            margin: .5rem 0 1rem 0rem;
-        }
-
-        h1 {
-            font-family: 'Raleway', sans-serif;
-            color:  wheat;
-            font-weight: bold;
-            margin: 1rem;
-            text-transform: uppercase;
-            
-        }
-
-        p {
-            font-family: 'Lato', sans-serif;
-            margin-bottom: 1.5rem;
-            line-height: 1.5;
-            cursor: default;
-        }
     </style>
 </head>
 <body>
@@ -93,7 +37,7 @@
     </header>
     <nav>
         <div class="mobile-nav">
-            <span style="font-weight:bold;">Huvudmeny</span>
+            <span>Huvudmeny</span>
             <div class="nav-btn">
                 <img src="img/menuicon.png" alt="menu">
             </div>
@@ -101,42 +45,42 @@
     </nav>
     <section id="content">
         <article class="p-grid">
-            <article class="p-item">
+            <article class="p-item grid-col-span-2 grid-col-center">
                 <h2>Portfolio</h2>
             </article>
             <article class="p-item">
-                <h3>Position CSS</h3>
+                <h3><a class="p-link" href="projects/position/index.html">Position CSS</a></h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia deserunt blanditiis molestias dolores nobis officia optio itaque saepe eligendi doloremque, dolorum nam quasi eum impedit obcaecati quos sunt libero suscipit quis? Cum labore architecto saepe.</p>
             </article>
-            <article class="p-item">    
-                <img class="p-image" src="img/position_500p.png" target="_blank" onClick="showImg('pos');" alt="positionsexempel i css">
+            <article class="p-item grid-col-center">    
+                <img src="img/position_500p.png" target="_blank" onClick="showImg('pos');" alt="positionsexempel i css">
             </article>
             <article class="p-item">
-                <h3>Grid-exempel i CSS</h3>
+                <h3><a class="p-link" href="projects/grid.html">Grid-exempel i CSS</a></h3>
                 <p>
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit nihil molestiae aspernatur ipsum vel unde facere? Quaerat eveniet recusandae exercitationem.
                 </p>
             </article>
-            <article class="p-item">
-                <img class="p-image" src="img/grid_500px.png" onClick="showImg('grid');" alt="gridexempel i css">
+            <article class="p-item grid-col-center">
+                <img src="img/grid_500px.png" onClick="showImg('grid');" alt="gridexempel i css">
             </article>
             <article class="p-item">
-                <h3>Färgblandare i Javascript</h3>
+                <h3><a class="p-link" href="projects/colorcalc.html">Färgblandare i Javascript</a></h3>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium eaque dolor aliquid, possimus minima repellendus, officiis facere quibusdam, eos optio ullam atque.
                 </p>
             </article>
-            <article class="p-item">
-                <img class="p-image" src="img/colorc_500p.png" onClick="showImg('colorc');" alt="färgblandare i javascript">
+            <article class="p-item grid-col-center">
+                <img src="img/colorc_500p.png" onClick="showImg('colorc');" alt="färgblandare i javascript">
             </article>
             <article class="p-item">
-                <h3>Miniräknare i Javascript</h3>
+                <h3><a class="p-link" href="projects/calc.html">Miniräknare i Javascript</a></h3>
                 <p>
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores, ipsum enim ipsam repudiandae neque corporis cupiditate mollitia eos exercitationem aperiam eius praesentium, molestiae doloremque nam sit officiis omnis illum explicabo? Maxime quaerat nesciunt rerum est expedita! Mollitia, maiores. Nemo incidunt perspiciatis recusandae illo temporibus enim accusamus repellendus dolores provident beatae?
                 </p>
             </article>
-            <article class="p-item">
-                <img class="p-image" src="img/calc_500p.png" onClick="showImg('calc');" alt="miniräknare i javascript">
+            <article class="p-item grid-col-center">
+                <img src="img/calc_500p.png" onClick="showImg('calc');" alt="miniräknare i javascript">
             </article>    
         </article>
     </section>
