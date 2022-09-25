@@ -1,7 +1,5 @@
 const elemShowImage = document.getElementById('show-image');
-    
 const elemBtnClose = document.getElementById('btn-close');
-
 
 elemShowImage.addEventListener("click", e => closeImage());
 
@@ -23,9 +21,8 @@ function loadImage(src, alt) {
     img.style.cursor = "zoom-out";
     img.style.border = "none";
 
-    elemShowImage.appendChild(img);
-
     elemShowImage.style.display = "flex"; //show image
+    elemShowImage.appendChild(img);
 }
 
 function closeImage() {
