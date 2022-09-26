@@ -123,7 +123,9 @@ span {
 
 .p-item > img {
     cursor:zoom-in;
-    border-radius: 15px;
+    border-radius: 250px;
+    
+    border: 1px solid black;
 }
 
 .grid-col-center {
@@ -211,7 +213,6 @@ span {
         height: 100%;
         margin-inline: 10px;
     }
-    
     
     #content img {
         max-width: 100%;
