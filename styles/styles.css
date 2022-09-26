@@ -13,6 +13,28 @@
     box-sizing: border-box;
 }
 
+#skip-bar {
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    font-family: 'Lato', sans-serif;
+    visibility: hidden;
+    color: red;
+    width: 200px;
+    border-radius: 15px;
+    border: 1px solid black;
+    background: white;
+    z-index: 100;
+    text-align: center;
+    height: auto;
+    line-height: auto;
+
+}
+
+#skip-bar:active {
+    visibility: visible;
+}
+
 .p-link {
     text-decoration: none;
     color: #111;
@@ -120,7 +142,6 @@ span {
     justify-content: center;
     z-index: 100;
 }
-
 
 @keyframes zoomIn {
     0% {
