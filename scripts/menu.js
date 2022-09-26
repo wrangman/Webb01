@@ -52,6 +52,11 @@ document.addEventListener("DOMContentLoaded", function() {
                             "menuItem": "porto",
                             "name": "Portfolio med Grid",
                             "href": "/portfolio.html"
+                        },
+                        {
+                            "menuItem": "colortheory",
+                            "name": "Avancerad färgteori",
+                            "href": "/projects/colortheory/index.html"
                         }
                     ]
                 },
@@ -74,11 +79,6 @@ document.addEventListener("DOMContentLoaded", function() {
                             "menuItem": "ccalc",
                             "name": "Färgblandare",
                             "href": "/projects/colorcalc.html"
-                        },
-                        {
-                            "menuItem": "tictac",
-                            "name": "Tre-i-rad",
-                            "href": "/projects/tictactoe.html"
                         }
                     ]
                 }

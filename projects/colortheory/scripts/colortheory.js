@@ -1,12 +1,25 @@
 document.querySelectorAll('.color-link').forEach(item => {
     item.addEventListener('click', event => {
-      
-      alert(item);
-        
+        switch (event.target.id) {
+            case 'clr-slice1-link':
+                alert('ya');
+               
+                break;
+            default:
+                console.log(event.target.id)
+        }
     })
-  }) 
+}) 
 
-/*
+
+
+
+
+
+/* SKRÄP
+
+
+
   const slice1 = document.getElementById("clr-slice1-link")
   const slice2 = document.getElementById("clr-slice2-link")
   const slice3 = document.getElementById("clr-slice3-link")
