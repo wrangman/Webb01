@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+body {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    
+}
+
+
+  #color-wheel {  
+    /* This section calls the slideInFromLeft animation we defined above */
+    animation: 1s ease-out 0s 1 spin;
+
+  }
+
+  @keyframes spin {
+    0% {
+      rotate:0;
+    }
+    100% {
+      rotate: -360deg;
+    }
+  }
+  
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 40px;
+    background: black;
+    color: white;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background: whitesmoke;
+}
+
+#color-wheel:hover {
+    scale: 2.5;
+}
+
+
+
+#color-wheel {
+    height: 200px;
+    background-color: black;
+    transition: all 500ms ease-in-out;
+    rotate: -15deg;
+}
+
+.wheel-bg {
+    background-color: grey;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+}
+
+.wheel {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    clip: rect(0px, 100px, 200px, 0px);
+}
+
+.hold {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    clip: rect(0px, 200px, 200px, 100px);
+}
+
+#clr-slice1 .wheel {
+    background-color: #f72508;
+    rotate: 30deg;
+}
+#clr-slice2 .wheel {
+    background-color: #fb500a;
+    rotate: calc(2 * 30deg);
+}
+#clr-slice3 .wheel {
+    background-color: #fa8d0b;
+    rotate: calc(3 * 30deg);
+}
+#clr-slice4 .wheel {
+    background-color: #cba007;
+    rotate: calc(4 * 30deg);
+}
+#clr-slice5 .wheel {
+    background-color: #fefc01;
+    rotate: calc(5 * 30deg);
+}
+#clr-slice6 .wheel {
+    background-color: #a8f909;
+    rotate: calc(6 * 30deg);
+}
+
+/** Litet hack-lösning här att jag fyller halva cirkeln som är fylld och börjar om på nytt **/
+
+#clr-slice7 {
+    rotate: 180deg;
+}
+
+#clr-slice7 .wheel {
+    background-color: #21d105;
+    rotate: 30deg;
+}
+
+#clr-slice8 {
+    rotate: 180deg;
+}
+
+#clr-slice8 .wheel {
+    background-color:  #03bfc0;
+    rotate: calc(2 * 30deg);
+}
+
+#clr-slice9 {
+    rotate: 180deg;
+}
+
+#clr-slice9 .wheel {
+    background-color:  #0929f3;
+    rotate: calc(3 * 30deg);
+}
+
+#clr-slice10 {
+    rotate: 180deg;
+}
+
+#clr-slice10 .wheel {
+    background-color: #411acb;
+    rotate: calc(4 * 30deg);
+}
+
+#clr-slice11 {
+    rotate: 180deg;
+}
+
+#clr-slice11 .wheel {
+    background-color: #8b26ab;
+    rotate: calc(5 * 30deg);
+}
+
+#clr-slice12 {
+    rotate: 180deg;
+}
+
+#clr-slice12 .wheel {
+    background-color: #aa227a;
+    rotate: calc(6 * 30deg);
+}
+
