@@ -14,22 +14,6 @@ body {
 }
 
 
-  #color-wheel {  
-    /* This section calls the slideInFromLeft animation we defined above */
-    animation: 1s ease-out 0s 1 spin;
-
-  }
-
-  @keyframes spin {
-    0% {
-      rotate:0;
-    }
-    100% {
-      rotate: -360deg;
-    }
-  }
-  
-
 nav {
     display: flex;
     justify-content: space-evenly;
@@ -40,23 +24,16 @@ nav {
 }
 
 .content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
     height: 100%;
     background: whitesmoke;
 }
 
-#color-wheel:hover {
-    scale: 2.5;
-}
-
-
 
 #color-wheel {
-    height: 200px;
+    position: relative;
     background-color: black;
-    transition: all 500ms ease-in-out;
+ 
     rotate: -15deg;
 }
 
@@ -108,6 +85,7 @@ nav {
     background-color: #a8f909;
     rotate: calc(6 * 30deg);
 }
+
 
 /** Litet hack-lösning här att jag fyller halva cirkeln som är fylld och börjar om på nytt **/
 
@@ -165,3 +143,125 @@ nav {
     rotate: calc(6 * 30deg);
 }
 
+
+/* länkar på färghjulet: */
+
+#clr-slice1-link {
+    position: absolute;
+    left: 100px;
+    top: 17px;
+    border-radius: 100px;
+    height: 34px;
+    width: 34px;
+    z-index: 2;
+}
+
+#clr-slice2-link {
+    position: absolute;
+    left: 130px;
+    top: 35px;
+    border-radius: 100px;
+    height: 34px;
+    width: 34px;
+    z-index: 2;
+}
+
+#clr-slice3-link {
+    position: absolute;
+    left: 150px;
+    top: 65px;
+    border-radius: 100px;
+    height: 34px;
+    width: 34px;
+    z-index: 2;
+}
+
+#clr-slice4-link {
+    position: absolute;
+    left: 150px;
+    top: 100px;
+    border-radius: 100px;
+    height: 34px;
+    width: 34px;
+    z-index: 2;
+}
+
+#clr-slice5-link {
+    position: absolute;
+    left: 130px;
+    top: 130px;
+    border-radius: 100px;
+    height: 34px;
+    width: 34px;
+    z-index: 2;
+}
+
+#clr-slice6-link {
+    position: absolute;
+    left: 100px;
+    top: 145px;
+    border-radius: 100px;
+    height: 34px;
+    width: 34px;
+    z-index: 2;
+}
+
+#clr-slice7-link {
+    position: absolute;
+    left: 65px;
+    top: 145px;
+    border-radius: 100px;
+    height: 34px;
+    width: 34px;
+    z-index: 2;
+}
+
+#clr-slice8-link {
+    position: absolute;
+    left: 35px;
+    top: 130px;
+    border-radius: 100px;
+    height: 34px;
+    width: 34px;
+    z-index: 2;
+}
+
+#clr-slice9-link {
+    position: absolute;
+    left: 20px;
+    top: 100px;
+    border-radius: 100px;
+    height: 34px;
+    width: 34px;
+    z-index: 2;
+}
+
+#clr-slice10-link {
+    position: absolute;
+    left: 20px;
+    top: 65px;
+    border-radius: 100px;
+    height: 34px;
+    width: 34px;
+    z-index: 2;
+}
+
+#clr-slice11-link {
+    position: absolute;
+    left: 35px;
+    top: 35px;
+    border-radius: 100px;
+    height: 34px;
+    width: 34px;
+    z-index: 2;
+}
+
+#clr-slice12-link {
+    position: absolute;
+    left: 65px;
+    top: 20px;
+    border-radius: 100px;
+    height: 34px;
+    width: 34px;
+    z-index: 2;
+}
