@@ -3,8 +3,8 @@ nav {
     background: var(--bg-col-blue);
     transition: all 250ms ease;
     background: #2c3e50;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
 nav:hover {
@@ -19,7 +19,6 @@ nav:hover {
 ul {
     list-style: none;
     display: flex;
-    background: transparent;
 }
 
 ul li a,
@@ -30,7 +29,6 @@ ul li {
     font-size: 16px;
     font-weight: 300;
     text-decoration: none;
-    background: transparent;
 }
 
 ul li {
@@ -50,6 +48,7 @@ ul li a {
 
 li a:hover {
     background-color: var(--bg-col-accent);
+    border-radius: 15px;
     color: var(--fg-col-normal);
 }
 
@@ -63,7 +62,6 @@ ul li ul {
 
 li ul li a {
     padding: 10px;
-    background-color: var(--bg-col-blue);
     color: var(--fg-col-normal);
 }
 
@@ -88,6 +86,7 @@ ul li ul li ul {
 li:hover > ul,  
 li:active > ul {
     display: block;
+    border-radius: 15px;
     z-index: 2;
     background-image: linear-gradient(-45deg, #314457, #566671);
     box-shadow: 5px 5px 7px rgb(57, 57, 57);
@@ -109,6 +108,7 @@ li:active > ul {
 
 .dropdown a:hover {
     background-color: var(--bg-col-accent);
+    border-radius: 15px;
     color: var(--fg-col-normal);
 }
 
