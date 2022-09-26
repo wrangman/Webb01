@@ -9,13 +9,13 @@
 .article-grid {
     display: grid;
     grid-template-columns: 1fr;
-    padding-block: 1rem;
+ 
     height:fit-content;
     
 }
 
 .article-item {
-    padding: 1.5rem;
+    padding: 1em;
     border-radius: 0.5rem;
     box-shadow: 5px 5px 7px rgb(57, 57, 57);
     transition: all 400ms ease;
