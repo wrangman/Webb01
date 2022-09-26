@@ -5,18 +5,13 @@ nav {
     background: #2c3e50;
 }
 
-.nav {
-    z-index: 100;
-}
-
 nav:hover {
-    position: relative;
     box-shadow: 
     0px 1px black,
     0px 5px 7px rgb(57, 57, 57),
     0px -1px lightgray;
     background-image: linear-gradient(-45deg, #314457, #566671);
-    top: -5px;
+    transform: translateY(-5px);
 }
 
 ul {
@@ -40,14 +35,14 @@ ul li {
     padding: 10px;
     color: var(--fg-col-normal);
     display: block;
-    z-index: 100;
+    z-index: 2;
 }
 
 ul li a {
     padding: 10px 15px;
     color: var(--fg-col-normal);
     display: block;
-    z-index: 100;
+    z-index: 2;
     /* white-space: nowrap; */
 }
 
@@ -91,7 +86,7 @@ ul li ul li ul {
 li:hover > ul,  
 li:active > ul {
     display: block;
-    z-index: 100;
+    z-index: 2;
     background-image: linear-gradient(-45deg, #314457, #566671);
     box-shadow: 5px 5px 7px rgb(57, 57, 57);
 }
