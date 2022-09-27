@@ -13,6 +13,14 @@
     <link rel="stylesheet" href="styles/menu.css">
     
     <script src="scripts/menu.js" defer></script>
+    <style>
+        #container{
+            animation: 500ms ease-in 0s 1 slide-down;
+        }
+        #content {
+            animation: 500ms ease-in 0s 1 slide-up;
+        }
+    </style>
 
     <title>Webbutveckling 01</title>
 </head>
@@ -24,17 +32,17 @@
         <div id="main-caption">
             <h1 class="main-title">Webbutveckling 01</h1>
         </div>
-    </header>
-    <nav>
-        <div class="mobile-nav">
-            <span>Huvudmeny</span>
-            <div class="nav-btn">    
-                <img src="img/menuicon.png" alt="menu">
+        <nav>
+            <div class="mobile-nav">
+                <span>Huvudmeny</span>
+                <div class="nav-btn">    
+                    <img src="img/menuicon.png" alt="menu">
+                </div>
             </div>
-        </div>
-    </nav>
-    <section id="content">
-        <div class="about-grid">
+        </nav>
+    </header>
+    <main id="content">
+        <section class="about-grid">
             <article class="about grid-col-span-2 grid-col-center">
                 <h2 class="sub-title">Välkommen till Webbutveckling 01</h2>
             </article>
@@ -46,8 +54,7 @@
             <article class="about grid-col-center">
                 <img src="img/webb.png" alt="">
             </article>
-          
-        </div>
-    </section>
+        </section>
+    </main>
 </body>
 </html>
