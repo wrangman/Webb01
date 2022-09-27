@@ -57,17 +57,34 @@ nav {
     line-height: 50px;
 }
 
-.content {
-    
+.container {
+    display: flex;
+
     height: 100%;
     background: whitesmoke;
 }
 
+.content {
+    flex: 1 1 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.color-menu {
+    flex: 0 0 100px;
+    background: red;
+    align-content: center;
+    vertical-align: middle;
+}
 
 #color-wheel {
-    position: relative;
+    position: fixed;
+    top: 300px;
+    left: 20px;
     background-color: black;
- 
+    z-index: 1;
     rotate: -15deg;
 }
 
@@ -298,4 +315,46 @@ nav {
     height: 34px;
     width: 34px;
     z-index: 2;
+}
+
+/* Kurvad bakgrund för färgmenyn */
+
+#curved-corner-bottomleft,
+#curved-corner-topleft {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    position: relative;
+}
+#curved-corner-bottomleft:before,
+#curved-corner-topleft:before {
+    content: "";
+    display: block;
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    border-radius: 50%;
+}
+
+#curved-corner-bottomleft:before {
+    bottom: 0;
+    left: 0;
+    box-shadow: -50px 50px 0 0 green;
+  }
+
+#curved-corner-topleft:before {
+    top: 0;
+    left: 0;
+    box-shadow: -50px -50px 0 0 green;
+}
+
+#circle-shape {
+    position: fixed;
+    top: 245px;
+    left: 10px;
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    background-color: greenyellow;
+    z-index: 0;
 }
