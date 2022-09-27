@@ -62,9 +62,9 @@ body {
     width: 100%;
 }
 
-#container #row1 {
+#container #main-caption {
     position: relative;
-    background-image: linear-gradient(0deg, #0082c8, #0082c8, #667db6);
+    background: #2980b9;
     padding: 10px;
     z-index: 2;
 }
@@ -86,11 +86,19 @@ body {
 
 .main-title {
     font-family: 'Raleway', sans-serif;
-    color: #ff7d37;
+    color: wheat;
+    text-shadow: 1px 1px 1px black;
     font-weight: bold;
     margin: 1rem;
     text-transform: uppercase;
     
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+    cursor: default;
 }
 
 .sub-title {
@@ -99,10 +107,11 @@ body {
 }
 
 .plain-text {
-    font-family: 'Lato', sans-serif;
-    margin-bottom: 1.5rem;
-    line-height: 1.5;
-    cursor: default;
+    color: var(--fg-col-dark);
+}
+
+.article-text {
+    color: #111;
 }
 
 span {
