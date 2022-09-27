@@ -18,14 +18,14 @@
     <title>Webbutveckling 01</title>
 
     <style>
-        #content {
+        .content {
             height: auto;
         }
     </style>
 </head>
-<body id="fade-body">
-    <header id="container">
-        <div id="main-caption">
+<body>
+    <header class="main-header">
+        <div class="main-caption">
             <h1 class="main-title">Webbutveckling 01</h1>
         </div>
     </header>
@@ -37,47 +37,47 @@
             </div>
         </div>
     </nav>
-    <section id="content">
-        <article class="p-grid">
-            <article class="p-item grid-col-span-2 grid-col-center">
+    <main class="content">
+        <section class="p-grid">
+            <header class="p-item grid-col-span-2 grid-col-center">
                 <h2 class="sub-title">Portfolio</h2>
-            </article>
+            </header>
             <article class="p-item">
                 <h3 class="sub-title"><a class="p-link" href="projects/position/index.html">Position CSS</a></h3>
                 <p class="plain-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia deserunt blanditiis molestias dolores nobis officia optio itaque saepe eligendi doloremque, dolorum nam quasi eum impedit obcaecati quos sunt libero suscipit quis? Cum labore architecto saepe.</p>
             </article>
-            <article class="p-item grid-col-center">    
-                <img src="img/position_500p.png" target="_blank" onClick="loadImage('/img/position_1080p.png', 1920, 1080, 'position');" alt="positionsexempel i css">
-            </article>
+            <div class="p-item grid-col-center">    
+                <img src="img/position_500p.png" onClick="loadImage('/img/position_1080p.png', 1920, 1080, 'position');" alt="positionsexempel i css">
+            </div>
             <article class="p-item">
                 <h3 class="sub-title"><a class="p-link" href="projects/grid.html">Grid-exempel i CSS</a></h3>
                 <p class="plain-text">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit nihil molestiae aspernatur ipsum vel unde facere? Quaerat eveniet recusandae exercitationem.
                 </p>
             </article>
-            <article class="p-item grid-col-center">
+            <div class="p-item grid-col-center">
                 <img src="img/grid_500px.png" onClick="loadImage('/img/grid_1080p.png', 'grid');" alt="gridexempel i css">
-            </article>
+            </div>
             <article class="p-item">
                 <h3 class="sub-title"><a class="p-link" href="projects/colorcalc.html" >Färgblandare i Javascript</a></h3>
                 <p class="plain-text">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium eaque dolor aliquid, possimus minima repellendus, officiis facere quibusdam, eos optio ullam atque.
                 </p>
             </article>
-            <article class="p-item grid-col-center">
+            <div class="p-item grid-col-center">
                 <img src="img/colorc_500p.png" onClick="loadImage('/img/colorc_1080p.png', 'färgblandare');" alt="färgblandare i javascript">
-            </article>
+            </div>
             <article class="p-item">
                 <h3 class="sub-title"><a class="p-link" href="projects/calc.html">Miniräknare i Javascript</a></h3>
                 <p class="plain-text">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores, ipsum enim ipsam repudiandae neque corporis cupiditate mollitia eos exercitationem aperiam eius praesentium, molestiae doloremque nam sit officiis omnis illum explicabo? Maxime quaerat nesciunt rerum est expedita! Mollitia, maiores. Nemo incidunt perspiciatis recusandae illo temporibus enim accusamus repellendus dolores provident beatae?
                 </p>
             </article>
-            <article class="p-item grid-col-center">
+            <div class="p-item grid-col-center">
                 <img src="img/calc_500p.png" onClick="loadImage('/img/calc_1080p.png', 'miniräknare');" alt="miniräknare i javascript">
-            </article>    
-        </article>
-    </section>
+            </div>    
+        </section>
+    </main>
     <div id="show-image">
     </div>
 </body>
