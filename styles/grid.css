@@ -56,6 +56,10 @@
 }
 
 @media screen and (min-width: 768px) {
+    .article-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
     @supports (scale: 1.05) {
         .article-item:hover {
             z-index: 1;
