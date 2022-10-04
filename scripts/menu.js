@@ -54,6 +54,11 @@ document.addEventListener("DOMContentLoaded", function() {
                             "href": "/portfolio.html"
                         },
                         {
+                            "menuItem": "nocco",
+                            "name": "NOCCO omgjord",
+                            "href": "/projects/nocco/index.html"
+                        },
+                        {
                             "menuItem": "colortheory",
                             "name": "Avancerad färgteori",
                             "href": "/projects/colortheory/index.html"

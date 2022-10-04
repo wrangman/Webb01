@@ -1,0 +1,47 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.top-header {
+    background: gray;
+    height: 20rem;
+    vertical-align: middle;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    background: #111;
+    
+}
+
+.main_section {
+    margin-block: 10rem;
+    width: 80%;
+   
+    margin-inline: auto;
+}
+
+.drinks__bcaa {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+
+    gap: 2rem;
+    
+}
+
+img {
+    width: 8rem;
+    object-fit: cover;
+    transition: all 250ms ease;
+}
+
+img:hover {
+    cursor: pointer;
+    scale: 1.1;
+    filter: brightness(1.5);
+}
