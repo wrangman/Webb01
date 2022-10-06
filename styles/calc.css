@@ -61,7 +61,7 @@
 
 .compability-warning {
     display: none;
-    background: var(--fg-col-black);
+    background: var(--fg-clr-black);
     color: white;
     text-transform: uppercase;
     text-align: center;

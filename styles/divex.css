@@ -3,7 +3,7 @@
 
 .main-header {
     width: 70%;
-    background: wheat;
+    background: var(--fg-clr-wheat);
     margin-inline: auto;
     
 }

@@ -1,8 +1,7 @@
 
 nav {
-    background: var(--bg-col-blue);
     transition: all 250ms ease;
-    background: #2c3e50;
+    background: var(--bg-clr-menu);
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
 }
@@ -12,7 +11,7 @@ nav:hover {
     0px 1px black,
     0px 5px 7px rgb(57, 57, 57),
     0px -1px lightgray;
-    background-image: linear-gradient(-45deg, #314457, #566671);
+    background-image: var(--bg-clr-menu-hover);
     transform: translateY(-5px);
 }
 
@@ -33,27 +32,27 @@ ul li {
 
 ul li {
     padding: 10px;
-    color: var(--fg-col-normal);
+    color: var(--fg-clr-normal);
     display: block;
     z-index: 2;
 }
 
 ul li a {
     padding: 10px 15px;
-    color: var(--fg-col-normal);
+    color: var(--fg-clr-normal);
     display: block;
     z-index: 2;
     /* white-space: nowrap; */
 }
 
 li a:hover {
-    background-color: var(--bg-col-accent);
-    border-radius: 15px;
-    color: var(--fg-col-normal);
+    background-color: var(--bg-clr-accent);
+    border-radius: 0.938rem;
+    color: var(--fg-clr-normal);
 }
 
 ul li ul {
-    background: var(--fg-col-dark);
+    background: var(--fg-clr-dark);
     padding-left: 5px;
     position: absolute;
     display: none;
@@ -62,11 +61,11 @@ ul li ul {
 
 li ul li a {
     padding: 10px;
-    color: var(--fg-col-normal);
+    color: var(--fg-clr-normal);
 }
 
 ul li a:hover {
-    background-color: var(--bg-col-accent);
+    background-color: var(--bg-clr-accent);
 }
 
 ul li ul li {
@@ -74,7 +73,7 @@ ul li ul li {
 }
 
 ul li ul a {
-    background: var(--bg-col-dark);
+    background: var(--bg-clr-dark);
 }
 
 ul li ul li ul {
@@ -84,11 +83,12 @@ ul li ul li ul {
 }
 
 li:hover > ul,  
+li:focus > ul,
 li:active > ul {
     display: block;
-    border-radius: 15px;
+    border-radius: 0.938rem;
     z-index: 2;
-    background-image: linear-gradient(-45deg, #314457, #566671);
+    background-image: var(--bg-clr-menu-hover);
     box-shadow: 5px 5px 7px rgb(57, 57, 57);
 }
 
@@ -103,18 +103,18 @@ li:active > ul {
     background: url("/img/arrowdown.png");
     background-position: right;
     background-repeat: no-repeat;
-    color: var(--fg-col-normal);
+    color: var(--fg-clr-normal);
 }
 
 .dropdown a:hover {
-    background-color: var(--bg-col-accent);
-    border-radius: 15px;
-    color: var(--fg-col-normal);
+    background-color: var(--bg-clr-accent);
+    border-radius: 0.938rem;
+    color: var(--fg-clr-normal);
 }
 
 .dropdown ul li a:hover {
-    background-color: var(--bg-col-accent);
-    color: var(--fg-col-normal);
+    background-color: var(--bg-clr-accent);
+    color: var(--fg-clr-normal);
  }
 
 span {
@@ -128,8 +128,8 @@ MOBILNAV
 
 
 .mobile-nav {
-    background: wheat;
-    color: var(--fg-col-black);
+    background: var(--fg-clr-wheat);
+    color: var(--fg-clr-black);
     font-family: 'Raleway', sans-serif;
     text-transform: uppercase;
     display: none;
@@ -231,8 +231,8 @@ MOBILNAV
     }
 
     .dropdown a:hover {
-        background-color: var(--bg-col-accent);
-        color: var(--fg-col-normal);
+        background-color: var(--bg-clr-accent);
+        color: var(--fg-clr-normal);
     }
 
     #row2 img {
