@@ -6,6 +6,7 @@
     --bg-clr-menu: #2c3e50;
     --bg-clr-menu-hover: linear-gradient(-45deg, #314457, #566671);
     --bg-clr-footer: linear-gradient(to top, #314457, #566671);
+    --bg-clr-3a: #3a3a3a;
 
     --fg-clr-dark: #555;
     --fg-clr-normal: #fff;
@@ -27,11 +28,10 @@
     text-align: center;
     font-family: 'Lato', sans-serif;
     color: var(--fg-clr-black);
-    background-color: var(--fg-clr-rebecca);
+    background-color: var(--bg-clr-3a);
     translate: 0 -100%;
     transition: translate 150ms ease-in-out;
-    padding: .5rem;
-    color: var(--fg-clr-wheat);
+    padding: .75rem;
     text-decoration: none;
 }
 
@@ -54,7 +54,7 @@
     font-family: 'Lato', sans-serif;
 }
 
-:focus :not(.skip-link) and :not(.normal-link) {
+:focus:not(.skip-link):not(.normal-link) {
     border-radius: 0.938rem;
 } 
 
@@ -72,7 +72,6 @@
 .normal-link:hover,
 .normal-link:focus {
     text-decoration: underline;
-
     color: var(--fg-clr-hover);
 }
 
@@ -99,7 +98,6 @@
     height: 100%;
    
 }
-
 
 .main-header {
     margin: 0 auto;
@@ -179,7 +177,6 @@ span {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
-  
 }
 
 .about {

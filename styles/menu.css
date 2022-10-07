@@ -45,7 +45,7 @@ ul li a {
     /* white-space: nowrap; */
 }
 
-li a:hover {
+li a:hover:not(.normal-link) {
     background-color: var(--bg-clr-accent);
     border-radius: 0.938rem;
     color: var(--fg-clr-normal);
