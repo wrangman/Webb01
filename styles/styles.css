@@ -54,8 +54,7 @@
     font-family: 'Lato', sans-serif;
 }
 
-
-:focus :not(.skip-link) :not(.normal-link) {
+:focus :not(.skip-link) and :not(.normal-link) {
     border-radius: 0.938rem;
 } 
 
@@ -73,6 +72,7 @@
 .normal-link:hover,
 .normal-link:focus {
     text-decoration: underline;
+
     color: var(--fg-clr-hover);
 }
 
@@ -99,6 +99,7 @@
     height: 100%;
    
 }
+
 
 .main-header {
     margin: 0 auto;
