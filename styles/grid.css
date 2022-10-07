@@ -2,15 +2,11 @@
  CSS Grid
 *******************************/
 
-.content {
-    height: auto;
-}   
-
 .article-grid {
     display: grid;
     grid-template-columns: 1fr;
  
-    height:fit-content;
+    height: 100%;
     
 }
 

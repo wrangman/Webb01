@@ -2,8 +2,6 @@
 nav {
     transition: all 250ms ease;
     background: var(--bg-clr-menu);
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
 }
 
 nav:hover {
@@ -45,7 +43,7 @@ ul li a {
     /* white-space: nowrap; */
 }
 
-li a:hover:not(.normal-link) {
+li a:hover:not(.normal-link):not(.footer-link) {
     background-color: var(--bg-clr-accent);
     border-radius: 0.938rem;
     color: var(--fg-clr-normal);

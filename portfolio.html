@@ -16,14 +16,8 @@
     <script src="scripts/image.js" defer></script>
 
     <title>Webbutveckling 01</title>
-
-    <style>
-        .content {
-            height: auto;
-        }
-    </style>
 </head>
-<body>
+<body class="container">
     <header class="main-header">
         <div class="main-caption">
             <h1 class="main-title">Webbutveckling 01</h1>
@@ -43,14 +37,14 @@
                 <h2 class="sub-title">Portfolio</h2>
             </header>
             <article class="p-item">
-                <h3 class="sub-title"><a class="p-link" href="projects/position/index.html">Position CSS</a></h3>
+                <h3 class="sub-title"><a class="normal-link" href="projects/position/index.html">Position CSS</a></h3>
                 <p class="plain-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia deserunt blanditiis molestias dolores nobis officia optio itaque saepe eligendi doloremque, dolorum nam quasi eum impedit obcaecati quos sunt libero suscipit quis? Cum labore architecto saepe.</p>
             </article>
             <div class="p-item grid-col-center">    
                 <img src="img/position_500p.png" onClick="loadImage('/img/position_1080p.png', 1920, 1080, 'position');" alt="positionsexempel i css">
             </div>
             <article class="p-item">
-                <h3 class="sub-title"><a class="p-link" href="projects/grid.html">Grid-exempel i CSS</a></h3>
+                <h3 class="sub-title"><a class="normal-link" href="projects/grid.html">Grid-exempel i CSS</a></h3>
                 <p class="plain-text">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit nihil molestiae aspernatur ipsum vel unde facere? Quaerat eveniet recusandae exercitationem.
                 </p>
@@ -59,7 +53,7 @@
                 <img src="img/grid_500px.png" onClick="loadImage('/img/grid_1080p.png', 'grid');" alt="gridexempel i css">
             </div>
             <article class="p-item">
-                <h3 class="sub-title"><a class="p-link" href="projects/colorcalc.html" >Färgblandare i Javascript</a></h3>
+                <h3 class="sub-title"><a class="normal-link" href="projects/colorcalc.html" >Färgblandare i Javascript</a></h3>
                 <p class="plain-text">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium eaque dolor aliquid, possimus minima repellendus, officiis facere quibusdam, eos optio ullam atque.
                 </p>
@@ -68,7 +62,7 @@
                 <img src="img/colorc_500p.png" onClick="loadImage('/img/colorc_1080p.png', 'färgblandare');" alt="färgblandare i javascript">
             </div>
             <article class="p-item">
-                <h3 class="sub-title"><a class="p-link" href="projects/calc.html">Miniräknare i Javascript</a></h3>
+                <h3 class="sub-title"><a class="normal-link" href="projects/calc.html">Miniräknare i Javascript</a></h3>
                 <p class="plain-text">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores, ipsum enim ipsam repudiandae neque corporis cupiditate mollitia eos exercitationem aperiam eius praesentium, molestiae doloremque nam sit officiis omnis illum explicabo? Maxime quaerat nesciunt rerum est expedita! Mollitia, maiores. Nemo incidunt perspiciatis recusandae illo temporibus enim accusamus repellendus dolores provident beatae?
                 </p>
@@ -78,6 +72,21 @@
             </div>    
         </section>
     </main>
+    <footer class="footer-section">
+        <div class="footer-grid">
+            <div>
+                <ol class="footer-menu">
+                    <li><a class="footer-link" href="#">Kontakta oss</a></li>
+                    <li><a class="footer-link" href="#">Hjälp</a></li>
+                    <li><a class="footer-link" href="#">Om oss</a></li>
+                    <li><a class="footer-link" href="#">Villkor</a></li>
+                </ol>
+            </div>
+            <div>
+                <p class="footer-text">Copyright &copy; 2022 - Johan Wrangö / litespoon Studios</p>
+            </div>
+        </div> 
+    </footer>
     <div id="show-image">
     </div>
 </body>

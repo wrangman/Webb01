@@ -52,44 +52,12 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
+    caret-color: transparent;
 }
 
-:focus:not(.skip-link):not(.normal-link) {
-    border-radius: 0.938rem;
-} 
-
-.normal-link {
-    text-decoration: none;
-    color: var(--fg-clr-rebecca);
-
-}
-
-.normal-link:visited {
-    text-decoration: none;
-    color: var(--fg-clr-black);
-}
-
-.normal-link:hover,
-.normal-link:focus {
-    text-decoration: underline;
-    color: var(--fg-clr-hover);
-}
-
-
-.p-link {
-    text-decoration: none;
-    color: var(--fg-clr-black);
-}
-
-.p-link:visited {
-    text-decoration: none;
-    color: var(--fg-clr-black);
-}
-
-.p-link:hover,
-.p-link:focus {
-    text-decoration: underline;
-    color: var(--fg-clr-hover);
+::selection {
+    background: var(--bg-clr-pane);
+    color: var(--fg-clr-normal);
 }
 
 .container {
@@ -139,7 +107,42 @@
     font-weight: bold;
     margin: 1rem;
     text-transform: uppercase;
-    
+}
+
+:focus:not(.skip-link):not(.normal-link):not(.calc-button) {
+    border-radius: 0.938rem;
+} 
+
+.normal-link {
+    text-decoration: none;
+    color: var(--bg-clr-pane);
+}
+
+.normal-link:visited {
+    text-decoration: none;
+    color: var(--bg-clr-pane);
+}
+
+.normal-link:hover,
+.normal-link:focus {
+    text-decoration: underline;
+    color: var(--bg-clr-blue);
+}
+
+.footer-link {
+    text-decoration: none;
+    color: var(--fg-clr-wheat);
+}
+
+.footer-link:visited {
+    text-decoration: none;
+    color: var(--fg-clr-wheat);
+}
+
+.footer-link:hover,
+.footer-link:focus {
+    text-decoration: underline;
+    color: var(--fg-clr-normal);
 }
 
 
@@ -177,11 +180,12 @@ span {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
+    height: max-content;
 }
 
-.about {
+/* .about {
     height: 100%;
-}
+} */
 
 .footer-menu {
     display: flex;
@@ -190,7 +194,6 @@ span {
     justify-content: center;
     list-style: none;
 }
-
 
 .p-item > img {
     cursor:zoom-in;
@@ -203,16 +206,14 @@ span {
 }
 
 .footer-section {
-    height: 10rem;
+    height: 100%;
     padding: 1em;
     width: 100%;
     background: var(--bg-clr-menu);
-    border-top-left-radius: .938rem;
-    border-top-right-radius: .938rem;
 }
 
 
-/** enlarge images **/
+/** portfolio: enlarge images **/
 
 #show-image {
     position: fixed;
