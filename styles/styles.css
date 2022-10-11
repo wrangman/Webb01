@@ -89,7 +89,7 @@
 
 .content img {
     /*display: block;*/
-    max-width: 100%;
+    max-width: 350px;
     object-fit: cover;
     border-radius: 0.938rem;
 }
@@ -109,7 +109,7 @@
     text-transform: uppercase;
 }
 
-:focus:not(.skip-link):not(.normal-link):not(.calc-button) {
+:focus:not(.skip-link):not(.normal-link):not(.calc-button):not(.footer-link):not(button) {
     border-radius: 0.938rem;
 } 
 
@@ -327,6 +327,10 @@ span {
         cursor: default;
     }
 
+    .about-header, .grid-header {
+        padding-top: 1.5rem;
+    }
+
     .about-grid {
         display: flex;
         flex-direction: column;
@@ -335,7 +339,8 @@ span {
         width: auto;
         background: none;
         height: 100%;
-        margin-inline: 10px;
+        margin-inline: 1rem;
+        padding-inline: .75rem;
     }
     
     .content img {
