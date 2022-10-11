@@ -1,6 +1,6 @@
 :root {
     --bg-clr-white: whitesmoke;
-    --bg-clr-blue: lightslategray;
+    --bg-clr-gray: lightslategray;
     --bg-clr-accent: #ccc3;
     --bg-clr-pane: #2980b9;
     --bg-clr-menu: #2c3e50;
@@ -115,18 +115,18 @@
 
 .normal-link {
     text-decoration: none;
-    color: var(--bg-clr-pane);
+    color: var(--bg-clr-gray);
 }
 
 .normal-link:visited {
     text-decoration: none;
-    color: var(--bg-clr-pane);
+    color: var(--bg-clr-gray);
 }
 
 .normal-link:hover,
 .normal-link:focus {
     text-decoration: underline;
-    color: var(--bg-clr-blue);
+    color: var(--bg-clr-pane);
 }
 
 .footer-link {
@@ -150,6 +150,7 @@
 
 p {
     font-family: 'Lato', sans-serif;
+    font-size: 1rem;
     margin-bottom: 1.5rem;
     line-height: 1.5;
     cursor: default;
@@ -183,10 +184,6 @@ span {
     height: max-content;
 }
 
-/* .about {
-    height: 100%;
-} */
-
 .footer-menu {
     display: flex;
     flex: 1;
@@ -199,6 +196,7 @@ span {
     cursor:zoom-in;
     border-radius: 0.938rem;
     border: 1px solid black;
+    max-width: 100%;
 }
 
 .grid-col-center {
@@ -255,6 +253,39 @@ span {
         grid-template-columns: 70% 30%;
         gap: 2rem;  
     }  
+
+    .p-item:not(:nth-child(1)):nth-child(2n) {
+        border-block-start: .250rem solid;
+        padding-block-start: .250rem;
+        border-image-source: linear-gradient(90deg, lightslategray, lightslategray, whitesmoke);
+        transition: all 500ms ease-in-out;
+        border-image-slice: 1;
+        
+    }
+
+    .p-item:not(:nth-child(1)):nth-child(2n):hover {
+        background-image: linear-gradient(90deg,  #2980b9 whitesmoke);
+    }
+}
+
+@media screen and (min-width: 1185px) {
+    .p-item:not(:nth-child(1)):nth-child(2n) {
+        border-top: .250rem solid;
+        border-bottom: .250rem solid;
+        border-left: .250rem solid;
+        padding-left: .75rem;
+        padding-block-start: .250rem;
+        border-image-source: linear-gradient(90deg, lightslategray, lightslategray, whitesmoke);
+        border-image-slice: 1;
+    
+        transition: all 500ms ease-in-out;
+    }
+    
+    .p-item:not(:nth-child(1)):nth-child(2n):hover {
+        border-image-source: linear-gradient(90deg, #2980b9,#2980b9, whitesmoke);
+        background-image: linear-gradient(90deg, #b3defb, whitesmoke);
+        background-blend-mode: lighten;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -276,10 +307,26 @@ span {
         width: auto;
         background: var(--bg-clr-white);
         height: auto;
-        padding: 10px;
+        padding: .250rem;
         margin: 0;
     }
+
+    .p-item:nth-child(1) {
+        padding-top: 1.5rem;
+    }
+
+    .p-item:not(:nth-child(1)):nth-child(2n) {
+        padding-top: 2rem;
+    }
     
+    .p-item {
+        padding-inline: 1rem;
+    }
+
+    .p-item > img {
+        cursor: default;
+    }
+
     .about-grid {
         display: flex;
         flex-direction: column;
