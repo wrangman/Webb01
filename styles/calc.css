@@ -68,7 +68,56 @@
     text-align: center;
     line-height: 1.5;
     padding: 10px;
+    border: 10px solid;
+    border-color: transparent;
+    border-image-slice: 1;
+    animation: dance 500ms forwards infinite;
 }
+
+
+/* crazy over-the-top animation for message ;) */
+
+@keyframes dance {
+    0% {
+        border-image-source: linear-gradient(0deg, red, blue);
+       
+    }
+    12.5% {
+        border-image-source: linear-gradient(45deg, red, blue);
+      
+    }
+    25% {
+        border-image-source: linear-gradient(90deg, red, blue);
+      
+    }
+
+    37.5% {
+        border-image-source: linear-gradient(135deg, red, blue);
+        
+    }
+    
+    50% {
+        border-image-source: linear-gradient(180deg, red, blue);
+        
+    }
+    62.5% {
+        border-image-source: linear-gradient(225deg, red, blue);
+        
+    }
+    75% {
+        border-image-source: linear-gradient(270deg, red, blue);
+        
+    }
+    87.5% {
+        border-image-source: linear-gradient(315deg, red, blue);
+        
+    }
+    100% {
+        border-image-source: linear-gradient(360deg, red, blue);
+        
+    }
+}
+
 
 @media screen and (max-width: 768px) {
     .compability-warning {
