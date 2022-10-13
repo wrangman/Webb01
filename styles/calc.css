@@ -26,6 +26,7 @@
     border-radius: 0.5rem;
     background-color: lightgray;
     border: lightslategray 1px solid;
+    box-shadow: inset 1px 1px 0px darkgray;
     font-size:24px;
     margin: 5px;
     font-family: 'Orbitron', monospace;
