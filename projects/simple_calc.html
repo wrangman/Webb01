@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="/styles/menu.css">
+    <link rel="stylesheet" href="/styles/simple_calc.css">
+
+    <script src="/scripts/menu.js" defer></script>
+    <script src="/scripts/simple_calc.js" defer></script>
+    
+    <title>Webbutveckling 01</title>
+</head>
+<body class="container">
+    <header class="main-header">
+        <div class="main-caption">
+            <h1 class="main-title">Webbutveckling 01</h1>
+        </div>
+    </header>
+    <nav>
+        <div class="mobile-nav">
+            <span>Huvudmeny</span>
+            <div class="nav-btn">    
+                <img src="/img/menuicon.png" alt="menu">
+            </div>
+        </div>
+    </nav>
+    <main class="content">
+        <h2 class="sub-title">Enkel räknare (JS)</h2>
+        <p class="plain-text">
+            Detta är ett exempel på Webb01 Javascript-räknare.
+        </p>
+        <div class="main">
+            <div class="calc-screen grid-col-span-4" id="calc-screen"></div>
+            <button class="calc-btn" onClick="addDigit('7');">7</button>
+            <button class="calc-btn" onClick="addDigit('8');">8</button>
+            <button class="calc-btn" onClick="addDigit('9');">9</button>
+            <button class="calc-btn" onClick="btnBackSpace();">&#9003;</button> 
+            <button class="calc-btn" onClick="addDigit('4');">4</button>
+            <button class="calc-btn" onClick="addDigit('5');">5</button>
+            <button class="calc-btn" onClick="addDigit('6');">6</button>
+            <button class="calc-btn" onClick="btnConvertToEuro();">&rarr;&euro;</button> 
+            <button class="calc-btn" onClick="addDigit('1');">1</button>
+            <button class="calc-btn" onClick="addDigit('2');">2</button>
+            <button class="calc-btn" onClick="addDigit('3');">3</button> 
+            <button class="calc-btn" onClick="btnConvertToDollar();">&rarr;&#36;</button>  
+            <button class="calc-btn" onClick="btnConvertNegative();">&plusmn;</button> 
+            <button class="calc-btn" onClick="addDigit('0');">0</button> 
+            <button class="calc-btn" id="btn-calc" onClick="addDigit('.');">.</button>
+            <button class="calc-btn" id="btn-calc" onClick="btnClearAll();">AC</button>
+        </div>
+    </main>
+</body>
+</html>

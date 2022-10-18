@@ -1,6 +1,6 @@
 
 /******************************
- JS Miniräknare
+ JS calc
 *******************************/
 
 #calc-UI {
@@ -50,7 +50,7 @@
     color: rgb(216, 225, 252);
     padding: 1rem;
     border-radius: 0.5rem;
-    font-size:20px;
+    font-size: 1rem;
     background-image: linear-gradient(-45deg, #445669, #566671);
     border-color: gray;
     caret-color: transparent;

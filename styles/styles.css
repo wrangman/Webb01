@@ -1,3 +1,9 @@
+/******************************
+ CSS main
+*******************************/
+
+/* global styling */
+
 :root {
     --bg-clr-white: whitesmoke;
     --bg-clr-gray: lightslategray;
@@ -26,7 +32,6 @@
     left: 0;
     right: 0;
     text-align: center;
-    font-family: 'Lato', sans-serif;
     color: var(--fg-clr-black);
     background-color: var(--bg-clr-3a);
     translate: 0 -100%;
@@ -51,7 +56,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Titillium Web', sans-serif;
     caret-color: transparent;
 }
 
@@ -64,7 +69,6 @@
     background-color: var(--bg-clr-white); 
     width: 100%;
     height: 100%;
-   
 }
 
 .main-header {
@@ -75,7 +79,7 @@
 .main-header .main-caption {
     position: relative;
     background: var(--bg-clr-pane);
-    padding: 1em;
+    padding: .2em;
     z-index: 2;
 }
 
@@ -87,11 +91,11 @@
     margin-inline: auto;
 }
 
-.content img {
+.content > img {
     /*display: block;*/
     max-width: 350px;
     object-fit: cover;
-    border-radius: 0.938rem;
+    /* border-radius: 0.938rem; */
 }
 
 .content .secondary-image {
@@ -101,10 +105,9 @@
 }
 
 .main-title {
-    font-family: 'Raleway', sans-serif;
     color: var(--fg-clr-wheat);
     text-shadow: 1px 1px 1px black;
-    font-weight: bold;
+    font-weight: 700;
     margin: 1rem;
     text-transform: uppercase;
 }
@@ -149,15 +152,12 @@
 /** text styling **/
 
 p {
-    font-family: 'Lato', sans-serif;
-    font-size: 1rem;
     margin-bottom: 1.5rem;
     line-height: 1.5;
     cursor: default;
 }
 
 .sub-title {
-    font-family: 'Raleway', sans-serif;
     margin: .5rem 0 1rem 0rem;
 }
 
@@ -174,7 +174,7 @@ p {
 }
 
 span {
-    font-weight:bold;
+    font-weight: 700;
 }
 
 .about-grid {
@@ -194,7 +194,6 @@ span {
 
 .p-item > img {
     cursor:zoom-in;
-    border-radius: 0.938rem;
     border: 1px solid black;
     max-width: 100%;
 }
@@ -277,7 +276,7 @@ span {
         padding-block-start: .250rem;
         border-image-source: linear-gradient(90deg, lightslategray, lightslategray, whitesmoke);
         border-image-slice: 1;
-    
+        
         transition: all 500ms ease-in-out;
     }
     

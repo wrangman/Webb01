@@ -25,6 +25,11 @@ document.addEventListener("DOMContentLoaded", function() {
                             "menuItem": "htmldiv",
                             "name": "HTML <div>",
                             "href": "/projects/div.html"
+                        },
+                        {
+                            "menuItem": "history",
+                            "name": "HTMLs historia",
+                            "href": "/projects/history.html"
                         }
                     ]
                 },  
@@ -84,6 +89,11 @@ document.addEventListener("DOMContentLoaded", function() {
                             "menuItem": "ccalc",
                             "name": "Färgblandare",
                             "href": "/projects/colorcalc.html"
+                        },
+                        {
+                            "menuItem": "scalc",
+                            "name": "Valutaomvandlare",
+                            "href": "/projects/simple_calc.html"
                         }
                     ]
                 }

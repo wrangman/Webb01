@@ -1,0 +1,57 @@
+/******************************
+ CSS simple calc
+*******************************/
+
+/* global styling */
+
+:root {
+    --fg-clr-plain: #111;                                      /* standard for text */    
+    --bg-clr-light: gainsboro;
+    --bg-clr-gray: darkgray;
+    --bg-clr-iceblue: aliceblue;
+    --line-clr-blue: lightblue;
+    --line-clr-darkgray: rgb(50, 93, 107);
+}
+
+.main {                                                         /*calc body*/
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    gap: .5rem;
+    background-color: var(--bg-clr-iceblue);
+    border: 2px solid var(--line-clr-blue);
+    box-shadow: .125rem .125rem .125rem var(--bg-clr-gray);
+    max-width: 20%;
+    min-height: 35%;
+    padding: 1rem;
+}
+
+.calc-btn {                                                    /*calc buttons*/
+    height:  100%;
+    width: auto;
+    font-size: clamp(1rem, 1vw, 2rem);
+    
+}   
+
+.calc-screen {                                                  /*calculator screen*/
+    font-family: 'Courier New', Courier, monospace;
+    font-size: clamp(.55rem, 3vw, 3.5rem);                     /*clamp is useful if you want the page to be responsive. (minimum size, preferred size, max size) */
+    box-shadow: inset 1px 1px 0px var(--bg-clr-gray);           /*inset means that the shadow is inside the element - not outside - used here to create the illusion of a real screen - feel free to remove and see what you like best */
+    width: 100%;
+    height: clamp(1rem, 3vw, 4rem);
+    border: 1px solid var(--line-clr-darkgray);
+    background: var(--bg-clr-light);
+    color: var(--fg-clr-plain);
+    padding: .125rem;
+}
+
+
+/* specifically for grid */
+
+.grid-col-span-2 {
+    grid-column: span 2;
+}
+
+.grid-col-span-4 {
+    grid-column: span 4;
+}
