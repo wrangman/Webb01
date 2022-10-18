@@ -112,10 +112,6 @@
     text-transform: uppercase;
 }
 
-:focus:not(.skip-link):not(.normal-link):not(.calc-button):not(.footer-link):not(button) {
-    border-radius: 0.938rem;
-} 
-
 .normal-link {
     text-decoration: none;
     color: var(--bg-clr-gray);

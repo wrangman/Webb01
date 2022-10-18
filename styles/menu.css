@@ -1,3 +1,6 @@
+/*******************************
+CSS nav bar
+********************************/
 
 nav {
     transition: all 250ms ease;
@@ -42,10 +45,29 @@ ul li a {
     /* white-space: nowrap; */
 }
 
-li a:hover:not(.normal-link):not(.footer-link) {
-    background-color: var(--bg-clr-accent);
-    border-radius: 0.938rem;
-    color: var(--fg-clr-normal);
+ li a:hover:not(.normal-link):not(.footer-link) {
+    /* background-color: var(--bg-clr-accent); */
+    color: var(--fg-clr-wheat);
+} 
+
+
+li a:not(li ul li a):not(.normal-link):not(.footer-link)::before {
+    content: '';
+    position: relative;
+    top: -20px;
+    display: block;
+    width: 0%;
+    height: 3px;
+    background: var(--fg-clr-normal);
+    transition: all 250ms ease-in-out;
+}
+
+li a:hover:not(li ul li a):not(.normal-link):not(.footer-link)::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: var(--fg-clr-normal);
 }
 
 ul li ul {
@@ -59,10 +81,6 @@ ul li ul {
 li ul li a {
     padding: 10px;
     color: var(--fg-clr-normal);
-}
-
-ul li a:hover {
-    background-color: var(--bg-clr-accent);
 }
 
 ul li ul li {
@@ -83,7 +101,6 @@ li:hover > ul,
 li:focus > ul,
 li:active > ul {
     display: block;
-    border-radius: 0.938rem;
     z-index: 2;
     background-image: var(--bg-clr-menu-hover);
     box-shadow: 5px 5px 7px rgb(57, 57, 57);
@@ -102,17 +119,17 @@ li:active > ul {
     background-repeat: no-repeat;
     color: var(--fg-clr-normal);
 }
-
+/* 
 .dropdown a:hover {
     background-color: var(--bg-clr-accent);
-    border-radius: 0.938rem;
     color: var(--fg-clr-normal);
 }
 
+*/
 .dropdown ul li a:hover {
     background-color: var(--bg-clr-accent);
     color: var(--fg-clr-normal);
- }
+ } 
 
 span {
     font-weight:bold;
@@ -120,7 +137,7 @@ span {
 
 
 /*******************************
-CSS navbar
+CSS mobile bar
 ********************************/
 
 
@@ -225,11 +242,11 @@ CSS navbar
     .dropdown.active > a:hover  {
         background-position: 95% 50%;
     }
-
+/* 
     .dropdown a:hover {
         background-color: var(--bg-clr-accent);
         color: var(--fg-clr-normal);
-    }
+    } */
 
     #row2 img {
         width: 100%;
