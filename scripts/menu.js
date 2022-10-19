@@ -100,6 +100,11 @@ document.addEventListener("DOMContentLoaded", function() {
             ]
         },
         {
+            "menuItem": "help",
+            "href": "/help.html",
+            "name": "Hjälp & Självstudier"
+        },
+        {
             "menuItem": "about",
             "href": "/about.html",
             "name": "Om kursen"

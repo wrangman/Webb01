@@ -13,9 +13,13 @@
     
     --bg-clr-header: rgb(15, 51, 231);
     --bg-clr-blue: rgb(208, 215, 253);
-    --bg-clr-white: whitesmoke;
+    --bg-clr-offwhite: whitesmoke;
 
     --line-clr-black: #111;
+
+    --img-width-small: 150px;
+    --img-width-medium: 300px;
+    --img-width-full: 100%;
 
     --padding-tight: .4rem;
     --padding-normal: 5em;
@@ -29,7 +33,6 @@
 *::after {                                            
     font-family: 'Titillium Web', sans-serif;
     font-weight: var(--ft-weight-400);
-
 }
 
 .header {
@@ -53,9 +56,33 @@
     list-style: none;
 }
 
-/* .content {
-    width: 60%;
-} */
+.main-content {
+    /* width: 60%; */
+    background: var(--bg-clr-offwhite);
+} 
+
+.footer {
+    background: var(--bg-clr-blue);
+}
+
+
+/* image styling */
+
+.inline-image {
+    object-fit: cover;
+}
+
+.inline-image-small {
+    width: var(--img-width-small);
+}
+
+.inline-image-medium {
+    width: var(--img-width-medium);
+}
+
+.inline-image-full {
+    width: var(--img-width-full);
+}
 
 
 /* text styling */
@@ -75,7 +102,6 @@ p {
 
 a {
     text-decoration: none;
-    
 }
 
 .nav-link {

@@ -73,7 +73,7 @@
     border-color: transparent;
     border-image-slice: 1;
     animation: dance 500ms forwards infinite;
-    /* animation-iteration-count: 4; */
+    animation-iteration-count: 4;
 }
 
 
