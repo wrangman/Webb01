@@ -404,7 +404,7 @@ span {
         cursor: default;
     }
 
-    .about-header, .grid-header {
+    .about-header, .grid-header, .p-header {
         padding-top: 1.5rem;
     }
 
