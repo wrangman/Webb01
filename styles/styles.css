@@ -10,7 +10,7 @@
     --bg-clr-accent: #ccc3;
     --bg-clr-pane: #2980b9;
     --bg-clr-menu: #2c3e50;
-    --bg-clr-menu-hover: linear-gradient(-45deg, #314457, #566671);
+    --bg-clr-menu-hover: linear-gradient(to top, #314457, #314457, #566671);
     --bg-clr-footer: linear-gradient(to top, #314457, #566671);
     --bg-clr-grayish: #3a3a3a;
 
@@ -23,7 +23,7 @@
     --fg-clr-hover: #0082c8;
     --fg-clr-rebecca: rebeccapurple;
 
-    --line-clr-black: #111;
+    --line-clr-black: black;
 }
 
 
@@ -76,10 +76,12 @@
 }
 
 .main-header {
-    padding-top: .7rem;
+    position: relative;
+    padding-top: .8rem;
     background-image: linear-gradient(90deg, #141E30, var(--bg-clr-pane), #141E30);
     height: 110px;
     width: 100%;
+    z-index: 2;
 }
 
 .main-caption {
@@ -88,7 +90,7 @@
     flex-direction: column;
     justify-content:space-around;
     align-items: center;
-    z-index: 2;
+   
 }
 
 .content {
@@ -213,6 +215,7 @@ p {
     color: var(--fg-clr-normal);
     text-transform: uppercase;
     letter-spacing: .25rem;
+    font-weight: 100;
 }
 
 .sub-title {
