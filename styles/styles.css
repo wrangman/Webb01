@@ -88,7 +88,7 @@
 }
 
 .content {
-    width: min(70%, 70.5rem);
+    width: 70%;
     padding: 2rem 4rem;
     background-color: var(--bg-clr-white);
     height: auto;
@@ -142,10 +142,14 @@ img {
 
 .p-link {
     text-decoration: none;
-    color: var(--fg-clr-black);
+    color: var(--fg-clr-gray);
 }
 
 .p-link:visited {
+    color: var(--fg-clr-gray);
+}
+
+.p-link:hover {
     color: var(--fg-clr-black);
 }
 
@@ -331,7 +335,7 @@ span {
         padding-block-start: .250rem;
         border-image-source: linear-gradient(90deg, lightslategray,  whitesmoke);
         border-image-slice: 1;
-        filter:opacity(.7);
+        filter:opacity(.8);
         overflow: hidden;
         transition: all 250ms ease-in-out;
     }
