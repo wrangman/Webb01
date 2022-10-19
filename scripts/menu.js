@@ -102,7 +102,7 @@ document.addEventListener("DOMContentLoaded", function() {
         {
             "menuItem": "about",
             "href": "/about.html",
-            "name": "Om"
+            "name": "Om kursen"
         }
     ]`; //Huvudmeny
 
