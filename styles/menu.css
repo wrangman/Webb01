@@ -9,9 +9,9 @@ nav {
 
 nav:hover {
     box-shadow: 
-    0px 1px black,
+    0px 1px var(--line-clr-black),
     0px 5px 7px rgb(57, 57, 57),
-    0px -1px lightgray;
+    0px -2px lightgray;
     background-image: var(--bg-clr-menu-hover);
     transform: translateY(-5px);
 }

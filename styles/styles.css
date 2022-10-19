@@ -22,6 +22,8 @@
     --fg-clr-black: #111;
     --fg-clr-hover: #0082c8;
     --fg-clr-rebecca: rebeccapurple;
+
+    --line-clr-black: #111;
 }
 
 
@@ -339,10 +341,8 @@ span {
     
     .p-sub-grid:hover {
         grid-template-columns: 80% 20%;
-        padding-block-start: .250rem;
         border-image-source: linear-gradient(90deg, #2980b9,#2980b9, whitesmoke);
         background-image: linear-gradient(0deg, whitesmoke, #b3defb);
-        background-blend-mode: lighten;
         height: 180px;
     }
     
