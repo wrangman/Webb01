@@ -24,6 +24,7 @@
     max-width: 20%;
     min-height: 35%;
     padding: 1rem;
+    margin-inline: auto;
 }
 
 .calc-btn {                                                    /*calc buttons*/

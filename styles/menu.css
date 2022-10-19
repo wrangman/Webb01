@@ -2,7 +2,7 @@
 CSS nav bar
 ********************************/
 
-nav {
+nav {  
     transition: all 250ms ease;
     background: var(--bg-clr-menu);
 }
@@ -46,6 +46,7 @@ ul li a {
 
  li a:hover:not(.normal-link):not(.footer-link) {
     color: var(--fg-clr-wheat);
+    font-weight: 400;
 } 
 
 
@@ -151,6 +152,17 @@ span {
 }
 
 
+/* compability & responsiveness */
+
+@media screen and (min-width: 768px) {
+    nav {
+        display: flex;
+        flex: 1;
+        justify-content: space-evenly;
+        gap: .5rem;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .mobile-nav {
         display: flex;
@@ -236,11 +248,6 @@ span {
     .dropdown.active > a:hover  {
         background-position: 95% 50%;
     }
-/* 
-    .dropdown a:hover {
-        background-color: var(--bg-clr-accent);
-        color: var(--fg-clr-normal);
-    } */
 
     #row2 img {
         width: 100%;

@@ -3,12 +3,14 @@
 *******************************/
 
 .colorcalc-UI {
+    margin-inline: auto;
     width: 400px;
     height: 100%;
     padding: 10px;
 }
 
 .colorcalc-result {
+    margin-inline: auto;
     width: 400px;
     padding: 10px;
 }
