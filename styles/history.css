@@ -6,10 +6,10 @@
 
 :root {
     --fg-clr-normal: #111;
+    --fg-clr-gray: #3a3a3a;
     --fg-clr-link: rgb(7, 78, 118);
     --fg-clr-accent: rgb(0, 166, 255);
-    --fg-clr-header: #fff;
-    --fg-clr-gray: #3a3a3a;
+    --fg-clr-white: #fff;
     
     --bg-clr-header: rgb(15, 51, 231);
     --bg-clr-blue: rgb(208, 215, 253);
@@ -89,7 +89,7 @@
 
 .header-caption {
     font-weight: var(--ft-weight-700);
-    color: var(--fg-clr-header);
+    color: var(--fg-clr-white);
 }
 
 p {
@@ -118,4 +118,4 @@ a {
 }
 
 
-/* compability/responsiveness */
+/* compability & responsiveness */
