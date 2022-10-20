@@ -191,7 +191,6 @@ img {
 .footer-link:focus {
     text-decoration: underline;
     color: var(--fg-clr-wheat);
-    font-weight: 400;
 }
 
 
@@ -344,7 +343,6 @@ span {
         padding-block-start: .250rem;
         border-image-source: linear-gradient(90deg, lightslategray,  whitesmoke);
         border-image-slice: 1;
-        filter:opacity(.8);
         overflow: hidden;
         transition: all 250ms ease-in-out;
         box-shadow: inset 0px -10px 10px lightgray;
@@ -354,7 +352,6 @@ span {
         grid-template-columns: 80% 20%;
         border-image-source: linear-gradient(90deg, #2980b9,#2980b9, whitesmoke);
         background-image: linear-gradient(0deg, whitesmoke, #b3defb);
-        filter:opacity(1);
         height: 180px;
         box-shadow:  none;
     }

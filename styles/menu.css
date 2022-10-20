@@ -45,7 +45,6 @@ ul li a {
 
  li a:hover:not(.normal-link):not(.footer-link) {
     color: var(--fg-clr-wheat);
-    font-weight: 400;
 } 
 
 
