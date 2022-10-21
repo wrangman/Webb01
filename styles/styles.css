@@ -10,7 +10,9 @@
     --bg-clr-accent: #ccc3;
     --bg-clr-pane: #2980b9;
     --bg-clr-menu: #2c3e50;
-    --bg-clr-menu-hover: linear-gradient(to top, #314457, #314457, #566671);
+
+    /* --bg-clr-menu: linear-gradient(45deg, #333399, #9c034f); */
+    --bg-clr-menu-hover: linear-gradient(to top, #111,#2c3e50, #566671);
     --bg-clr-footer: linear-gradient(to top, #314457, #566671);
     --bg-clr-grayish: #3a3a3a;
 
@@ -95,7 +97,7 @@
 
 .content {
     width: 70%;
-    padding: 2rem 4rem;
+    padding-block: 4rem;
     background-color: var(--bg-clr-white);
     height: auto;
     margin-inline: auto;
@@ -203,17 +205,19 @@ p {
 }
 
 .main-title {
+    flex-wrap: nowrap;
     color: var(--fg-clr-wheat);
-    text-shadow: 1px 1px 1px black;
+    /* text-shadow: 1px 1px 1px black; */
     font-weight: 700;
+    font-size: 1.4rem;
     text-transform: uppercase;
-    letter-spacing: .75rem;
+    /* letter-spacing: .75rem; */
 }
 
 .header-paragraph {
     color: var(--fg-clr-normal);
     text-transform: uppercase;
-    letter-spacing: .25rem;
+    /* letter-spacing: .25rem; */
     font-weight: 100;
 }
 
@@ -227,10 +231,6 @@ p {
 
 .article-text {
     color: var(--fg-clr-black);
-}
-
-span {
-    font-weight: 700;
 }
 
 .grid-col-center {
@@ -398,6 +398,7 @@ span {
     .main-title {
         text-shadow: 1px 1px 1px black;
         font-weight: 700;
+        font-size: 1.2rem;
         text-transform: uppercase;
         letter-spacing: normal;
     }
