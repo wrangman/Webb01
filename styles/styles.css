@@ -349,6 +349,11 @@ p {
         height: 180px;
         box-shadow:  none;
     }
+
+    .p-flex-list:hover > *:not(.p-sub-grid:hover) {
+        opacity: .6;
+        
+    }
     
     .p-item-img {
         width: 100%;
