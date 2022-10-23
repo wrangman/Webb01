@@ -67,6 +67,11 @@ document.addEventListener("DOMContentLoaded", function() {
                             "menuItem": "colortheory",
                             "name": "Avancerad färgteori",
                             "href": "/projects/colortheory/index.html"
+                        },
+                        {
+                            "menuItem": "menuchange",
+                            "name": "Auto-meny",
+                            "href": "/projects/automenu.html"
                         }
                     ]
                 },

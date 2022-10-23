@@ -12,21 +12,10 @@ CSS nav bar
 nav {  
     transition: all 250ms ease;
     background: var(--bg-clr-menu);
-    box-shadow: 
-    /* inset 0px 2px rgb(189, 189, 189), */
-    inset 0px -1px 1px var(--line-clr-black);
-    /* 0px 5px 5px rgb(57, 57, 57); */  
+    box-shadow: inset 0px -1px 1px var(--line-clr-black);  
     width: 60%;
     margin-inline: auto;
     padding-left: 1rem;
-}
-
-nav:hover {
-    box-shadow: 
-    /*inset 0px 2px rgb(189, 189, 189),*/
-    inset 0px -1px 1px var(--line-clr-black);
-    /* 0px 5px 5px rgb(57, 57, 57); */
-    /* background-image: var(--bg-clr-menu-hover); */
 }
 
 ul {
