@@ -203,14 +203,6 @@ p {
     cursor: default;
 }
 
-.main-title {
-    flex-wrap: nowrap;
-    color: var(--fg-clr-wheat);
-    font-weight: 700;
-    font-size: 1.4rem;
-    text-transform: uppercase;
-}
-
 .header-paragraph {
     color: var(--fg-clr-normal);
     text-transform: uppercase;

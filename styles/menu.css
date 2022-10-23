@@ -3,33 +3,33 @@ CSS nav bar
 ********************************/
 
 .nav-container {
+    position: sticky;
+    top: 0;
+    z-index: 2;
     width: 100%;
     height: auto;
-    background: var(--bg-clr-menu);
+    background: var(--bg-clr-menu);   
 }
 
-
 nav {  
-    transition: all 250ms ease;
-    background: var(--bg-clr-menu);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 250ms ease; 
     box-shadow: inset 0px -1px 1px var(--line-clr-black);  
     width: 60%;
     margin-inline: auto;
     padding-left: 1rem;
 }
 
+.nav {
+    display: flex;
+    flex-shrink: 1;
+}
+
 ul {
     list-style: none;
     display: flex;
-}
-
-ul li a,
-ul li {
-    cursor: pointer;
-    text-transform: uppercase;
-    font-size: 1rem;
-    font-weight: 200;
-    text-decoration: none;
 }
 
 ul li {
@@ -129,10 +129,9 @@ li:active > ul {
  } 
 
  
- /*******************************
- CSS mobile bar
- ********************************/
- 
+/*******************************
+CSS mobile bar
+********************************/
  
 .mobile-nav {
     background: var(--fg-clr-wheat);
@@ -157,12 +156,41 @@ span {
 /* compability & responsiveness */
 
 @media screen and (min-width: 768px) {
-    nav {
-        display: flex;
-        flex: 1;
-        gap: 1rem;
-        justify-content: space-between;
-        align-items: center;
+
+    ul li a,
+    ul li {
+        cursor: pointer;
+        text-transform: uppercase;
+        font-size: .6rem;
+        font-weight: 200;
+        text-decoration: none;
+    }
+
+    .main-title {
+        flex-wrap: nowrap;
+        color: var(--fg-clr-wheat);
+        font-weight: 400;
+        font-size: 1rem;
+        text-transform: uppercase;
+    }
+} 
+
+@media screen and (min-width: 1185px) {
+    ul li a,
+    ul li {
+        cursor: pointer;
+        text-transform: uppercase;
+        font-size: 1rem;
+        font-weight: 200;
+        text-decoration: none;
+    }
+
+    .main-title {
+        flex-wrap: nowrap;
+        color: var(--fg-clr-wheat);
+        font-weight: 700;
+        font-size: 1.4rem;
+        text-transform: uppercase;
     }
 }
 
@@ -207,7 +235,6 @@ span {
         text-transform: uppercase;
        
     }
-
 
     ul li ul a {
         background-color: rgb(128, 127, 127);;
@@ -264,10 +291,8 @@ span {
     }
 }
 
-@supports (position: sticky) {
+/* @supports (position: sticky) {
     .nav-container {
-        position: sticky;
-        top: 0;
-        z-index: 2;
+     
     }
-}
+} */
