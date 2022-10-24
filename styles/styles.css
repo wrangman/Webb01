@@ -343,8 +343,7 @@ p {
     }
 
     .p-flex-list:hover > *:not(.p-sub-grid:hover) {
-        opacity: .6;
-        
+        opacity: .6;        
     }
     
     .p-item-img {

@@ -15,8 +15,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    transition: all 250ms ease; 
-    box-shadow: inset 0px -1px 1px var(--line-clr-black);  
+    transition: all 250ms ease;     
     width: 60%;
     margin-inline: auto;
     padding-left: 1rem;
