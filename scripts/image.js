@@ -1,3 +1,5 @@
+"use strict"
+
 const elemShowImage = document.getElementById('show-image');
 const elemBtnClose = document.getElementById('btn-close');
 
@@ -9,11 +11,9 @@ function loadImage(src, alt) {
     let windowH = window.innerHeight;
     let img = document.createElement("img");
 
-    console.log(windowW, windowH);
-
     img.src = src;
-    img.width = windowW - 100;
-    img.height = windowH - 100;
+    img.width = windowW - 70;
+    img.height = windowH - 70;
     img.style.left = - windowW + 100;
     img.alt = alt;
     img.id = "tempImage";

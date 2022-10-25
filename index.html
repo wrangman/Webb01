@@ -18,7 +18,7 @@
 </head>
 <body class="container">
     <a class="skip-link" href="#main-content">Skip to main content</a>
-    <div class="nav-container">
+    <header class="nav-container">
         <nav>
             <h1 class="main-title">Webbutveckling 01</h1>
             <div class="mobile-nav">
@@ -28,54 +28,77 @@
                 </div>
             </div>
         </nav>
-    </div>
+    </header>
     <main class="content" id="main-content">
-        <section class="about-grid">
-            <header class="about-header grid-col-span-2 grid-col-center">
-                <h2 class="sub-title">Välkommen till Webbutveckling 01</h2>
-            </header>
-            <article class="about">
-                <h3 class="sub-title">Vad vi kommer göra</h3>
+        <header class="about-header grid-col-span-2 grid-col-center">
+            <h2 class="sub-title">Välkommen till Webbutveckling 01</h2>
+        </header>
+        <div class="about-grid">
+            <section class="about">
+                <header>
+                    <h3 class="sub-title">Vad vi kommer göra</h3>
+                </header>
                 <p class="plain-text">
                     I denna kurs kommer du själv få lära dig skriva kod och bygga många olika typer av hemsidor för olika ändamål. Till en början kommer det vara relativt noga styrt kring hur du ska bygga hemsidorna. Längre fram kommer du att få mer frihet i hur dina hemsidor ska se ut.
                 </p>
-            </article>
+            </section>
             <div class="about grid-col-center">
                 <img class="main-image" src="img/webb.png" alt="">
             </div>
             <div class="about grid-col-center">
                 <img class="secondary-image" src="img/vsclogo.jpg" alt="visual studio code logo">
-            </div>
-            <article class="about">
-                <h3 class="sub-title">Verktyg</h3>
+            </div>  
+            <section class="about">
+                <header>
+                    <h3 class="sub-title">Visual Studio Code</h3>
+                </header>
                 <p class="plain-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus inventore, mollitia quod quas eos beatae? Doloribus at architecto dicta assumenda! Eligendi, vitae dolore ipsum incidunt perspiciatis quasi in aliquam, fuga error animi recusandae laboriosam, Lorem, ipsum dolor. <a class="normal-link" href="#">Zulu Romeo</a>, sit amet consectetur adipisicing elit. Eius dolor dolore ipsum adipisci eum reiciendis et, necessitatibus quae, aliquam vitae unde inventore? Ab sint dolorum ex laboriosam esse quia accusantium, dolorem tenetur quae. Inventore distinctio nihil ipsum! Esse, rem assumenda.
+                    Vi arbetar främst med <span>Visual Studio Code</span> för att skriva HTML, CSS och Javascript. Vi använder även webbläsarnas <span>DevTools</span> för att felsöka kod eller för att prova responsivitet. För att komma åt DevTools, högerklicka på en hemsida och välj &quot;Inspect&quot;. <a class="normal-link" href="https://code.visualstudio.com/download">Ladda ner Visual Studio Code här</a> och installera om du inte har det på din dator än.
                 </p>
-            </article>
-            <article class="about grid-col-span-2">
-                <h3 class="sub-title">Hjälp &amp; Självstudier</h3>
-                <p class="plain-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae culpa qui molestias facilis, cumque at provident a! Excepturi, neque molestias. </p>
+            </section>
+            <section class="about grid-col-span-2">
+                <header>
+                    <h3 class="sub-title">Några snabbkommandon</h3>
+                </header>
+                <p class="plain-text">Här är några snabbkommandon du bör lära dig så du kan jobba mer effektivt:
                 <ol>
-                    <li><a class="normal-link" href="#">Lorem, ipsum dolor.</a></li>
-                    <li><a class="normal-link" href="#">Lorem, ipsum dolor.</a></li>
-                    <li><a class="normal-link" href="#">Lorem, ipsum dolor.</a></li>
-                    <li><a class="normal-link" href="#">Lorem, ipsum dolor.</a></li>
-                    <li><a class="normal-link" href="#">Lorem, ipsum dolor.</a></li>
+                    <li><kbd>F12</kbd>&#47;<kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>I</kbd> = visa DevTools</li>
+                    <li><kbd>CTRL</kbd> + <kbd>Z</kbd> = ångra</li>
+                    <li><kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>Z</kbd> = gör om</li>
+                    <li><kbd>CTRL</kbd> + <kbd>ALT</kbd> + <kbd>&darr;</kbd> &#47; <kbd>&uarr;</kbd> = Lägg till markör</li>
+                    <li><kbd>ESC</kbd> = ta bort flera markörer</li>
+                    <li><kbd>CTRL</kbd> + <kbd>D</kbd> = markera samma</li>
+                    <li><kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>L</kbd> = hitta alla i dokumentet</li>
+                    <li><kbd>ALT</kbd> + <kbd>&darr;</kbd> &#47; <kbd>&uarr;</kbd> = flytta aktuell rad upp eller ned</li>
                 </ol>
-            </article>
-        </section>
+            </section>
+            <section class="about grid-col-span-2">
+                <header>
+                    <h3 class="sub-title">Få hjälp</h3>
+                </header>
+                <p class="plain-text">Använd dessa länkar för att gå till olika Youtube-videos eller exempel. Du kan även titta på Google Classroom under kursen. Alla länkar finns under Hjälp &amp; Självstudier.
+                <ol>
+                    <li><a class="normal-link" href="#">Visual Studio Code tips &amp; tricks</a></li>
+                    <li><a class="normal-link" href="#">HTML för nybörjare</a></li>
+                    <li><a class="normal-link" href="#">CSS för nybörjare</a></li>
+                    <li><a class="normal-link" href="#">Javascript för nybörjare</a></li>
+                    <li><a class="normal-link" href="#">Grid eller Flex - vad ska man använda?</a></li>
+                    <li><a class="normal-link" href="#">Ladda ner exempelkod för miniräknare</a></li>
+                </ol>
+            </section>
+        </div>
     </main>
     <footer class="footer-section">
         <div class="footer-grid">
             <div>
             </div>
             <div>
-                <ol class="footer-menu">
-                    <li><a class="footer-link" href="#">Tillbaka till toppen</a></li>
-                    <li><a class="footer-link" href="#">Kontakta oss</a></li>
-                    <li><a class="footer-link" href="#">Hjälp</a></li>
-                    <li><a class="footer-link" href="#">Om oss</a></li>
-                    <li><a class="footer-link" href="#">Villkor</a></li>
+                <ol class="footer-navigation">
+                    <li><a class="footer-link" href="#">&uarr; Tillbaka till toppen</a></li>
+                    <li><a class="footer-link" href="portfolio.html">Portfolio</a></li>
+                    <li><a class="footer-link" href="help.html">Hjälp</a></li>
+                    <li><a class="footer-link" href="about.html">Om kursen</a></li>
+                    <li><a class="footer-link" href="mailto:johan.wrango@ga.ntig.se">Kontakta oss</a></li>
                 </ol>
             </div>
             <div>

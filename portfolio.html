@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;700&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/menu.css">
@@ -18,7 +18,7 @@
     <title>Webbutveckling 01</title>
 </head>
 <body class="container">
-    <div class="nav-container">
+    <header class="nav-container">
         <nav>
             <h1 class="main-title">Webbutveckling 01</h1>
             <div class="mobile-nav">
@@ -28,83 +28,101 @@
                 </div>
             </div>
         </nav>
-    </div>
+    </header>
     <main class="content">
-        <div class="p-main">
-            <header class="p-header grid-col-center">
-                <h2 class="sub-title">Portfolio</h2>
-            </header>
-            <p class="plain-text">Här är några av uppgifterna och projekten vi kommer göra i kursen. Håll musen över en post du vill veta mer om och klicka på bilden för att förstora den. Klicka på titeln för att gå till respektive uppgift eller projekt.</p>
-            <div class="p-flex-list">
-                <div class="p-sub-grid">
-                    <div class="p-item-item">
-                        <h3 class="sub-title">
-                            <a class="normal-link" href="projects/position/index.html">Position CSS</a>
-                        </h3>
-                        <p class="plain-text">
-                            <a class="p-link" href="projects/position/index.html">I första momentet kommer vi jobba med grundläggande HTML, CSS. Denna specifika uppgift tittar vi på egenskapen position och vad den har för värden. T.ex. static, absolute, relative, fixed och sticky. Ni härmar en hemsida och prövar olika värden i position-egenskapen.</a>
-                        </p>
-                    </div>
-                    <div class="p-sub-item grid-col-center">    
-                        <img class="p-item-img" src="img/position_500p.png" onClick="loadImage('/img/position_1080p.png', 1920, 1080, 'position');" alt="positionsexempel i css">
-                    </div>
+        <header class="p-header grid-col-center">
+            <h2 class="sub-title">Portfolio</h2>
+        </header>
+        <p class="plain-text">
+            Här är några av uppgifterna och projekten vi kommer göra i kursen. Håll musen över en post du vill veta mer om och klicka på bilden för att förstora den. Klicka på titeln för att gå till respektive uppgift eller projekt.    
+        </p>
+        <div class="p-flex-list">
+            <div class="p-sub-grid">
+                <div class="p-item-item">
+                    <h3 class="sub-title">
+                        <a class="normal-link" href="projects/position/index.html">Position CSS</a>
+                    </h3>
+                    <p class="plain-text">
+                        <a class="p-link" href="projects/position/index.html">I första momentet kommer vi jobba med grundläggande HTML, CSS. Denna specifika uppgift tittar vi på egenskapen position och vad den har för värden. T.ex. static, absolute, relative, fixed och sticky. Ni härmar en hemsida och prövar olika värden i position-egenskapen.</a>
+                    </p>
                 </div>
-                <div class="p-sub-grid">
-                    <div class="p-sub-item">
-                        <h3 class="sub-title">
-                            <a class="normal-link" href="projects/grid.html">Grid-exempel i CSS</a>
-                        </h3>
-                        <p class="plain-text">
-                            <a class="p-link" href="projects/grid.html">Nu är det dags att lära sig ett kraftfullt verktyg, nämligen grid. Grid kan ses som en tabell, men mycket snabbare och smidigare än den äldre versionen table. Grid och flex är kusiner kan man säga. Medan flex tillåter sina childs att ha kontroll, är grid mera strikt över sina childs.</a>
-                        </p>
-                    </div>
-                    <div class="p-sub-item grid-col-center">
-                        <img class="p-item-img" src="img/grid_500px.png" onClick="loadImage('/img/grid_1080p.png', 'grid');" alt="gridexempel i css">
-                    </div>
+                <div class="p-sub-item grid-col-center">    
+                    <img class="p-item-img" src="img/position_500p.png" onClick="loadImage('/img/position_1080p.png', 1920, 1080, 'position');" alt="positionsexempel i css">
                 </div>
-                <div class="p-sub-grid">
-                    <div class="p-sub-item">
-                        <h3 class="sub-title">
-                            <a class="normal-link" href="projects/colorcalc.html">Färgblandare i Javascript</a>
-                        </h3>
-                        <p class="plain-text">
-                            <a class="p-link" href="projects/colorcalc.html">I detta projekt ska du skapa en JavaScript-räknare som gör något unikt som t.ex. BMI eller valutaomvandling. Se det som ett större projekt där du använder allt du lärt dig hittills. Skapa därför en helt ny webbsida med ett genomtänkt gränssnitt.</a>
-                        </p>
-                    </div>
-                    <div class="p-sub-item grid-col-center">
-                        <img class="p-item-img" src="img/colorc_500p.png" onClick="loadImage('/img/colorc_1080p.png', 'färgblandare');" alt="färgblandare i javascript">
-                    </div>
+            </div>
+            <div class="p-sub-grid">
+                <div class="p-sub-item">
+                    <h3 class="sub-title">
+                        <a class="normal-link" href="projects/grid.html">Grid-exempel i CSS</a>
+                    </h3>
+                    <p class="plain-text">
+                        <a class="p-link" href="projects/grid.html">Nu är det dags att lära sig ett kraftfullt verktyg, nämligen grid. Grid kan ses som en tabell, men mycket snabbare och smidigare än den äldre versionen table. Grid och flex är kusiner kan man säga. Medan flex tillåter sina childs att ha kontroll, är grid mera strikt över sina childs.</a>
+                    </p>
                 </div>
-                <div class="p-sub-grid">
-                    <div class="p-sub-item">
-                        <h3 class="sub-title">
-                            <a class="normal-link" href="projects/calc.html">Miniräknare i Javascript</a>
-                        </h3>
-                        <p class="plain-text">
-                            <a class="p-link" href="projects/calc.html">I detta projekt ska du skapa en JavaScript-miniräknare som kan räkna med alla fyra räknesätten. Se det som ett större projekt där du använder allt du lärt dig hittills. Skapa därför en helt ny webbsida med ett genomtänkt gränssnitt.</a>
-                        </p>
-                    </div>
-                    <div class="p-sub-item grid-col-center">
-                        <img class="p-item-img" src="img/calc_500p.png" onClick="loadImage('/img/calc_1080p.png', 'räknare');" alt="kalkylator i javascript">
-                    </div>
+                <div class="p-sub-item grid-col-center">
+                    <img class="p-item-img" src="img/grid_500px.png" onClick="loadImage('/img/grid_1080p.png', 'grid');" alt="gridexempel i css">
                 </div>
-                <div class="p-sub-grid">
-                    <div class="p-sub-item">
-                        <h3 class="sub-title">
-                            <a class="normal-link" href="projects/history.html">HTMLs Historia och DOM</a>
-                        </h3>
-                        <p class="plain-text">
-                            <a class="p-link" href="projects/history.html">I detta moment kommer vi titta på HTMLs historia samt andra aspekter av webben. Allt ifrån responsivitet, tillgänglighet och anpassning för alla sorts användare. Det finns t.ex. särskilda taggar och metoder man kan använda för att skapa en mer responsiv sida och/eller en mer tillgänglig sida.
-                            </a>
-                        </p>
-                    </div>
-                    <div class="p-sub-item grid-col-center">
-                        <img class="p-item-img" src="img/history_500p.png" onClick="loadImage('/img/history_1080p.png', 'history');" alt="HTMLs historia">
-                    </div>
+            </div>
+            <div class="p-sub-grid">
+                <div class="p-sub-item">
+                    <h3 class="sub-title">
+                        <a class="normal-link" href="projects/colorcalc.html">Färgblandare i Javascript</a>
+                    </h3>
+                    <p class="plain-text">
+                        <a class="p-link" href="projects/colorcalc.html">I detta projekt ska du skapa en JavaScript-räknare som gör något unikt som t.ex. BMI eller valutaomvandling. Se det som ett större projekt där du använder allt du lärt dig hittills. Skapa därför en helt ny webbsida med ett genomtänkt gränssnitt.</a>
+                    </p>
+                </div>
+                <div class="p-sub-item grid-col-center">
+                    <img class="p-item-img" src="img/colorc_500p.png" onClick="loadImage('/img/colorc_1080p.png', 'färgblandare');" alt="färgblandare i javascript">
+                </div>
+            </div>
+            <div class="p-sub-grid">
+                <div class="p-sub-item">
+                    <h3 class="sub-title">
+                        <a class="normal-link" href="projects/calc.html">Miniräknare i Javascript</a>
+                    </h3>
+                    <p class="plain-text">
+                        <a class="p-link" href="projects/calc.html">I detta projekt ska du skapa en JavaScript-miniräknare som kan räkna med alla fyra räknesätten. Se det som ett större projekt där du använder allt du lärt dig hittills. Skapa därför en helt ny webbsida med ett genomtänkt gränssnitt.</a>
+                    </p>
+                </div>
+                <div class="p-sub-item grid-col-center">
+                    <img class="p-item-img" src="img/calc_500p.png" onClick="loadImage('/img/calc_1080p.png', 'räknare');" alt="kalkylator i javascript">
+                </div>
+            </div>
+            <div class="p-sub-grid">
+                <div class="p-sub-item">
+                    <h3 class="sub-title">
+                        <a class="normal-link" href="projects/history.html">HTMLs Historia och DOM</a>
+                    </h3>
+                    <p class="plain-text">
+                        <a class="p-link" href="projects/history.html">I detta moment kommer vi titta på HTMLs historia samt andra aspekter av webben. Allt ifrån responsivitet, tillgänglighet och anpassning för alla sorts användare. Det finns t.ex. särskilda taggar och metoder man kan använda för att skapa en mer responsiv sida och/eller en mer tillgänglig sida.
+                        </a>
+                    </p>
+                </div>
+                <div class="p-sub-item grid-col-center">
+                    <img class="p-item-img" src="img/history_500p.png" onClick="loadImage('/img/history_1080p.png', 'history');" alt="HTMLs historia">
                 </div>
             </div>
         </div>
     </main>
+    <footer class="footer-section">
+        <div class="footer-grid">
+            <div>
+            </div>
+            <div>
+                <ol class="footer-navigation">
+                    <li><a class="footer-link" href="#">&uarr; Tillbaka till toppen</a></li>
+                    <li><a class="footer-link" href="portfolio.html">Portfolio</a></li>
+                    <li><a class="footer-link" href="help.html">Hjälp</a></li>
+                    <li><a class="footer-link" href="about.html">Om kursen</a></li>
+                    <li><a class="footer-link" href="mailto:johan.wrango@ga.ntig.se">Kontakta oss</a></li>
+                </ol>
+            </div>
+            <div>
+                <p class="footer-text">Copyright &copy; 2022 - Johan Wrangö / litespoon Studios</p>
+            </div>
+        </div> 
+    </footer>
     <div id="show-image">
     </div>
 </body>

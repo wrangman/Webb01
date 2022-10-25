@@ -17,7 +17,7 @@
     <title>Om Webbutveckling 01</title>
 </head>
 <body class="container">
-    <div class="nav-container">
+    <header class="nav-container">
         <nav>
             <h1 class="main-title">Webbutveckling 01</h1>
             <div class="mobile-nav">
@@ -27,29 +27,88 @@
                 </div>
             </div>
         </nav>
-    </div>
+    </header>
     <main class="content">
-        <section class="about-grid">
-            <header class="about-header grid-col-span-2 grid-col-center">
-                <h2 class="sub-title">Hjälp &amp; Självstudier</h2>
-            </header>
-            <article class="about">
-                <h3 class="sub-title">HTML</h3>
+        <header class="about-header grid-col-center">
+            <h2 class="sub-title">Hjälp &amp; Självstudier</h2>
+        </header>
+        <div class="about-grid">
+            <section class="about grid-col-span-2">
+                <header>
+                    <h3 class="sub-title">Användbara länkar &amp; exempel</h3>
+                </header>
                 <p class="plain-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio ab minus velit aperiam sit nobis perspiciatis possimus soluta? Laborum vel, facilis nemo id maiores accusantium nobis pariatur, deleniti aut neque dicta beatae aliquid aperiam, in voluptates! Cumque eaque consequatur sunt consequuntur qui temporibus cum ut laborum corporis nihil provident mollitia nesciunt quod voluptates, corrupti doloribus ea repellat maiores voluptatem aliquid vitae incidunt natus! Sit minima iste maxime dignissimos incidunt laborum quo magnam ratione, error aut reprehenderit ipsam ea pariatur aperiam! Porro facere inventore, officiis voluptatibus ipsa voluptate doloremque deleniti, eaque distinctio dolores commodi nesciunt nostrum, quidem beatae maxime suscipit.
+                    Använd dessa länkar för att gå till olika Youtube-videos eller exempel. Du kan även titta på Google Classroom under kursen. Alla länkar finns under Hjälp &amp; Självstudier.
                 </p>
-                <h3 class="sub-title">CSS</h3>
+                <ol>
+                    <li><a class="normal-link" href="#">Visual Studio Code tips &amp; tricks</a></li>
+                    <li><a class="normal-link" href="#">HTML för nybörjare</a></li>
+                    <li><a class="normal-link" href="#">CSS för nybörjare</a></li>
+                    <li><a class="normal-link" href="#">Javascript för nybörjare</a></li>
+                    <li><a class="normal-link" href="#">Grid eller Flex - vad ska man använda?</a></li>
+                    <li><a class="normal-link" href="#">Ladda ner exempelkod för miniräknare</a></li>
+                </ol>
+            </section>
+            <section class="about grid-col-span-2">
+                <header>
+                    <h3 class="sub-title">Grundläggande terminologi</h3>
+                </header>
                 <p class="plain-text">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto illo delectus assumenda, omnis, inventore nisi laborum neque eaque autem, soluta quis accusamus distinctio laboriosam? Numquam illum quo impedit, cumque voluptatum autem eligendi assumenda amet officiis rem debitis voluptatibus veniam quae quia accusamus. Earum odio minima assumenda impedit accusamus perspiciatis officia incidunt, debitis vitae nam dolorum, nostrum voluptate! Maiores, facere temporibus?
+                    <span>HTML (HyperText Markup Language)</span> - the language used to write web pages
                 </p>
-            </article>
-            <article class="about">
-                <h3 class="sub-title">Javascript</h3>
                 <p class="plain-text">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas quod inventore esse, aperiam fuga pariatur laborum adipisci, possimus labore mollitia cum libero repellat optio natus dolorum tempora! Assumenda laboriosam molestias ullam provident perspiciatis dolorem iusto? Dolor repellat suscipit amet? Ipsa est quos hic blanditiis quas maiores architecto error, praesentium, molestiae enim at nostrum cum vero reprehenderit dolore mollitia quidem voluptate! Laborum aperiam rem, earum blanditiis ipsam necessitatibus assumenda alias facere doloremque adipisci deleniti aut eius voluptatibus fuga eum amet corporis velit? Deleniti optio illo voluptas voluptates explicabo. Vitae dicta magni, earum labore veritatis hic asperiores error iusto. Vel tempore, obcaecati veniam molestias distinctio pariatur, et non quas, enim aliquam temporibus.
+                    <span>CSS (Cascading Style Sheets)</span> - the language for describing the presentation of Web pages, including colors, layout, and fonts
                 </p>
-            </article>  
-        </section>
+                <p class="plain-text">
+                    <span>DOM (Document Object Model)</span> - the client creates a DOM with the html document it received from the server
+                </p>
+                <p class="plain-text">
+                    <span>Source file</span> - the set of tags and text which make up a web page. Browsers process the source file to make the web page look the way the designer wanted it to look
+                </p>
+                <p class="plain-text">
+                    <span>URL (Uniform Resource Locator)</span> - a web address; indicates the location of a web resource as well as the protocol needed to access it
+                </p>
+                <p class="plain-text">
+                    <span>Protocol</span> - ground rules or "language" that internet computers use to "talk" with each other
+                </p>
+                <p class="plain-text">
+                    <span>HTTP (HyperText Transfer Protocol)<span> - the internet protocol which allows web pages to work
+                </p>
+                <p class="plain-text">
+                    <span>FTP (File Transfer Protocol)</span> - allows computers to exchange files over a network
+                </p>
+                <p class="plain-text">
+                    <span>Web page</span> - a single page on the web (a "homepage" is the first web page on a web site)
+                </p>
+                <p class="plain-text">
+                    <span>Web site</span> - a collection of web pages, usually on a particular topic or business
+                </p>
+                <p class="plain-text">
+                    <span>Web browser&#47;navigator&#47;client</span> - the software application which displays web pages
+                </p>
+                <p class="plain-text">
+                    <span>Web server&#47;Back-end</span> - the computer or network of computers which stores 
+                </p>
+            </section>
+        </div>
     </main>
+    <footer class="footer-section">
+        <div class="footer-grid">
+            <div>
+            </div>
+            <div>
+                <ol class="footer-navigation">
+                    <li><a class="footer-link" href="#">&uarr; Tillbaka till toppen</a></li>
+                    <li><a class="footer-link" href="portfolio.html">Portfolio</a></li>
+                    <li><a class="footer-link" href="help.html">Hjälp</a></li>
+                    <li><a class="footer-link" href="about.html">Om kursen</a></li>
+                    <li><a class="footer-link" href="mailto:johan.wrango@ga.ntig.se">Kontakta oss</a></li>
+                </ol>
+            </div>
+            <div>
+                <p class="footer-text">Copyright &copy; 2022 - Johan Wrangö / litespoon Studios</p>
+            </div>
+        </div> 
+    </footer>
 </body>
 </html>

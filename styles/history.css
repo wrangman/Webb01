@@ -42,7 +42,7 @@
     background: var(--bg-clr-header);
 }
 
-.main-navigation  {
+.primary-navigation  {
     width: 100%;
     height: 40px;
     background: var(--bg-clr-blue);
