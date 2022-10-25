@@ -48,7 +48,7 @@
     background: var(--bg-clr-blue);
 }
 
-.main-nav-links {
+.primary-navigation__links {
     display: flex;
     flex: 1;
     justify-content: space-evenly;
