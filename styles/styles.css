@@ -267,6 +267,11 @@ p {
 @media screen and (min-width: 768px) {                /*resolution is at least 768 px */
     .content {
         height: auto;
+        width: 80%;
+        padding: 3rem 1rem;
+        background-color: var(--bg-clr-white);
+        height: auto;
+        margin-inline: auto;
     }
     
     .p-flex-list {
@@ -329,6 +334,11 @@ p {
 }
 
 @media screen and (min-width: 1185px) {                         /*resolution is at least 1185 px */
+
+    .content {
+        width: 60%;
+    }
+
     .p-flex-list {
         display: flex;
         flex-direction: column;
