@@ -124,15 +124,19 @@ img {
     object-fit: cover;
 }
 
-.content .main-image {
+.main-image {
     max-width: 90%;
 }
 
-.content .secondary-image {
+.secondary-image {
     max-width: 50%;
     border-radius: 100%;
 }
 
+.about-image {
+    max-width: 100%;
+    
+}
 
 /* about page */
 
