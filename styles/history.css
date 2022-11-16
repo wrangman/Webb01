@@ -6,7 +6,7 @@
 
 :root {
     --fg-clr-normal: #111;
-    --fg-clr-gray: #3a3a3a;
+    --fg-clr-text: #3a3a3a;
     --fg-clr-link: rgb(7, 78, 118);
     --fg-clr-accent: rgb(0, 166, 255);
     --fg-clr-white: #fff;
@@ -22,7 +22,8 @@
     --img-width-full: 100%;
 
     --padding-tight: .4rem;
-    --padding-normal: 5em;
+    --padding-normal: 2em;
+    --padding-menu: 1rem;
 
     --ft-weight-400: 400;
     --ft-weight-700: 700;
@@ -33,17 +34,39 @@
 *::after {                                            
     font-family: 'Titillium Web', sans-serif;
     font-weight: var(--ft-weight-400);
+    margin: 0;
+    padding: 0;
 }
 
-.header {
-    margin: 0 auto;
+body {
+
+    background: var(--bg-clr-offwhite);
+}
+
+header {
     width: 100%;
     background: var(--bg-clr-header);
 }
 
-.primary-navigation  {
+nav {
     width: 100%;
     background: var(--bg-clr-blue);
+}
+
+.main-header {
+    margin: 0 auto;
+    width: 60%;
+    background: var(--bg-clr-header);
+    padding: var(--padding-normal);
+    margin-inline: auto;
+    /* text-align: center; */
+}
+
+.primary-navigation  {
+    /* width: 60%; */
+    background: var(--bg-clr-blue);
+    padding: var(--padding-menu);
+    /* margin-inline: auto; */
 }
 
 .primary-navigation__links {
@@ -54,12 +77,15 @@
 }
 
 .main-content {
-    /* width: 60%; */
+    width: 60%;
     background: var(--bg-clr-offwhite);
+    padding: var(--padding-normal);
+    margin-inline: auto;
 } 
 
 .footer {
     background: var(--bg-clr-blue);
+    padding: var(--padding-menu);
 }
 
 
@@ -90,10 +116,13 @@
 }
 
 p {
-    padding: var(--padding-tight);
-    color: var(--fg-clr-gray);
+    padding-top: var(--padding-normal);
+    color: var(--fg-clr-text);
 }
 
+.sub-title {
+    background-color: var(--bg-clr-offwhite);
+}
 
 /* link styling */
 
