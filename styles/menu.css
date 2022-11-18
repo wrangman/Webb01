@@ -69,7 +69,7 @@ li a:hover:not(li ul li a):not(.normal-link):not(.footer-link)::before {
     left: 0;
     height: 2px;
     background: var(--fg-clr-wheat);
-    box-shadow: 0 30px 30px 1px  var(--fg-clr-wheat); 
+    /* box-shadow: 0 30px 30px 1px  var(--fg-clr-wheat);  */
 }
 
 ul li ul {

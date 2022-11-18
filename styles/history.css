@@ -13,7 +13,7 @@
     --fg-clr-accent: rgb(0, 166, 255);
     --fg-clr-white: #fff;
     
-    --bg-clr-header: rgb(15, 51, 231);
+    --bg-clr-header: #191654;
     --bg-clr-blue: rgb(208, 215, 253);
     --bg-clr-offwhite: whitesmoke;
 
@@ -49,6 +49,16 @@ header {
     background: var(--bg-clr-header);
 }
 
+.header-html {
+    padding-top: 2rem;  
+    background: none;
+}
+
+.header-dom {
+    padding-top: 2rem;
+    background: none;
+}
+
 nav {
     width: 100%;
     background: var(--bg-clr-blue);
@@ -58,7 +68,6 @@ nav {
     position: relative;
     margin: 0 auto;
     width: 60%;
-    background: var(--bg-clr-header);
     padding: var(--padding-normal);
     margin-inline: auto;
     
@@ -66,7 +75,6 @@ nav {
 
 .primary-navigation  {
     width: 60%;
-    background: var(--bg-clr-blue);
     padding-inline: var(--padding-menu);
     margin-inline: auto;
     margin-block: 0px;
@@ -79,7 +87,6 @@ nav {
     align-items: center;
     list-style: none;
     height: 66px;
-
 }
 
 .main-content {
@@ -89,11 +96,26 @@ nav {
     margin-inline: auto;
 } 
 
+.main-content__history {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.main-content__dom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
 .footer {
     background: var(--bg-clr-blue);
     padding: var(--padding-menu);
 }
 
+.grid-col-span-2 {
+    grid-column: span 2;
+}
 
 /* image styling */
 
@@ -122,8 +144,11 @@ nav {
 }
 
 p {
-    padding-top: var(--padding-normal);
     color: var(--fg-clr-text);
+}
+
+.normal-text {
+    padding-top: var(--padding-normal);
 }
 
 .sub-title {
@@ -134,7 +159,22 @@ p {
 
 a {
     text-decoration: none;
+} 
+
+/* a:visited {
+    color: var(--link-clr-normal);
 }
+
+li a:active {
+    color: var(--link-clr-active);
+     
+}
+
+a:hover {
+    text-decoration: underline;
+    color: var(--link-clr-hover);
+    box-shadow: 0 10px 1px 10px red;
+} */
 
 .nav-link {
     color: var(--link-clr-normal)
@@ -148,14 +188,14 @@ li .nav-link:active {
     background: var(--link-clr-active);
     color: var(--fg-clr-white);
     box-shadow: 
-        0px -20px 1px 20px var(--link-clr-active),
+        0px -1px 1px 20px var(--link-clr-active),
         0px 1px 1px 20px var(--link-clr-active);
 }
 
 .nav-link:hover {
     background: var(--link-clr-hover);
     box-shadow: 
-        0px -20px 1px 20px var(--link-clr-hover),
+        0px -1px 1px 20px var(--link-clr-hover),
         0px 1px 1px 20px var(--link-clr-hover);
 }
 
@@ -198,10 +238,11 @@ li .nav-link:active {
 */
 
 
-/* animation n stuff */
+/* animations 'n' stuff */
 
 .fade-welcome-swe {
     color: var(--fg-clr-accent);
+    font-size: 1.5rem;
     opacity: 1;
     animation: fade-swe 3s ease-in-out infinite;
     animation-iteration-count: 3;
@@ -209,6 +250,7 @@ li .nav-link:active {
   
 .fade-welcome-eng {
     position: absolute;
+    font-size: 1.5rem;
     top: 32px;
     color: var(--fg-clr-accent);
     opacity: 0;
@@ -229,7 +271,6 @@ li .nav-link:active {
         opacity: 1;
     }
 }
-
 
 @keyframes fade-eng {
     0%, 25% {
