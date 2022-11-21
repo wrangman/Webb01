@@ -26,6 +26,7 @@
     --padding-tight: .4rem;
     --padding-normal: 2em;
     --padding-menu: 1rem;
+    --padding-footer: 2rem;
 
     --ft-weight-400: 400;
     --ft-weight-700: 700;
@@ -60,6 +61,8 @@ header {
 }
 
 nav {
+    position: sticky;
+    top: 0;
     width: 100%;
     background: var(--bg-clr-blue);
 }
@@ -110,12 +113,13 @@ nav {
 
 .footer {
     background: var(--bg-clr-blue);
-    padding: var(--padding-menu);
+    padding: var(--padding-footer);
 }
 
 .grid-col-span-2 {
     grid-column: span 2;
 }
+
 
 /* image styling */
 
