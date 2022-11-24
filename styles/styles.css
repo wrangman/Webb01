@@ -327,6 +327,10 @@ p {
     .p-sub-grid:hover {
         border-image-source: linear-gradient(90deg, #2980b9,#2980b9, whitesmoke);
     }
+
+    .p-sub-item {
+        padding-right: .5rem;
+    }
     
     .p-item-img {
         max-width: 100%;
