@@ -514,5 +514,18 @@ p {
         gap: .1rem;
         align-items: baseline;
     }
+
+    .footer-navigation {
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-end;
+        padding-inline: 1rem;
+    }
+
+    .footer-navigation > li {
+        text-align: right;
+    }
+
+
 }
 
