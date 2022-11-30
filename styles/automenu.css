@@ -1,0 +1,119 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family:'Anek Devanagari', sans-serif;
+    caret-color: transparent;
+}
+
+@font-face {
+    font-family: "Dash";
+    src: url(Dashhorizon-eZ5wg.otf) format("opentype");
+}
+
+.logo {
+    width: 110px;
+    object-fit: cover;
+    
+}
+
+.brand-name {
+    font-family: 'Dash', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Dash', sans-serif;
+}
+
+.main-menu {
+    display: grid;
+    width: 60%;
+    margin-inline: auto;
+    grid-template-columns: 20% 20% 60%;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+    background: white;
+}
+
+.main-menu__brand {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.scrolled {
+    background: red;
+}
+
+.main-menu {
+    position: sticky;
+    top:0;
+}
+
+.primary-navigation {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+    height: 100%;
+
+}
+
+.container {
+    width: 60%;
+    margin-inline: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.link-item {
+    font-family:'Dash', sans-serif;
+    font-size: 2rem;
+    color: darkred;
+    font-weight: 100;
+    
+}
+
+.link-item::after {
+    content: '';
+    display: block;
+    position: relative;
+    top: -10px;
+    background: darkred;
+    width: 0%;
+    height: 2px;
+    transition: all 250ms ease-in-out;
+
+}
+
+.link-item:hover::after {
+    content: '';
+    display: block;
+    position: relative;
+    top: -10px;
+    background: red;
+    width: 100%;
+    height: 2px;
+   
+
+}
+
+.link-item:visited {
+    color: darkred;
+
+}
+
+.link-item:active {
+    color: darkred;
+}
+
+.link-item:hover {
+    color: red;
+     
+}
+
