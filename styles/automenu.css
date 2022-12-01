@@ -14,7 +14,7 @@
 }
 
 .logo {
-    width: 110px;
+    width: 80px;
     object-fit: cover;
     
 }
@@ -27,6 +27,13 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Dash', sans-serif;
 }
 
+.top-header {
+    width: 100%;
+    background: hsl(180, 100%, 90%);
+    position: sticky;
+    top:0;
+}
+
 .main-menu {
     display: grid;
     width: 60%;
@@ -35,7 +42,7 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     padding: 1rem;
     gap: 1rem;
-    background: white;
+   
 }
 
 .main-menu__brand {
@@ -46,11 +53,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .scrolled {
     background: red;
-}
-
-.main-menu {
-    position: sticky;
-    top:0;
 }
 
 .primary-navigation {
