@@ -10,7 +10,11 @@
 
 @font-face {
     font-family: "Dash";
-    src: url(Dashhorizon-eZ5wg.otf) format("opentype");
+    src: url(/fonts/Dashhorizon-eZ5wg.otf) format("opentype");
+}
+
+body {
+    background: whitesmoke;
 }
 
 .logo {
@@ -27,28 +31,60 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Dash', sans-serif;
 }
 
+h2 {
+    /* padding-block: 1rem .5rem; */
+    text-transform: uppercase;
+}
+
 .top-header {
     width: 100%;
-    background: hsl(180, 100%, 90%);
+    /* background: hsl(180, 100%, 90%); */
+    background: linear-gradient(to bottom, #2193b0, #6dd5ed, #6dd5ed, #2193b0);
     position: sticky;
     top:0;
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    height: 100%;
 }
 
 .main-menu {
     display: grid;
     width: 60%;
     margin-inline: auto;
-    grid-template-columns: 20% 20% 60%;
+    grid-template-columns: repeat(2, auto) 1fr;
     align-items: center;
-    padding: 1rem;
     gap: 1rem;
-   
-}
+    padding-block: 1rem;
+}  
 
-.main-menu__brand {
+.main-menu__logo, .main-menu__brand {
     display: flex;
     align-items: center;
     height: 100%;
+}
+
+.content__aside-join {
+    padding: 1rem;
+    border: 2px solid #2193b0;
+    background:  #6dd5ed;
+}
+
+footer {
+    width: 100%;
+    /* background: hsl(180, 100%, 90%); */
+    background: linear-gradient(to bottom, #2193b0, #6dd5ed, #6dd5ed, #2193b0);
+    height: 70px;
+}
+
+.footer {
+    padding-top: 2rem;
+    width: 60%;
+    margin-inline: auto;    
 }
 
 .scrolled {
@@ -65,15 +101,29 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
     width: 60%;
     margin-inline: auto;
+    min-height: 100vh;
+}
+
+.content__aside{
+    display: flex;
+    padding: 1rem;  
+    flex-direction: column;
+    position: sticky;
+    top: 90px;
+    z-index: -1;
+  
 }
 
 a {
     text-decoration: none;
 }
 
-.link-item {
+.link-item:link {
     font-family:'Dash', sans-serif;
     font-size: 2rem;
     color: darkred;
@@ -119,3 +169,6 @@ a {
      
 }
 
+.grid-col-span-2 {
+    grid-column: span 2;
+}
