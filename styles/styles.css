@@ -385,7 +385,7 @@ p {
     .p-sub-grid:hover {
         grid-template-columns: 75% 25%;
         border-image-source: linear-gradient(90deg, #2980b9,#2980b9, whitesmoke);
-        background-image: linear-gradient(0deg, whitesmoke, #b3defb);
+        background-image: linear-gradient(-45deg, whitesmoke, #b3defb);
         height: 180px;
         box-shadow:  none;
     }
