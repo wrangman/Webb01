@@ -1,22 +1,34 @@
+const mainPart = document.querySelector('main');
+const navHeader = document.querySelector('header');
 
-const header = document.querySelector("header");
-const navBackground = document.querySelector("nav");
-const containerOptions = {};
+// define the options for the observer
+const containerOptions = {
+  // add custom options here
+};
 
-const containerObserver = new IntersectionObserver(function(
-    entries, 
-    appearOnScroll
-) { 
-    entries.forEach(entry => {
-        if(!entry.isIntersecting) {
-            return;
-        } else {
-            
-            header.classList.add("scrolled");
-            appearOnScroll.unobserve(entry.target);
-        }
-    })
+// create the intersection observer
+const containerObserver = new IntersectionObserver(function(entries) {
+  // loop through the entries
+  entries.forEach(entry => {
+    // check if the element is intersecting with the viewport
+    if (!entry.isIntersecting) {
+     
+      console.log("! scrolled");
+    
 
+      // add the "scrolled" class to the navHeader element
+      navHeader.classList.add('scrolled');
+    } else {
+      // remove the "sticky" position from the navHeader element
+ 
+      console.log("not scrolled");
+
+
+      // remove the "scrolled" class from the navHeader element
+      navHeader.classList.remove('scrolled');
+    }
+  });
 }, containerOptions);
 
-containerObserver.observe(navHeader);
+// start observing the mainPart element
+containerObserver.observe(mainPart);

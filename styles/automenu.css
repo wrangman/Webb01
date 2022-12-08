@@ -23,7 +23,6 @@ body {
     
 }
 
-
 .brand-name {
     font-family: 'Dash', sans-serif;
 }
@@ -37,14 +36,24 @@ h2 {
     text-transform: uppercase;
 }
 
-.top-header {
+
+
+header { 
+    position: relative;
+    height: 120px;
     width: 100%;
     /* background: hsl(180, 100%, 90%); */
     background: linear-gradient(to bottom, #2193b0, #6dd5ed, #6dd5ed, #2193b0);
-    position: sticky;
-    top:0;
+    
 }
 
+header.scrolled {
+    position: sticky;
+    top: 0;
+   background:red;
+
+ 
+}
 
 nav {
     display: flex;
@@ -88,9 +97,7 @@ footer {
     margin-inline: auto;    
 }
 
-.scrolled {
-    background: red;
-}
+
 
 .primary-navigation {
     display: flex;
