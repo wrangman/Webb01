@@ -39,6 +39,7 @@
     font-weight: var(--ft-weight-400);
     margin: 0;
     padding: 0;
+    scroll-padding: 6rem;
 }
 
 body {
@@ -58,6 +59,7 @@ header {
 .header-dom {
     padding-top: 2rem;
     background: none;
+   
 }
 
 nav {
@@ -109,6 +111,7 @@ nav {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
+    
 }
 
 .footer {
