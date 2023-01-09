@@ -284,8 +284,7 @@ li .nav-link:active {
     top: 32px;
     color: var(--fg-clr-accent);
     opacity: 0;
-    animation: fade-eng 3s ease-in-out infinite;
-    animation-iteration-count: 3;
+    animation: fade-eng 3s ease-in-out 3;
 }
 
 @keyframes fade-swe {
