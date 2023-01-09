@@ -316,14 +316,12 @@ li .nav-link:active {
     }
 }
 
+
 /* compability & responsiveness */
-
-
 
 @media (max-width: 768px) {                              /*resolution is under 768 px - most cellphones */
     .screen-type-display {
         background-color: green;
-        transition: background-color 500ms ease-in;
     }
     .screen-type-display::before {
         content: 'cellphone mode activated';
@@ -335,7 +333,6 @@ li .nav-link:active {
 @media (min-width: 768px) and (max-width: 1184px) {      /*resolution is at least 768 px - most tablets */
     .screen-type-display {
         background-color: red;
-        transition: background-color 500ms ease-in;
     }
 
     .screen-type-display::before {
@@ -348,7 +345,6 @@ li .nav-link:active {
 @media (min-width: 1185px) {                               /*resolution is at least 1185 px */
     .screen-type-display {
         background-color: blue;
-        transition: background-color 500ms ease-in;
     }
     .screen-type-display::before {
         content: 'normal mode activated';
