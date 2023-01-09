@@ -35,14 +35,15 @@
 *,
 *::before,
 *::after {                                            
-    font-family: 'Titillium Web', sans-serif;
-    font-weight: var(--ft-weight-400);
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     scroll-padding: 6rem;
 }
 
 body {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: var(--ft-weight-400);
     background: var(--bg-clr-offwhite);
 }
 

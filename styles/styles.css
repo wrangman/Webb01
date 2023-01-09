@@ -62,8 +62,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Titillium Web', sans-serif;
     caret-color: transparent;
+}
+
+body {
+    font-family: 'Titillium Web', sans-serif;
 }
 
 ::selection {

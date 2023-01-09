@@ -4,7 +4,6 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family:'Anek Devanagari', sans-serif;
     caret-color: transparent;
 }
 
@@ -14,6 +13,7 @@
 }
 
 body {
+    font-family:'Anek Devanagari', sans-serif;
     background: whitesmoke;
 }
 
