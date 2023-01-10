@@ -274,8 +274,7 @@ li .nav-link:active {
     color: var(--fg-clr-accent);
     font-size: 1.5rem;
     opacity: 1;
-    animation: fade-swe 3s ease-in-out infinite;
-    animation-iteration-count: 3;
+    animation: fade-swe 3s ease-in-out 3;
 }
   
 .fade-welcome-eng {
