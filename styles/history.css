@@ -70,14 +70,6 @@ nav {
     background: var(--bg-clr-blue);
 }
 
-.main-header {
-    position: relative;
-    margin: 0 auto;
-    width: 60%;
-    padding: var(--padding-normal);
-    margin-inline: auto;
-    
-}
 
 .primary-navigation  {
     width: 60%;
@@ -102,7 +94,7 @@ nav {
     margin-inline: auto;
 } 
 
-.main-content__history {
+/* .main-content__history {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
@@ -113,7 +105,7 @@ nav {
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
     
-}
+} */
 
 .footer {
     background: var(--bg-clr-blue);
@@ -318,18 +310,40 @@ li .nav-link:active {
 /* compability & responsiveness */
 
 @media (max-width: 768px) {                              /*resolution is under 768 px - most cellphones */
-    .screen-type-display {
+    /* .screen-type-display {
         background-color: green;
     }
     .screen-type-display::before {
         content: 'cellphone mode activated';
         font-size: 1.5rem;
         color:white;
+    } */
+
+    
+.main-header {
+    position: relative;
+   
+    width: 95%;
+
+    margin-inline: auto;
+    
+}
+
+.main-content {
+    width: 95%;
+    background: var(--bg-clr-offwhite);
+
+    margin-inline: auto;
+} 
+
+    .main-content__history {
+        width: 100%;
     }
+    
 }
 
 @media (min-width: 769px) and (max-width: 1184px) {      /*resolution is between 769 px and 1184 px - most tablets */
-    .screen-type-display {
+    /* .screen-type-display {
         background-color: red;
     }
 
@@ -337,16 +351,62 @@ li .nav-link:active {
         content: 'tablet mode activated';
         font-size: 1.5rem;
         color:white;
+    } */
+
+
+    .main-header {
+        position: relative;
+        margin: 0 auto;
+        width: 60%;
+        padding: var(--padding-normal);
+        margin-inline: auto;
+        
+    }
+
+    .main-content__history {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+    
+    .main-content__dom {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        
     }
 }
 
 @media (min-width: 1185px) {                               /*resolution is at least 1185 px */
-    .screen-type-display {
+    /* .screen-type-display {
         background-color: blue;
     }
     .screen-type-display::before {
         content: 'normal mode activated';
         font-size: 1.5rem;
         color: white;
+    } */
+
+    
+    .main-header {
+        position: relative;
+        margin: 0 auto;
+        width: 60%;
+        padding: var(--padding-normal);
+        margin-inline: auto;
+        
+    }
+
+    .main-content__history {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+    
+    .main-content__dom {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        
     }
 }
